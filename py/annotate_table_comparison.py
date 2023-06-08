@@ -6,6 +6,17 @@ import logging
 import pandas as pd
 import requests
 import json
+from enum import Enum
+
+class Call(Enum):
+  NO_CALL, \
+  GENOMIC, \
+  PROTEIN, \
+  HGVSG \
+    = range(4)
+  # if adding enum, update range to reflect change
+  
+call_type = Call.NO_CALL
 
 SCRIPT_PATH = os.path.abspath(__file__)
 FORMAT = '[%(asctime)s] %(levelname)s %(message)s'
@@ -33,8 +44,6 @@ parser = argparse.ArgumentParser(description=DESCRIPTION, epilog=EPILOG,
 
 parser.add_argument('config') # config file with key -jaq
 parser.add_argument('variant_table') # inputted table -jaq
-parser.add_argument('-g', '--genomic', action='store_true',
-    help='Use genomic coordinates/alterations (MAF format)')
 parser.add_argument('-v', '--verbose', action='store_true',
     help='Set logging level to DEBUG')
 
@@ -78,10 +87,13 @@ headers = {
   'authorization': f'Bearer {token}'
 }
 
-json_out_d = 'json_protein'
-if args.genomic:
-  json_out_d = 'json_genomic'
-os.makedirs(json_out_d)
+### create JSON directories
+json_out_protein = 'json_protein'
+os.makedirs(json_out_protein)
+json_out_genomic = 'json_genomic'
+os.makedirs(json_out_genomic)
+json_out_hgvsg = 'json_hgvsg'
+os.makedirs(json_out_hgvsg)
 
 df = pd.read_csv(args.variant_table, sep='\t')
 
@@ -124,21 +136,61 @@ def add_maf(row):
   row['maf_ref'] = maf_ref
   row['maf_alt'] = maf_alt
   return row
+  
+def add_hgvsg(row): # -jaq
+  variant_type = row['type']
+  chromosome = row['chrom'].replace('chr', '')
+  position = int(row['pos'])
+  reference = row['ref']
+  alteration = row['alt']
+  
+  hgvsg = f'{chromosome}:g.'
+  
+  ### SNV "Substitution"
+  if (len(reference) == 1) and (len(alteration) == 1):
+    if variant_type != 'SNV':
+      error('Type mismatch')
+      sys.exit(1)
+    hgvsg += f'{position}{reference}>{alteration}'
+      
+  ### DELETION
+  elif (len(reference) > 1) and (len(alteration) == 1):
+    if variant_type != 'INDEL':
+      error('Type mismatch')
+      sys.exit(1)
+    position += 1
+    if len(reference) == 2: # one nucleotide deletion
+      hgvsg += f'{position}del'
+    else: # serveral nucleotide deletion
+      second_position = position + len(reference) - 2
+      hgvsg += f'{position}_{second_position}del'
+
+  ### INSERTION
+  elif (len(reference) == 1) and (len(alteration) > 1):
+    if variant_type != 'INDEL':
+      error('Type mismatch')
+      sys.exit(1)
+    second_position = position + 1
+    hgvsg += f'{position}_{second_position}ins{alteration[1:]}'
+    
+  row['hgvsg'] = hgvsg
+  return row
 
 def add_oncokb(row):
   chrom = row['chrom']
   chrom_no_chr = chrom.replace('chr', '')
   pos = row['pos']
+  ref = row['ref']
+  alt = row['alt']
   gene = row['gene']
   alteration = row['psyntax'].replace('p.', '')
   
-  if args.genomic:
+  
+  if call_type == Call.GENOMIC:
     start = row['start']
     end = row['end']
     maf_ref = row['maf_ref']
     maf_alt = row['maf_alt']
-    ref = row['ref']
-    alt = row['alt']
     genomicLocation = ','.join(str(x) for x in (chrom_no_chr, start, end, maf_ref, maf_alt)) 
   
     url = 'https://www.oncokb.org/api/v1/annotate/mutations/byGenomicChange'
@@ -146,43 +198,85 @@ def add_oncokb(row):
       'genomicLocation': genomicLocation,
       'referenceGenome': 'GRCh38'
     }
-  else:
-    url = f'https://www.oncokb.org/api/v1/annotate/mutations/byProteinChange'
+  elif call_type == Call.PROTEIN:
+    url = 'https://www.oncokb.org/api/v1/annotate/mutations/byProteinChange'
     params = {
       'hugoSymbol': gene,
       'alteration': alteration,
       'referenceGenome': 'GRCh38'
     }
-#  info(params)
+  elif call_type == Call.HGVSG:
+    hgvsg = row['hgvsg']
+    
+    url = 'https://www.oncokb.org/api/v1/annotate/mutations/byHGVSg'
+    params = {
+      'hgvsg': hgvsg,
+      'referenceGenome': 'GRCh38'
+    }
+  else: # NO_CALL, safely exit
+    info('API mismatch')
+    sys.exit(1)
+  
+  ### requests URL, checks status
   r = requests.get(url, headers=headers, params=params)
-  if args.genomic:
+  if call_type == Call.GENOMIC:
     info(f'{gene} {alteration} {pos} {ref} {alt} {chrom_no_chr} {start} {end} {maf_ref} {maf_alt} {r.status_code}')
-  else:
+  elif call_type == Call.PROTEIN:
     info(f'{gene} {alteration} {r.status_code}')
+  elif call_type == Call.HGVSG:
+    info(f'{gene} {alteration} {hgvsg} {r.status_code}')
+    
   oncokb_data = r.json()
-#  info(r.url) ### DELETE ME
   json_string = json.dumps(oncokb_data,
     sort_keys=True, indent=2, separators=(',',':'))
   clean_alteration = alteration.replace('*', 'STAR')
   clean_alteration = clean_alteration.replace('>', 'GT')
   clean_alteration = clean_alteration.replace('+', 'PLUS')
-  if args.genomic:
-    out_p = os.path.join(json_out_d, f'{gene}_{clean_alteration}_{chrom}_{pos}_{ref}_{alt}.json')
-  else:
-    out_p = os.path.join(json_out_d, f'{gene}_{clean_alteration}.json')
-  if args.genomic:
-    out_p = os.path.join(json_out_d, f'{gene}_{chrom}_{pos}_{ref}_{alt}.json')
+  
+  if call_type == Call.GENOMIC:
+    out_p = os.path.join(json_out_genomic, f'{gene}_{clean_alteration}_{chrom}_{pos}_{ref}_{alt}.json')
+    out_p = os.path.join(json_out_genomic, f'{gene}_{chrom}_{pos}_{ref}_{alt}.json')
+  elif call_type == Call.PROTEIN:
+    out_p = os.path.join(json_out_protein, f'{gene}_{clean_alteration}.json')
+  elif call_type == Call.HGVSG:
+    out_p = os.path.join(json_out_hgvsg, f'{gene}_{clean_alteration}_{hgvsg}.json')
 
   with open(out_p, 'w') as out_fh:
     out_fh.write(json_string)
-#  info(oncokb_data)
+  
+#  return bool(oncokb_data['mutationEffect']['description'])
   return oncokb_data['mutationEffect']['description']
 
 
-if args.genomic:
-  df = df.apply(add_maf, axis=1)
+def check_api_call(df, column):
+  new_column = []
+  for call in df[column]:
+    new_column.append(bool(call))
+  type_name = (column.split(' '))[0]
+  new_name = f'found {type_name}?'
+  df[new_name] = new_column
 
-df['oncokb'] = df.apply(add_oncokb, axis=1)
+
+df = df.apply(add_maf, axis=1)
+df = df.apply(add_hgvsg, axis=1)
+
+# calls byGenomicChange
+call_type = Call.GENOMIC
+genomic_column = 'genomic oncokb'
+df[genomic_column] = df.apply(add_oncokb, axis=1)
+check_api_call(df, genomic_column)
+
+# calls byProteinChange
+call_type = Call.PROTEIN
+protein_column = 'protein oncokb'
+df[protein_column] = df.apply(add_oncokb, axis=1)
+check_api_call(df, protein_column)
+
+# calls byHGVSg  
+call_type = Call.HGVSG
+hgvsg_column = 'hgvsg oncokb'
+df[hgvsg_column] = df.apply(add_oncokb, axis=1)
+check_api_call(df, hgvsg_column)
 
 df.to_csv(sys.stdout, sep='\t', index=None)
 

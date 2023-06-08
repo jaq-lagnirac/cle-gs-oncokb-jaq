@@ -66,65 +66,6 @@ def get_api_requests(res):
   if 'exception' in res:
     return res
   return { 'status_code': res.status_code, 'reason': res.reason }
-
-
-# Format GatewaySeq loci and base changes to a comma-separated MAF string 
-# compatible with the OncoKB `byGenomicChange` API call.
-#
-# SNVs, INDELS, and di/tri/quad (maybe more?) nucleotide substitutions
-# are handled, but for complex variants with REF,ALT both > 1 and
-# len(REF) != len(ALT) this passes through as a complex substitution but
-# doesn't appear to work. Looking at 999 variants in our initial set,
-# there was one annotation like this picked up by protein change but 
-# not genomic. 
-#
-# TODO for these types of complex variants, querying `byHGVSg` may 
-# find more variants
-def get_maf_string(variant, columns):
-  typ = variant[columns.index('type')]
-  chrom = variant[columns.index('chrom')]
-  chrom_no_chr = chrom.replace('chr', '')
-  pos = int(variant[columns.index('pos')])
-  ref = variant[columns.index('ref')]
-  alt = variant[columns.index('alt')]
-  # SNV
-  if (len(ref) == 1) and (len(alt) == 1):
-    if typ != 'SNV':
-      error('Type mismatch')
-      sys.exit(1)
-    maf_ref = ref
-    maf_alt = alt
-    start = pos
-    end = pos
-  # DELETION
-  elif (len(ref) > 1) and (len(alt) == 1):
-    if typ != 'INDEL':
-      error('Type mismatch')
-      sys.exit(1)
-    start = pos + 1
-    end = pos + len(ref) - 1
-    maf_ref = ref[1:]
-    maf_alt = '-'
-  # INSERTION
-  elif (len(ref) == 1) and (len(alt) > 1):
-    if typ != 'INDEL':
-      error('Type mismatch')
-      sys.exit(1)
-    start = pos
-    end = pos + 1
-    maf_ref = '-'
-    maf_alt = alt[1:]
-  # COMPLEX this might handle DNP/TNP/ONP but probably not 
-  # len(ref) != len(alt)
-  else: 
-    maf_ref = ref
-    maf_alt = alt
-    start = pos
-    end = start + len(alt) - 1
-
-  maf_s = ','.join(
-    str(x) for x in (chrom_no_chr, start, end, maf_ref, maf_alt))
-  return maf_s
   
 
 def type_mismatch(): # -jaq
