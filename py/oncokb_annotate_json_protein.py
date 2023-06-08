@@ -131,17 +131,21 @@ def get_maf_string(variant, columns):
 #   oncokb_data   OncoKB data or false if request failed
 #   res           either str(exception) if exception was raised or 
 #                 Requests response object
-def get_oncokb(genomicLocation, timeout, tumorType):
-  url = 'https://www.oncokb.org/api/v1/annotate/mutations/byGenomicChange'
+def get_oncokb_protein(psyntax, gene, timeout, tumorType):
+#def get_oncokb_protein(genomicLocation, timeout, tumorType):
+  url = 'https://www.oncokb.org/api/v1/annotate/mutations/byProteinChange'
   params = {
-    'genomicLocation': genomicLocation,
-    'referenceGenome': 'GRCh38'
+    'alteration' : psyntax,
+    'hugoSymbol' : gene,
+#    'genomicLocation':genomicLocation,
+    'referenceGenome' : 'GRCh38'
   }
   if tumorType != None:
     params['tumorType'] = tumorType
 
   try:
     res = requests.get(url, headers=headers, params=params, timeout=timeout)
+#    info(res.url)
   # A timeout or a failed network connection will raise an exception
   # Catch it and return the string version
   except Exception as e:
@@ -225,7 +229,18 @@ for tier in tiers:
   columns = gs_data['VARIANTS'][tier]['columns']
   for variant in gs_data['VARIANTS'][tier]['data']:
     total_count[tier] += 1
-    genomicLocation = get_maf_string(variant, columns)
+#    info(f'Variant: {variant}')
+    ### add get_oncokb_protein params here
+#    genomicLocation = get_maf_string(variant, columns)
+    psyntax_index = columns.index('psyntax')
+    psyntax = variant[psyntax_index].replace('p.', '')
+#    info(f'psyntax {psyntax} \tat index {psyntax_index}')
+    gene_index = columns.index('gene') # aka hugoSymbol
+    gene = variant[gene_index]
+#    info(f'PSyntax/Alteration: {psyntax}\t\t\tGene/HugoSymbol: {gene}')
+#    alteration_index = columns.index('alt')
+#    alteration = variant[alteration_index]
+#    info(alteration)
 
     variant_oncokb_data = {} 
     if args.include_variant:
@@ -243,7 +258,7 @@ for tier in tiers:
 
     # Pre-flight check. Fetch data without a tumor type.
     preflight_oncokb_data, res = \
-      get_oncokb(genomicLocation, gs_config['oncokb_api_timeout'], None)
+      get_oncokb_protein(psyntax, gene, gs_config['oncokb_api_timeout'], None)
     if not preflight_oncokb_data:
       variant_oncokb_data['apiStatus'] = 'api_failed'
       variant_oncokb_data['apiRequests'] = get_api_requests(res)
@@ -258,10 +273,9 @@ for tier in tiers:
 
     # Go ahead and annotate
     annotated_count[tier] += 1
-
     for tumor_type in tumor_types:
       tumor_type_oncokb_data, res = \
-        get_oncokb(genomicLocation, gs_config['oncokb_api_timeout'], 
+        get_oncokb_protein(psyntax, gene, gs_config['oncokb_api_timeout'], 
                    tumor_type)
       # If no description, lookup failed, set empty object
       # If the per-tumor lookup returns false, the API call failed

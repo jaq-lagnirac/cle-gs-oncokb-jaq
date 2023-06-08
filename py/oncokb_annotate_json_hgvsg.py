@@ -125,16 +125,59 @@ def get_maf_string(variant, columns):
   maf_s = ','.join(
     str(x) for x in (chrom_no_chr, start, end, maf_ref, maf_alt))
   return maf_s
+  
+
+def type_mismatch(): # -jaq
+  error('Type mismatch')
+  sys.exit(1)
+
+  
+def get_hgvsg(variant, columns): # -jaq
+  variant_type = variant[columns.index('type')]
+  chromosome = variant[columns.index('chrom')].replace('chr', '')
+  position = int(variant[columns.index('pos')])
+  reference = variant[columns.index('ref')]
+  alteration = variant[columns.index('alt')]
+
+  hgvsg = f'{chromosome}:g.'
+
+  ### SNV "Substitution"
+  if (len(reference) == 1) and (len(alteration) == 1):
+    if variant_type != 'SNV':
+      type_mismatch()
+    hgvsg += f'{position}{reference}>{alteration}'
+      
+  ### DELETION
+  elif (len(reference) > 1) and (len(alteration) == 1):
+    if variant_type != 'INDEL':
+      type_mismatch()
+    position += 1
+    if len(reference) == 2: # one nucleotide deletion
+      hgvsg += f'{position}del'
+    else: # serveral nucleotide deletion
+      second_position = position + len(reference) - 2
+      hgvsg += f'{position}_{second_position}del'
+
+  ### INSERTION
+  elif (len(reference) == 1) and (len(alteration) > 1):
+    if variant_type != 'INDEL':
+      type_mismatch()
+    second_position = position + 1
+    hgvsg += f'{position}_{second_position}ins{alteration[1:]}'
+    
+#  info(f'vartype: {variant_type}, pos: {position}, ref: {reference}, alt: {alteration}, hgvsg: {hgvsg}')
+  
+  return hgvsg
 
 
 # returns a tuple of 
 #   oncokb_data   OncoKB data or false if request failed
 #   res           either str(exception) if exception was raised or 
 #                 Requests response object
-def get_oncokb(genomicLocation, timeout, tumorType):
-  url = 'https://www.oncokb.org/api/v1/annotate/mutations/byGenomicChange'
+def get_oncokb(HGVSg, timeout, tumorType):
+  url = 'https://www.oncokb.org/api/v1/annotate/mutations/byHGVSg'
   params = {
-    'genomicLocation': genomicLocation,
+    'hgvsg': HGVSg,
     'referenceGenome': 'GRCh38'
   }
   if tumorType != None:
@@ -142,6 +185,7 @@ def get_oncokb(genomicLocation, timeout, tumorType):
 
   try:
     res = requests.get(url, headers=headers, params=params, timeout=timeout)
+#    info(res.url)
   # A timeout or a failed network connection will raise an exception
   # Catch it and return the string version
   except Exception as e:
@@ -225,7 +269,8 @@ for tier in tiers:
   columns = gs_data['VARIANTS'][tier]['columns']
   for variant in gs_data['VARIANTS'][tier]['data']:
     total_count[tier] += 1
-    genomicLocation = get_maf_string(variant, columns)
+    HGVSg = get_hgvsg(variant, columns)
+#    info(f'HGVSg String: {HGVSg}')
 
     variant_oncokb_data = {} 
     if args.include_variant:
@@ -243,7 +288,7 @@ for tier in tiers:
 
     # Pre-flight check. Fetch data without a tumor type.
     preflight_oncokb_data, res = \
-      get_oncokb(genomicLocation, gs_config['oncokb_api_timeout'], None)
+      get_oncokb(HGVSg, gs_config['oncokb_api_timeout'], None)
     if not preflight_oncokb_data:
       variant_oncokb_data['apiStatus'] = 'api_failed'
       variant_oncokb_data['apiRequests'] = get_api_requests(res)
@@ -261,7 +306,7 @@ for tier in tiers:
 
     for tumor_type in tumor_types:
       tumor_type_oncokb_data, res = \
-        get_oncokb(genomicLocation, gs_config['oncokb_api_timeout'], 
+        get_oncokb(HGVSg, gs_config['oncokb_api_timeout'], 
                    tumor_type)
       # If no description, lookup failed, set empty object
       # If the per-tumor lookup returns false, the API call failed

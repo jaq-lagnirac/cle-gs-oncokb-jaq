@@ -52,15 +52,17 @@ with open(args.err_file) as fh:
         sys.exit(1)
       all_total_annotated.append(total_annotated)
     elif 'Elapsed' in line:
-      m = re.search(r'\(h:mm:ss or m:ss\): (.+)', line)
+      reference_point = 'Elapsed: '
+      elapsed_index = line.index(reference_point) + len(reference_point)
+      m = line[elapsed_index:]
       if (m):
-        elapsed_time = m.group(1)
+        elapsed_time = m
       else:
         error('Could not parse elapsed time')
         sys.exit(1)
       all_elapsed_time.append(elapsed_time)
 
 for i, total_annotated in enumerate(all_total_annotated):
-  print('\t'.join((total_annotated, all_elapsed_time[i])))      
+  print('\t'.join((total_annotated, all_elapsed_time[i])))
 
 debug('%s end', (SCRIPT_PATH))

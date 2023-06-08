@@ -1,0 +1,8 @@
+type	chrom	pos	ref	alt	gene	transcript	psyntax	csyntax	oncokb
+SNV	chr4	54729437	C	A	KIT	ENST00000288135	p.A698E	c.2093C>A	
+SNV	chr7	116739978	C	T	MET	ENST00000397752	p.T474I	c.1421C>T	
+SNV	chr9	8499717	T	A	PTPRD	ENST00000381196	p.Y751F	c.2252A>T	
+INDEL	chr13	32337239	CATATAAAAATGACTCTAGGTCAAG	C	BRCA2	ENST00000380152	p.I963_D970del	c.2887_2910del	
+SNV	chr17	7674220	C	T	TP53	ENST00000269305	p.R248Q	c.743G>A	The TP53 R248Q mutation is located in the protein's DNA binding domain. Expression of this mutation in TP53-null cell lines resulted in aggregation of unfolded mutant proteins, likely leading to destabilization of TP53 and upregulation of heat shock proteins (PMID: 21445056). Expression of this mutation in osteosarcoma cell lines led to a reduced apoptotic response, including reduced expression of pro-apoptotic proteins (PMID: 16778209). In biochemical assays, this mutation was found to bind DNA with a lower affinity than wildtype TP53 (PMID: 24814347).
+INDEL	chr17	43091462	CTTGA	C	BRCA1	ENST00000357654	p.N1355Kfs*10	c.4065_4068del	Truncating mutations in BRCA1 can lead to varying C-terminally truncated proteins that results in aberrant protein folding, contributing to loss of BRCA1 protein function. Human breast cancer cell lines that contain a truncating mutation in BRCA1 display elevated levels of aneuploidy and impaired DNA damage response. In addition, truncating mutations have been shown to induce aberrant protein localization, which may impact the interaction of important binding partners (PMID: 20608970). Mouse models of BRCA1 truncating mutations develop cancer, including mammary carcinomas, lymphomas and ovarian carcinomas (PMID: 11358863, 12483515, 12947386).
+SNV	chr22	29642262	G	C	NF2	ENST00000338641	p.A142P	c.424G>C	

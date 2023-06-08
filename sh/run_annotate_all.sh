@@ -56,5 +56,5 @@ mkdir annotated
 
 for f in $json_d/*.report.json; do 
   echo $f
-  gtime -v py/oncokb_annotate_json.py $include_flag $config $f > annotated/$(basename $f)
+  /usr/bin/time -v py/oncokb_annotate_json.py $include_flag $config $f > annotated/$(basename $f)
 done 2>annotate_all.err
