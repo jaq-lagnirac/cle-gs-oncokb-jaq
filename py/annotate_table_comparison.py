@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# based off of p30-annotate_table.py
+
 import os,sys
 import argparse
 import logging
@@ -20,6 +22,8 @@ NUM_DECIMALS = 3
 # global vars
 call_type = 'temp'
 elapsed_array = []
+successes_x = 0
+total_n = 0
 
 
 # enumerated constants for constants
@@ -285,54 +289,88 @@ def add_oncokb(row):
 
 
 def check_api_call(df, column):
+  global successes_x
+  global total_n
+  
   new_column = []
   for call in df[column]:
     new_column.append(bool(call))
   type_name = (column.split(' '))[0]
   new_name = f'found {type_name}?'
   df[new_name] = new_column
+  
+  successes_x = new_column.count(True)
+  total_n = len(new_column)
 
 
 df = df.apply(add_maf, axis=1)
 df = df.apply(add_hgvsg, axis=1)
 
-# calls byGenomicChange
+### calls byGenomicChange
 info('---Starts byGenomicChange calls---')
 elapsed_array = [] # resets global var
 call_type = Call.GENOMIC
 genomic_column = 'genomic oncokb'
 df[genomic_column] = df.apply(add_oncokb, axis=1)
 check_api_call(df, genomic_column)
-df['genomic elapsed (sec)'] = elapsed_array
+# handles elapsed time
+genomic_elapsed = 'genomic elapsed (sec)'
+df[genomic_elapsed] = elapsed_array
 elapsed_avg_genomic = round(statistics.mean(elapsed_array), \
   NUM_DECIMALS)
+# handles proportions, uses global vars
+genomic_successes = successes_x
+genomic_total = total_n
+genomic_prop = round(genomic_successes  / genomic_total, NUM_DECIMALS)
 
 
-# calls byProteinChange
+### calls byProteinChange
 info('---Starts byProteinChange calls---')
 elapsed_array = [] # resets global var
 call_type = Call.PROTEIN
 protein_column = 'protein oncokb'
 df[protein_column] = df.apply(add_oncokb, axis=1)
 check_api_call(df, protein_column)
-df['protein elapsed (sec)'] = elapsed_array
+
+# handles elapsed time
+protein_elapsed = 'protein elapsed (sec)'
+df[protein_elapsed] = elapsed_array
 elapsed_avg_protein = round(statistics.mean(elapsed_array), \
   NUM_DECIMALS)
+  
+# handles proportions, uses global vars
+protein_successes = successes_x
+protein_total = total_n
+protein_prop = round(protein_successes / protein_total, NUM_DECIMALS)
 
-# calls byHGVSg
+
+### calls byHGVSg
 info('---Starts byHGVSg calls---')
 elapsed_array = [] # resets global var  
 call_type = Call.HGVSG
 hgvsg_column = 'hgvsg oncokb'
 df[hgvsg_column] = df.apply(add_oncokb, axis=1)
 check_api_call(df, hgvsg_column)
-df['hgvsg elapsed (sec)'] = elapsed_array
+
+# handles elapsed time
+hgvsg_elapsed = 'hgvsg elapsed (sec)'
+df[hgvsg_elapsed] = elapsed_array
 elapsed_avg_hgvsg = round(statistics.mean(elapsed_array), \
   NUM_DECIMALS)
+  
+# handles proportions, uses global vars
+hgvsg_successes = successes_x
+hgvsg_total = total_n
+hgvsg_prop = round(hgvsg_successes  / hgvsg_total, NUM_DECIMALS)
 
+
+# prints overview info to .err file
 info(f'Genomic Average Elapsed Time: {elapsed_avg_genomic} secs')
 info(f'Protein Average Elapsed Time: {elapsed_avg_protein} secs')
 info(f'HGVSg Average Elapsed Time: {elapsed_avg_hgvsg} secs')
+info(f'Genomic Proportion of Successful Hits: {genomic_prop} ({genomic_successes}/{genomic_total})')
+info(f'Protein Proportion of Successful Hits: {protein_prop} ({protein_successes}/{protein_total})')
+info(f'Genomic Proportion of Successful Hits: {genomic_prop} ({hgvsg_successes}/{hgvsg_total})')
 
 df.to_csv(sys.stdout, sep='\t', index=None)
 
