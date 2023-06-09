@@ -297,7 +297,7 @@ df = df.apply(add_maf, axis=1)
 df = df.apply(add_hgvsg, axis=1)
 
 # calls byGenomicChange
-info('Starts byGenomicChange calls')
+info('---Starts byGenomicChange calls---')
 elapsed_array = [] # resets global var
 call_type = Call.GENOMIC
 genomic_column = 'genomic oncokb'
@@ -309,7 +309,7 @@ elapsed_avg_genomic = round(statistics.mean(elapsed_array), \
 
 
 # calls byProteinChange
-info('Starts byProteinChange calls')
+info('---Starts byProteinChange calls---')
 elapsed_array = [] # resets global var
 call_type = Call.PROTEIN
 protein_column = 'protein oncokb'
@@ -320,7 +320,7 @@ elapsed_avg_protein = round(statistics.mean(elapsed_array), \
   NUM_DECIMALS)
 
 # calls byHGVSg
-info('Starts byHGVSg calls')
+info('---Starts byHGVSg calls---')
 elapsed_array = [] # resets global var  
 call_type = Call.HGVSG
 hgvsg_column = 'hgvsg oncokb'
