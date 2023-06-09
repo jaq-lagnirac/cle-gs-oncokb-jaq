@@ -6,16 +6,32 @@ import logging
 import pandas as pd
 import requests
 import json
-from enum import Enum
 
-class Call(Enum):
+# - jaq
+from enum import Enum
+import time
+import statistics
+
+
+# global constants
+NUM_DECIMALS = 3
+
+
+# global vars
+call_type = 'temp'
+elapsed_array = []
+
+
+# enumerated constants for constants
+class Call(Enum): 
   NO_CALL, \
   GENOMIC, \
   PROTEIN, \
   HGVSG \
     = range(4)
   # if adding enum, update range to reflect change
-  
+
+ 
 call_type = Call.NO_CALL
 
 SCRIPT_PATH = os.path.abspath(__file__)
@@ -51,6 +67,7 @@ args = parser.parse_args()
 
 if args.verbose:
   l.setLevel(logging.DEBUG)
+  
   
 # Check for presence of required keys and types in the config file
 # Hard exit if anything is missing (ported from oncokb_annotate_json)
@@ -97,6 +114,7 @@ os.makedirs(json_out_hgvsg)
 
 df = pd.read_csv(args.variant_table, sep='\t')
 
+
 def add_maf(row):
   typ = row['type']
   pos = row['pos']
@@ -137,6 +155,7 @@ def add_maf(row):
   row['maf_alt'] = maf_alt
   return row
   
+
 def add_hgvsg(row): # -jaq
   variant_type = row['type']
   chromosome = row['chrom'].replace('chr', '')
@@ -176,7 +195,16 @@ def add_hgvsg(row): # -jaq
   row['hgvsg'] = hgvsg
   return row
 
+
 def add_oncokb(row):
+  ### ties in global vars
+  global call_type # not necessary, but clarifies role
+  global elapsed_array
+  
+  ### starts elapsed time
+  start_time = time.time()
+
+  ### sets up API vars
   chrom = row['chrom']
   chrom_no_chr = chrom.replace('chr', '')
   pos = row['pos']
@@ -185,7 +213,7 @@ def add_oncokb(row):
   gene = row['gene']
   alteration = row['psyntax'].replace('p.', '')
   
-  
+  ### generates API calls
   if call_type == Call.GENOMIC:
     start = row['start']
     end = row['end']
@@ -225,7 +253,8 @@ def add_oncokb(row):
     info(f'{gene} {alteration} {r.status_code}')
   elif call_type == Call.HGVSG:
     info(f'{gene} {alteration} {hgvsg} {r.status_code}')
-    
+  
+  ### pulls data and creates json filenames
   oncokb_data = r.json()
   json_string = json.dumps(oncokb_data,
     sort_keys=True, indent=2, separators=(',',':'))
@@ -233,6 +262,7 @@ def add_oncokb(row):
   clean_alteration = clean_alteration.replace('>', 'GT')
   clean_alteration = clean_alteration.replace('+', 'PLUS')
   
+  ### generates directory paths
   if call_type == Call.GENOMIC:
     out_p = os.path.join(json_out_genomic, f'{gene}_{clean_alteration}_{chrom}_{pos}_{ref}_{alt}.json')
     out_p = os.path.join(json_out_genomic, f'{gene}_{chrom}_{pos}_{ref}_{alt}.json')
@@ -241,8 +271,14 @@ def add_oncokb(row):
   elif call_type == Call.HGVSG:
     out_p = os.path.join(json_out_hgvsg, f'{gene}_{clean_alteration}_{hgvsg}.json')
 
+  ### writes to file
   with open(out_p, 'w') as out_fh:
     out_fh.write(json_string)
+  
+  ### ends elapsed time, processes elapsed time
+  end_time = time.time()
+  elapsed_time = round(end_time - start_time, NUM_DECIMALS)
+  elapsed_array.append(elapsed_time)
   
 #  return bool(oncokb_data['mutationEffect']['description'])
   return oncokb_data['mutationEffect']['description']
@@ -261,22 +297,42 @@ df = df.apply(add_maf, axis=1)
 df = df.apply(add_hgvsg, axis=1)
 
 # calls byGenomicChange
+info('Starts byGenomicChange calls')
+elapsed_array = [] # resets global var
 call_type = Call.GENOMIC
 genomic_column = 'genomic oncokb'
 df[genomic_column] = df.apply(add_oncokb, axis=1)
 check_api_call(df, genomic_column)
+df['genomic elapsed (sec)'] = elapsed_array
+elapsed_avg_genomic = round(statistics.mean(elapsed_array), \
+  NUM_DECIMALS)
+
 
 # calls byProteinChange
+info('Starts byProteinChange calls')
+elapsed_array = [] # resets global var
 call_type = Call.PROTEIN
 protein_column = 'protein oncokb'
 df[protein_column] = df.apply(add_oncokb, axis=1)
 check_api_call(df, protein_column)
+df['protein elapsed (sec)'] = elapsed_array
+elapsed_avg_protein = round(statistics.mean(elapsed_array), \
+  NUM_DECIMALS)
 
-# calls byHGVSg  
+# calls byHGVSg
+info('Starts byHGVSg calls')
+elapsed_array = [] # resets global var  
 call_type = Call.HGVSG
 hgvsg_column = 'hgvsg oncokb'
 df[hgvsg_column] = df.apply(add_oncokb, axis=1)
 check_api_call(df, hgvsg_column)
+df['hgvsg elapsed (sec)'] = elapsed_array
+elapsed_avg_hgvsg = round(statistics.mean(elapsed_array), \
+  NUM_DECIMALS)
+
+info(f'Genomic Average Elapsed Time: {elapsed_avg_genomic} secs')
+info(f'Protein Average Elapsed Time: {elapsed_avg_protein} secs')
+info(f'HGVSg Average Elapsed Time: {elapsed_avg_hgvsg} secs')
 
 df.to_csv(sys.stdout, sep='\t', index=None)
 
