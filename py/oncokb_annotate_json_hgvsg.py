@@ -105,6 +105,17 @@ def get_hgvsg(variant, columns): # -jaq
       type_mismatch()
     second_position = position + 1
     hgvsg += f'{position}_{second_position}ins{alteration[1:]}'
+  
+  ### DELINS
+  else: # The HARD one
+    if variant_type != 'REPLACE ME':
+      type_mismatch()
+    if len(reference) == 1:
+      hgvsg += f'{position}delins{alteration}'
+    else: # len(ref) > 1
+      second_position = position + len(reference) - 1
+      hgvsg += f'{position}_{second_position}delins{alteration}'
+    
     
 #  info(f'vartype: {variant_type}, pos: {position}, ref: {reference}, alt: {alteration}, hgvsg: {hgvsg}')
   
