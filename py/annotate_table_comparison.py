@@ -285,7 +285,12 @@ def add_oncokb(row):
   elapsed_array.append(elapsed_time)
   
 #  return bool(oncokb_data['mutationEffect']['description'])
-  return oncokb_data['mutationEffect']['description']
+#  return oncokb_data['mutationEffect']['description']
+  try:
+    return oncokb_data['mutationEffect']['description']
+  except KeyError:
+    error(f'Not found in OncoKB: {call_type} {gene} {hgvsg}')
+    sys.exit(1)
 
 
 def check_api_call(df, column):
