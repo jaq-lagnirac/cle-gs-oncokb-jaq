@@ -83,7 +83,7 @@ def get_hgvsg(variant, columns): # -jaq
   hgvsg = f'{chromosome}:g.'
 
   ### SNV "Substitution"
-  if (len(reference) == 1) and (len(alteration) == 1):
+  if (len(reference) == 1) and (len(alteration) == 1) :
     if variant_type != 'SNV':
       type_mismatch()
     hgvsg += f'{position}{reference}>{alteration}'
@@ -106,9 +106,41 @@ def get_hgvsg(variant, columns): # -jaq
     second_position = position + 1
     hgvsg += f'{position}_{second_position}ins{alteration[1:]}'
     
-#  info(f'vartype: {variant_type}, pos: {position}, ref: {reference}, alt: {alteration}, hgvsg: {hgvsg}')
-  
+  ### DELINS (not robust, simply to handle what we're dealing with)
+  elif variant_type != 'SNV': # The HARD one
+    if len(reference) == 1:
+      hgvsg += f'{position}delins{alteration}'
+    else: # len(ref) > 1
+      second_position = position + len(reference) - 1
+      hgvsg += f'{position}_{second_position}delins{alteration}'
+
   return hgvsg
+  ##### SKELETON CODE FOR FUTURE IMPLEMENTATIONS #####
+  ### DELINS
+'''
+  if variant_type == 'REPLACE ME':
+#  else:
+#    if variant_type != 'REPLACE ME': # The HARD one
+#      type_mismatch()
+    if len(reference) == 1:
+      hgvsg += f'{position}delins{alteration}'
+    else: # len(ref) > 1
+      second_position = position + len(reference) - 1
+      hgvsg += f'{position}_{second_position}delins{alteration}'
+#'''
+
+  ### REPEATED SEQUENCES
+'''
+  if variant_type == 'REPLACE ME':
+#  else:
+#    if variant_type != 'REPLACE ME': # The HARD one
+#      type_mismatch()
+    copy_num = alteration.count(reference)
+    hgvsg += f'{position}{alteration}[{copy_num}]'
+'''  
+  ##### END OF SKELETON CODE #####
+  
+#  info(f'vartype: {variant_type}, pos: {position}, ref: {reference}, alt: {alteration}, hgvsg: {hgvsg}')
 
 
 # returns a tuple of 
