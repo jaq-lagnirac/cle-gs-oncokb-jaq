@@ -1,0 +1,54 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"SDHD encodes an enzyme involved in the electron transport chain. Germline mutations of SDHD are associated with pheochromocytomas and paragangliomas and gastrointestinal, renal cell and pituitary cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"06/14/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "20226277",
+        "31039394",
+        "12883710",
+        "28099933",
+        "12111639",
+        "29545045"
+      ]
+    },
+    "description":"Truncating mutations in SDHD can occur anywhere throughout the gene and are predicted to lead to loss of its protein product. SDHD encodes a subunit of the Succinate Dehydrogenase (SDH) complex, an enzyme that is part of the Krebs cycle and complex II of the respiratory chain (PMID: 20226277). Loss of SDH complex has been shown to lead to succinate accumulation, which behaves as an oncometabolite to induce tumor formation through multiple mechanisms (PMID: 31039394). Reduced expression of SDHD has been reported in colorectal and gastric cancer (PMID: 12883710). Germline mutations in SDHD, including truncating variants, have been associated with the development of paragangliomas and pheochromocytomas (PMID: 28099933, 12111639, 29545045).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"W105*",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":6392,
+    "hgvs":null,
+    "hugoSymbol":"SDHD",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The SDHD W105* mutation is likely oncogenic.",
+  "vus":false
+}

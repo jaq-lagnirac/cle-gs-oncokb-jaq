@@ -1,0 +1,51 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"ERBB2, a receptor tyrosine kinase, is altered by mutation, amplification and/or overexpression in various cancer types, most frequently in breast, esophagogastric and endometrial cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"02/17/2022",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "29967253",
+        "25344691",
+        "27149842"
+      ]
+    },
+    "description":"The ERBB2 A1232fs mutation is located in the extracellular domain of the protein. This mutation has been found in colorectal cancer (PMID: 25344691, 27149842). There is conflicting functional data for this mutation. Expression of this mutation in a murine fibroblast cell line demonstrated that it may be activating as measured by increased cell proliferation compared to wildtype (PMID: 29967253). However, expression in a murine B-cell line demonstrated that it is neutral as measured by no change in proliferation compared to wildtype (PMID: 29967253). In vitro studies of this mutation demonstrate that it is resistant to the ERBB2 inhibitor trastuzumab, but sensitive to lapatinib, sapitinib, afatinib, neratinib, and osimertinib when expressed in a murine B-cell line as measured by decreased cell proliferation upon drug treatment (PMID: 29967253).",
+    "knownEffect":"Inconclusive"
+  },
+  "oncogenic":"Inconclusive",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"A1232Lfs*70",
+    "alterationType":null,
+    "consequence":"frameshift_variant",
+    "entrezGeneId":2064,
+    "hgvs":"17:g.39727965del",
+    "hugoSymbol":"ERBB2",
+    "id":null,
+    "proteinEnd":1230,
+    "proteinStart":1230,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"There is conflicting and/or weak data describing the biological significance of the ERBB2 A1232Lfs*70 mutation.",
+  "vus":true
+}

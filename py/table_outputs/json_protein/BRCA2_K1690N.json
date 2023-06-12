@@ -1,0 +1,49 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"BRCA2, a tumor suppressor involved in the DNA damage response, is mutated in various cancer types.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"01/30/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "17924331"
+      ]
+    },
+    "description":"The BRCA2 K1690N mutation is located in the BCR repeat domain of the protein. In an analysis of BRCA2 variants of unknown significance (VUS) using measures of co-occurrence with known deleterious mutations, analysis of personal and family history of cancer and analysis of cosegregation with disease in pedigrees, BRCA2 K1690N was predicted to be neutral, but otherwise has not been functionally validated (PMID: 17924331).",
+    "knownEffect":"Inconclusive"
+  },
+  "oncogenic":"Inconclusive",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"K1690N",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":675,
+    "hgvs":null,
+    "hugoSymbol":"BRCA2",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"There is conflicting and/or weak data describing the biological significance of the BRCA2 K1690N mutation.",
+  "vus":false
+}

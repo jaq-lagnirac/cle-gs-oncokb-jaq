@@ -1,0 +1,972 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"BRCA1, a tumor suppressor involved in the DNA damage response, is mutated in various cancer types.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":"LEVEL_Fda2",
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":"LEVEL_1",
+  "hotspot":false,
+  "lastUpdate":"02/27/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "11358863",
+        "20608970",
+        "12483515",
+        "12947386"
+      ]
+    },
+    "description":"Truncating mutations in BRCA1 can lead to varying C-terminally truncated proteins that results in aberrant protein folding, contributing to loss of BRCA1 protein function. Human breast cancer cell lines that contain a truncating mutation in BRCA1 display elevated levels of aneuploidy and impaired DNA damage response. In addition, truncating mutations have been shown to induce aberrant protein localization, which may impact the interaction of important binding partners (PMID: 20608970). Mouse models of BRCA1 truncating mutations develop cancer, including mammary carcinomas, lymphomas and ovarian carcinomas (PMID: 11358863, 12483515, 12947386).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"X1453_splice",
+    "alterationType":null,
+    "consequence":"splice_acceptor_variant",
+    "entrezGeneId":672,
+    "hgvs":null,
+    "hugoSymbol":"BRCA1",
+    "id":null,
+    "proteinEnd":1453,
+    "proteinStart":1453,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[
+        "Olaparib is FDA-approved as monotherapy in patients with deleterious or suspected deleterious germline BRCA mutated (as detected by an FDA-approved test) advanced ovarian cancer who have been treated with three or more prior lines of chemotherapy"
+      ],
+      "description":"Olaparib, a small molecule PARP inhibitor, is FDA-approved with or without bevacizumab for the treatment of patients with advanced ovarian cancer who have deleterious germline BRCA mutations and have been treated with three or more lines of chemotherapy, or as maintenance therapy for patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are having partial or complete responses to platinum-based chemotherapy. This drug is considered standard-of-care for the treatment of patients with somatic BRCA1/2 mutations. Initial FDA approval was based on Phase I and Phase II clinical trials evaluating patients with ovarian cancer harboring known BRCA1 or BRCA2 germline mutations, in which treatment with olaparib demonstrated a clear clinical benefit. Specifically, in a Phase II trial evaluating olaparib in patients with platinum-resistant ovarian cancer and a confirmed germline BRCA1 or BRCA2 mutation (n=193), the tumor response rate was 31% (95% CI=24.6 to 38.1), and stable disease (around 8 weeks) was seen in 40% of patients (95% CI=33.4 to 47.7) (PMID: 25366685). More recent FDA approval was based on a planned retrospective analysis of Phase II trial data in which patients with deleterious BRCA mutations had significantly longer progression-free survival with olaparib maintenance therapy than patients given placebo (11.2 months vs 4.3 months; HR=0.18; p<0\u00b70001)(PMID: 24882434). In the seven-year follow-up of the Phase III SOLO1/GOG-3004 trial of maintenance olaparib versus placebo in patients with newly diagnosed, advanced ovarian cancer harboring a BRCA mutation, the seven-year median overall survival rates were 67% in the olaparib arm and 46.5% in the placebo arm, and the median duration of treatment was 24.6 months with olaparib and 13.9 months with placebo (PMID: 36082969).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"LightBlue",
+        "id":880,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Ovarian Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Ovary/Fallopian Tube",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "36082969",
+        "25366685",
+        "24882434"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[
+        "Olaparib is FDA-approved as monotherapy in patients with deleterious or suspected deleterious germline BRCA mutated (as detected by an FDA-approved test) advanced ovarian cancer who have been treated with three or more prior lines of chemotherapy"
+      ],
+      "description":"Olaparib, a small molecule PARP inhibitor, is FDA-approved with or without bevacizumab for the treatment of patients with advanced ovarian cancer who have deleterious germline BRCA mutations and have been treated with three or more lines of chemotherapy, or as maintenance therapy for patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are having partial or complete responses to platinum-based chemotherapy. This drug is considered standard-of-care for the treatment of patients with somatic BRCA1/2 mutations. Initial FDA approval was based on Phase I and Phase II clinical trials evaluating patients with ovarian cancer harboring known BRCA1 or BRCA2 germline mutations, in which treatment with olaparib demonstrated a clear clinical benefit. Specifically, in a Phase II trial evaluating olaparib in patients with platinum-resistant ovarian cancer and a confirmed germline BRCA1 or BRCA2 mutation (n=193), the tumor response rate was 31% (95% CI=24.6 to 38.1), and stable disease (around 8 weeks) was seen in 40% of patients (95% CI=33.4 to 47.7) (PMID: 25366685). More recent FDA approval was based on a planned retrospective analysis of Phase II trial data in which patients with deleterious BRCA mutations had significantly longer progression-free survival with olaparib maintenance therapy than patients given placebo (11.2 months vs 4.3 months; HR=0.18; p<0\u00b70001)(PMID: 24882434). In the seven-year follow-up of the Phase III SOLO1/GOG-3004 trial of maintenance olaparib versus placebo in patients with newly diagnosed, advanced ovarian cancer harboring a BRCA mutation, the seven-year median overall survival rates were 67% in the olaparib arm and 46.5% in the placebo arm, and the median duration of treatment was 24.6 months with olaparib and 13.9 months with placebo (PMID: 36082969).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"OVARY",
+        "color":"LightBlue",
+        "id":557,
+        "level":1,
+        "mainType":{
+          "id":null,
+          "name":"Ovarian/Fallopian Tube Cancer, NOS",
+          "tumorForm":"SOLID"
+        },
+        "name":"Ovary/Fallopian Tube",
+        "parent":"TISSUE",
+        "tissue":"Ovary/Fallopian Tube",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "36082969",
+        "25366685",
+        "24882434"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[
+        "Olaparib is FDA-approved as monotherapy in patients with deleterious or suspected deleterious germline BRCA mutated (as detected by an FDA-approved test) advanced ovarian cancer who have been treated with three or more prior lines of chemotherapy"
+      ],
+      "description":"Olaparib, a small molecule PARP inhibitor, is FDA-approved with or without bevacizumab for the treatment of patients with advanced ovarian cancer who have deleterious germline BRCA mutations and have been treated with three or more lines of chemotherapy, or as maintenance therapy for patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are having partial or complete responses to platinum-based chemotherapy. This drug is considered standard-of-care for the treatment of patients with somatic BRCA1/2 mutations. Initial FDA approval was based on Phase I and Phase II clinical trials evaluating patients with ovarian cancer harboring known BRCA1 or BRCA2 germline mutations, in which treatment with olaparib demonstrated a clear clinical benefit. Specifically, in a Phase II trial evaluating olaparib in patients with platinum-resistant ovarian cancer and a confirmed germline BRCA1 or BRCA2 mutation (n=193), the tumor response rate was 31% (95% CI=24.6 to 38.1), and stable disease (around 8 weeks) was seen in 40% of patients (95% CI=33.4 to 47.7) (PMID: 25366685). More recent FDA approval was based on a planned retrospective analysis of Phase II trial data in which patients with deleterious BRCA mutations had significantly longer progression-free survival with olaparib maintenance therapy than patients given placebo (11.2 months vs 4.3 months; HR=0.18; p<0\u00b70001)(PMID: 24882434). In the seven-year follow-up of the Phase III SOLO1/GOG-3004 trial of maintenance olaparib versus placebo in patients with newly diagnosed, advanced ovarian cancer harboring a BRCA mutation, the seven-year median overall survival rates were 67% in the olaparib arm and 46.5% in the placebo arm, and the median duration of treatment was 24.6 months with olaparib and 13.9 months with placebo (PMID: 36082969).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"PSEC",
+        "color":"Green",
+        "id":863,
+        "level":2,
+        "mainType":{
+          "id":null,
+          "name":"Peritoneal Cancer, NOS",
+          "tumorForm":"SOLID"
+        },
+        "name":"Peritoneal Serous Carcinoma",
+        "parent":"PERITONEUM",
+        "tissue":"Peritoneum",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "36082969",
+        "25366685",
+        "24882434"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Olaparib, a small molecule PARP inhibitor, is FDA-approved for patients with deleterious or suspected deleterious germline or somatic homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC), who have progressed following prior treatment with enzalutamide or abiraterone. FDA approval was based on the results of the Phase III PROfound trial of olaparib in adult patients with metastatic castration-resistant prostate cancer who had disease progression while receiving a new hormonal agent and who had a deleterious or suspected deleterious mutation in a homologous recombination repair gene. Of patients with BRCA2 (n=128) or BRCA1 (n=13) mutations, the progression-free survival in the olaparib group was 9.8 months compared to 3.0 months in the placebo group (HR= 0.22; 95% CI=0.15 to 0.32), with a median overall survival of 19.1 months versus 15.1 months (HR=0.61; 95% CI=0.37 to 1.01), respectively (PMID: 32343890). However, while the FDA approval includes those with BRCA1 mutations, there is limited clinical data in patients with this biomarker (n=13)(PMID: 32343890). (PMID: 26510020)",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"Cyan",
+        "id":944,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Prostate Cancer, NOS",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Prostate",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "26510020",
+        "32343890"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Olaparib, a small molecule PARP inhibitor, is FDA-approved for patients with deleterious or suspected deleterious germline or somatic homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC), who have progressed following prior treatment with enzalutamide or abiraterone. FDA approval was based on the results of the Phase III PROfound trial of olaparib in adult patients with metastatic castration-resistant prostate cancer who had disease progression while receiving a new hormonal agent and who had a deleterious or suspected deleterious mutation in a homologous recombination repair gene. Of patients with BRCA2 (n=128) or BRCA1 (n=13) mutations, the progression-free survival in the olaparib group was 9.8 months compared to 3.0 months in the placebo group (HR= 0.22; 95% CI=0.15 to 0.32), with a median overall survival of 19.1 months versus 15.1 months (HR=0.61; 95% CI=0.37 to 1.01), respectively (PMID: 32343890). However, while the FDA approval includes those with BRCA1 mutations, there is limited clinical data in patients with this biomarker (n=13)(PMID: 32343890). (PMID: 26510020)",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"Cyan",
+        "id":936,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Prostate Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Prostate",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "26510020",
+        "32343890"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[
+        "Olaparib is FDA-approved as monotherapy in patients with deleterious or suspected deleterious germline BRCA mutated (as detected by an FDA-approved test) advanced ovarian cancer who have been treated with three or more prior lines of chemotherapy"
+      ],
+      "description":"Olaparib, a small molecule PARP inhibitor, is FDA-approved with or without bevacizumab for the treatment of patients with advanced ovarian cancer who have deleterious germline BRCA mutations and have been treated with three or more lines of chemotherapy, or as maintenance therapy for patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are having partial or complete responses to platinum-based chemotherapy. This drug is considered standard-of-care for the treatment of patients with somatic BRCA1/2 mutations. Initial FDA approval was based on Phase I and Phase II clinical trials evaluating patients with ovarian cancer harboring known BRCA1 or BRCA2 germline mutations, in which treatment with olaparib demonstrated a clear clinical benefit. Specifically, in a Phase II trial evaluating olaparib in patients with platinum-resistant ovarian cancer and a confirmed germline BRCA1 or BRCA2 mutation (n=193), the tumor response rate was 31% (95% CI=24.6 to 38.1), and stable disease (around 8 weeks) was seen in 40% of patients (95% CI=33.4 to 47.7) (PMID: 25366685). More recent FDA approval was based on a planned retrospective analysis of Phase II trial data in which patients with deleterious BRCA mutations had significantly longer progression-free survival with olaparib maintenance therapy than patients given placebo (11.2 months vs 4.3 months; HR=0.18; p<0\u00b70001)(PMID: 24882434). In the seven-year follow-up of the Phase III SOLO1/GOG-3004 trial of maintenance olaparib versus placebo in patients with newly diagnosed, advanced ovarian cancer harboring a BRCA mutation, the seven-year median overall survival rates were 67% in the olaparib arm and 46.5% in the placebo arm, and the median duration of treatment was 24.6 months with olaparib and 13.9 months with placebo (PMID: 36082969).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        },
+        {
+          "drugName":"Bevacizumab",
+          "ncitCode":"C2039",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"LightBlue",
+        "id":880,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Ovarian Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Ovary/Fallopian Tube",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "36082969",
+        "25366685",
+        "24882434"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[
+        "Olaparib is FDA-approved as monotherapy in patients with deleterious or suspected deleterious germline BRCA mutated (as detected by an FDA-approved test) advanced ovarian cancer who have been treated with three or more prior lines of chemotherapy"
+      ],
+      "description":"Olaparib, a small molecule PARP inhibitor, is FDA-approved with or without bevacizumab for the treatment of patients with advanced ovarian cancer who have deleterious germline BRCA mutations and have been treated with three or more lines of chemotherapy, or as maintenance therapy for patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are having partial or complete responses to platinum-based chemotherapy. This drug is considered standard-of-care for the treatment of patients with somatic BRCA1/2 mutations. Initial FDA approval was based on Phase I and Phase II clinical trials evaluating patients with ovarian cancer harboring known BRCA1 or BRCA2 germline mutations, in which treatment with olaparib demonstrated a clear clinical benefit. Specifically, in a Phase II trial evaluating olaparib in patients with platinum-resistant ovarian cancer and a confirmed germline BRCA1 or BRCA2 mutation (n=193), the tumor response rate was 31% (95% CI=24.6 to 38.1), and stable disease (around 8 weeks) was seen in 40% of patients (95% CI=33.4 to 47.7) (PMID: 25366685). More recent FDA approval was based on a planned retrospective analysis of Phase II trial data in which patients with deleterious BRCA mutations had significantly longer progression-free survival with olaparib maintenance therapy than patients given placebo (11.2 months vs 4.3 months; HR=0.18; p<0\u00b70001)(PMID: 24882434). In the seven-year follow-up of the Phase III SOLO1/GOG-3004 trial of maintenance olaparib versus placebo in patients with newly diagnosed, advanced ovarian cancer harboring a BRCA mutation, the seven-year median overall survival rates were 67% in the olaparib arm and 46.5% in the placebo arm, and the median duration of treatment was 24.6 months with olaparib and 13.9 months with placebo (PMID: 36082969).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        },
+        {
+          "drugName":"Bevacizumab",
+          "ncitCode":"C2039",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"OVARY",
+        "color":"LightBlue",
+        "id":557,
+        "level":1,
+        "mainType":{
+          "id":null,
+          "name":"Ovarian/Fallopian Tube Cancer, NOS",
+          "tumorForm":"SOLID"
+        },
+        "name":"Ovary/Fallopian Tube",
+        "parent":"TISSUE",
+        "tissue":"Ovary/Fallopian Tube",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "36082969",
+        "25366685",
+        "24882434"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[
+        "Olaparib is FDA-approved as monotherapy in patients with deleterious or suspected deleterious germline BRCA mutated (as detected by an FDA-approved test) advanced ovarian cancer who have been treated with three or more prior lines of chemotherapy"
+      ],
+      "description":"Olaparib, a small molecule PARP inhibitor, is FDA-approved with or without bevacizumab for the treatment of patients with advanced ovarian cancer who have deleterious germline BRCA mutations and have been treated with three or more lines of chemotherapy, or as maintenance therapy for patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are having partial or complete responses to platinum-based chemotherapy. This drug is considered standard-of-care for the treatment of patients with somatic BRCA1/2 mutations. Initial FDA approval was based on Phase I and Phase II clinical trials evaluating patients with ovarian cancer harboring known BRCA1 or BRCA2 germline mutations, in which treatment with olaparib demonstrated a clear clinical benefit. Specifically, in a Phase II trial evaluating olaparib in patients with platinum-resistant ovarian cancer and a confirmed germline BRCA1 or BRCA2 mutation (n=193), the tumor response rate was 31% (95% CI=24.6 to 38.1), and stable disease (around 8 weeks) was seen in 40% of patients (95% CI=33.4 to 47.7) (PMID: 25366685). More recent FDA approval was based on a planned retrospective analysis of Phase II trial data in which patients with deleterious BRCA mutations had significantly longer progression-free survival with olaparib maintenance therapy than patients given placebo (11.2 months vs 4.3 months; HR=0.18; p<0\u00b70001)(PMID: 24882434). In the seven-year follow-up of the Phase III SOLO1/GOG-3004 trial of maintenance olaparib versus placebo in patients with newly diagnosed, advanced ovarian cancer harboring a BRCA mutation, the seven-year median overall survival rates were 67% in the olaparib arm and 46.5% in the placebo arm, and the median duration of treatment was 24.6 months with olaparib and 13.9 months with placebo (PMID: 36082969).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        },
+        {
+          "drugName":"Bevacizumab",
+          "ncitCode":"C2039",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"PSEC",
+        "color":"Green",
+        "id":863,
+        "level":2,
+        "mainType":{
+          "id":null,
+          "name":"Peritoneal Cancer, NOS",
+          "tumorForm":"SOLID"
+        },
+        "name":"Peritoneal Serous Carcinoma",
+        "parent":"PERITONEUM",
+        "tissue":"Peritoneum",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "36082969",
+        "25366685",
+        "24882434"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Rucaparib, a small-molecule PARP inhibitor, is FDA-approved for adult patients with BRCA-mutated (germline and/or somatic) metastatic castration-resistant prostate cancer (mCRPC) who have been treated with androgen receptor-directed therapy and a taxane-based chemotherapy. FDA approval was based on the results of the multicenter, single-arm, Phase II TRITON2 trial (NCT02952534) of rucaparib in 62 eligible patients with pre-treated BRCA-mutated mCRPC in which the objective response rate was 44% (95% CI=31, 57) and in which fifteen of 27 (56%) patients with a confirmed objective response had a duration of response greater than or equal to six months (PMID: 32795228).",
+      "drugs":[
+        {
+          "drugName":"Rucaparib",
+          "ncitCode":"C137800",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"Cyan",
+        "id":944,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Prostate Cancer, NOS",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Prostate",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "32795228"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Rucaparib, a small-molecule PARP inhibitor, is FDA-approved for adult patients with BRCA-mutated (germline and/or somatic) metastatic castration-resistant prostate cancer (mCRPC) who have been treated with androgen receptor-directed therapy and a taxane-based chemotherapy. FDA approval was based on the results of the multicenter, single-arm, Phase II TRITON2 trial (NCT02952534) of rucaparib in 62 eligible patients with pre-treated BRCA-mutated mCRPC in which the objective response rate was 44% (95% CI=31, 57) and in which fifteen of 27 (56%) patients with a confirmed objective response had a duration of response greater than or equal to six months (PMID: 32795228).",
+      "drugs":[
+        {
+          "drugName":"Rucaparib",
+          "ncitCode":"C137800",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"Cyan",
+        "id":936,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Prostate Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Prostate",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "32795228"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Rucaparib, a small molecule PARP inhibitor, is FDA-approved for maintenance therapy of adult patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer. FDA approval is based on two early-phase studies (Study 10 and ARIEL2) in which a total of 106 women with previously-treated high-grade ovarian cancer (HGOC) harboring deleterious germline or somatic mutations of BRCA1 or BRCA2 were treated with rucaparib (PMID: 28882436). In the study population, 8.5% of 106 patients achieved a complete response and 45.3% of 106 patients achieved a partial response, giving an overall response rate of 53.8% (95% CI=34.8-63.5) (PMID: 28882436). In the follow-up Phase III trial (ARIEL3) of rucaparib versus placebo as maintenance therapy in patients with previously treated, platinum-sensitive HGOC harboring deleterious germline or somatic mutations of BRCA1 or BRCA2, median progression-free survival was 16.6 months (95% CI 13.4-22.9) in the rucaparib arm versus 5.4 months (95% CI 3.4-6.7) in the placebo arm (HR=0.23, p=0.0001) (PMID: 28916367). Post-progression endpoints from ARIEL3 demonstrated favorability of maintenance rucaparib versus placebo for the chemotherapy-free interval, time to first subsequent therapy, time to second subsequent therapy, and progression on subsequent therapy or death (PMID: 32359490). Resistance to rucaparib is often through de novo or acquired BRCA reversion mutation, which decreases the clinical efficacy of rucaparib (PMID: 30425037). The NCCN v5.2022 lists rucaparib as a maintenance therapy for patients with BRCA1/2-mutant ovarian cancer.",
+      "drugs":[
+        {
+          "drugName":"Rucaparib",
+          "ncitCode":"C137800",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"LightBlue",
+        "id":880,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Ovarian Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Ovary/Fallopian Tube",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "28882436",
+        "28916367",
+        "32359490",
+        "30425037"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Rucaparib, a small molecule PARP inhibitor, is FDA-approved for maintenance therapy of adult patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer. FDA approval is based on two early-phase studies (Study 10 and ARIEL2) in which a total of 106 women with previously-treated high-grade ovarian cancer (HGOC) harboring deleterious germline or somatic mutations of BRCA1 or BRCA2 were treated with rucaparib (PMID: 28882436). In the study population, 8.5% of 106 patients achieved a complete response and 45.3% of 106 patients achieved a partial response, giving an overall response rate of 53.8% (95% CI=34.8-63.5) (PMID: 28882436). In the follow-up Phase III trial (ARIEL3) of rucaparib versus placebo as maintenance therapy in patients with previously treated, platinum-sensitive HGOC harboring deleterious germline or somatic mutations of BRCA1 or BRCA2, median progression-free survival was 16.6 months (95% CI 13.4-22.9) in the rucaparib arm versus 5.4 months (95% CI 3.4-6.7) in the placebo arm (HR=0.23, p=0.0001) (PMID: 28916367). Post-progression endpoints from ARIEL3 demonstrated favorability of maintenance rucaparib versus placebo for the chemotherapy-free interval, time to first subsequent therapy, time to second subsequent therapy, and progression on subsequent therapy or death (PMID: 32359490). Resistance to rucaparib is often through de novo or acquired BRCA reversion mutation, which decreases the clinical efficacy of rucaparib (PMID: 30425037). The NCCN v5.2022 lists rucaparib as a maintenance therapy for patients with BRCA1/2-mutant ovarian cancer.",
+      "drugs":[
+        {
+          "drugName":"Rucaparib",
+          "ncitCode":"C137800",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"OVARY",
+        "color":"LightBlue",
+        "id":557,
+        "level":1,
+        "mainType":{
+          "id":null,
+          "name":"Ovarian/Fallopian Tube Cancer, NOS",
+          "tumorForm":"SOLID"
+        },
+        "name":"Ovary/Fallopian Tube",
+        "parent":"TISSUE",
+        "tissue":"Ovary/Fallopian Tube",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "28882436",
+        "28916367",
+        "32359490",
+        "30425037"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Rucaparib, a small molecule PARP inhibitor, is FDA-approved for maintenance therapy of adult patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer. FDA approval is based on two early-phase studies (Study 10 and ARIEL2) in which a total of 106 women with previously-treated high-grade ovarian cancer (HGOC) harboring deleterious germline or somatic mutations of BRCA1 or BRCA2 were treated with rucaparib (PMID: 28882436). In the study population, 8.5% of 106 patients achieved a complete response and 45.3% of 106 patients achieved a partial response, giving an overall response rate of 53.8% (95% CI=34.8-63.5) (PMID: 28882436). In the follow-up Phase III trial (ARIEL3) of rucaparib versus placebo as maintenance therapy in patients with previously treated, platinum-sensitive HGOC harboring deleterious germline or somatic mutations of BRCA1 or BRCA2, median progression-free survival was 16.6 months (95% CI 13.4-22.9) in the rucaparib arm versus 5.4 months (95% CI 3.4-6.7) in the placebo arm (HR=0.23, p=0.0001) (PMID: 28916367). Post-progression endpoints from ARIEL3 demonstrated favorability of maintenance rucaparib versus placebo for the chemotherapy-free interval, time to first subsequent therapy, time to second subsequent therapy, and progression on subsequent therapy or death (PMID: 32359490). Resistance to rucaparib is often through de novo or acquired BRCA reversion mutation, which decreases the clinical efficacy of rucaparib (PMID: 30425037). The NCCN v5.2022 lists rucaparib as a maintenance therapy for patients with BRCA1/2-mutant ovarian cancer.",
+      "drugs":[
+        {
+          "drugName":"Rucaparib",
+          "ncitCode":"C137800",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"PSEC",
+        "color":"Green",
+        "id":863,
+        "level":2,
+        "mainType":{
+          "id":null,
+          "name":"Peritoneal Cancer, NOS",
+          "tumorForm":"SOLID"
+        },
+        "name":"Peritoneal Serous Carcinoma",
+        "parent":"PERITONEUM",
+        "tissue":"Peritoneum",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "28882436",
+        "28916367",
+        "32359490",
+        "30425037"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Niraparib, a small molecule PARP inhibitor, is FDA-approved as maintenance therapy for the treatment of adult patients with advanced ovarian, fallopian tube, or primary peritoneal cancer who have been treated with three or more prior chemotherapy regimens and whose cancer is associated with homologous recombination deficiency (HRD) positive status such as by harboring a deleterious or suspected deleterious BRCA mutation. FDA approval was based on the Phase III NOVA trial of niraparib versus placebo in patients with platinum-sensitive, recurrent ovarian cancer with or without BRCA1/2 mutations in which patients in the germline BRCA mutant cohort (n=203) experienced significantly longer progression-free survival with niraparib than those in the placebo group (21.0 vs. 5.5 months; HR=0.27; 95% CI = 0.17-0.41) (PMID: 27717299). FDA approval of niraparib in the non-germline BRCA mutant patient cohort (n=350) was based on the results of improved progression-free survival with niraparib versus placebo as maintenance therapy (9.3 months vs. 3.9 months; HR=0.45; 95% CI= 0.34-0.61) in the overall non-germline BRCA cohort. However, the overall non-germline BRCA cohort included patients with somatic BRCA mutation (PMID: 27717299). Further studies have shown the efficacy of niraparib in patients with homologous-recombination-deficient, platinum-sensitive ovarian cancer, including patients with BRCA mutation (PMID: 30948273, 31562799). The NCCN v5.2022 lists niraparib as a maintenance therapy for patients with BRCA1/2-mutant ovarian cancer.",
+      "drugs":[
+        {
+          "drugName":"Niraparib",
+          "ncitCode":"C80059",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"LightBlue",
+        "id":880,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Ovarian Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Ovary/Fallopian Tube",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "30948273",
+        "27717299",
+        "31562799"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Niraparib, a small molecule PARP inhibitor, is FDA-approved as maintenance therapy for the treatment of adult patients with advanced ovarian, fallopian tube, or primary peritoneal cancer who have been treated with three or more prior chemotherapy regimens and whose cancer is associated with homologous recombination deficiency (HRD) positive status such as by harboring a deleterious or suspected deleterious BRCA mutation. FDA approval was based on the Phase III NOVA trial of niraparib versus placebo in patients with platinum-sensitive, recurrent ovarian cancer with or without BRCA1/2 mutations in which patients in the germline BRCA mutant cohort (n=203) experienced significantly longer progression-free survival with niraparib than those in the placebo group (21.0 vs. 5.5 months; HR=0.27; 95% CI = 0.17-0.41) (PMID: 27717299). FDA approval of niraparib in the non-germline BRCA mutant patient cohort (n=350) was based on the results of improved progression-free survival with niraparib versus placebo as maintenance therapy (9.3 months vs. 3.9 months; HR=0.45; 95% CI= 0.34-0.61) in the overall non-germline BRCA cohort. However, the overall non-germline BRCA cohort included patients with somatic BRCA mutation (PMID: 27717299). Further studies have shown the efficacy of niraparib in patients with homologous-recombination-deficient, platinum-sensitive ovarian cancer, including patients with BRCA mutation (PMID: 30948273, 31562799). The NCCN v5.2022 lists niraparib as a maintenance therapy for patients with BRCA1/2-mutant ovarian cancer.",
+      "drugs":[
+        {
+          "drugName":"Niraparib",
+          "ncitCode":"C80059",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"OVARY",
+        "color":"LightBlue",
+        "id":557,
+        "level":1,
+        "mainType":{
+          "id":null,
+          "name":"Ovarian/Fallopian Tube Cancer, NOS",
+          "tumorForm":"SOLID"
+        },
+        "name":"Ovary/Fallopian Tube",
+        "parent":"TISSUE",
+        "tissue":"Ovary/Fallopian Tube",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "30948273",
+        "27717299",
+        "31562799"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Niraparib, a small molecule PARP inhibitor, is FDA-approved as maintenance therapy for the treatment of adult patients with advanced ovarian, fallopian tube, or primary peritoneal cancer who have been treated with three or more prior chemotherapy regimens and whose cancer is associated with homologous recombination deficiency (HRD) positive status such as by harboring a deleterious or suspected deleterious BRCA mutation. FDA approval was based on the Phase III NOVA trial of niraparib versus placebo in patients with platinum-sensitive, recurrent ovarian cancer with or without BRCA1/2 mutations in which patients in the germline BRCA mutant cohort (n=203) experienced significantly longer progression-free survival with niraparib than those in the placebo group (21.0 vs. 5.5 months; HR=0.27; 95% CI = 0.17-0.41) (PMID: 27717299). FDA approval of niraparib in the non-germline BRCA mutant patient cohort (n=350) was based on the results of improved progression-free survival with niraparib versus placebo as maintenance therapy (9.3 months vs. 3.9 months; HR=0.45; 95% CI= 0.34-0.61) in the overall non-germline BRCA cohort. However, the overall non-germline BRCA cohort included patients with somatic BRCA mutation (PMID: 27717299). Further studies have shown the efficacy of niraparib in patients with homologous-recombination-deficient, platinum-sensitive ovarian cancer, including patients with BRCA mutation (PMID: 30948273, 31562799). The NCCN v5.2022 lists niraparib as a maintenance therapy for patients with BRCA1/2-mutant ovarian cancer.",
+      "drugs":[
+        {
+          "drugName":"Niraparib",
+          "ncitCode":"C80059",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"PSEC",
+        "color":"Green",
+        "id":863,
+        "level":2,
+        "mainType":{
+          "id":null,
+          "name":"Peritoneal Cancer, NOS",
+          "tumorForm":"SOLID"
+        },
+        "name":"Peritoneal Serous Carcinoma",
+        "parent":"PERITONEUM",
+        "tissue":"Peritoneum",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "30948273",
+        "27717299",
+        "31562799"
+      ]
+    },
+    {
+      "abstracts":[
+        {
+          "abstract":"Brown et al. Abstract# 734, ASCO 2023",
+          "link":"https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.4_suppl.734"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Rucaparib, a small-molecule PARP inhibitor, is listed in the NCCN compendium as maintenance therapy for patients with pancreatic adenocarcinoma with germline or somatic BRCA1/2 or PALB2 mutations who have had prior platinum-based therapy. In a Phase II study to assess maintenance rucaparib treatment in 42 patients with platinum-sensitive advanced pancreatic cancer harboring germline or somatic variants in BRCA1/2 or PALB2, the progression-free survival rate was 59.5% (95% CI=44.6 to 74.4), the median progression-free survival was 13.1 months (95% CI=4.4 to 21.8) and median overall survival was 23.5 months (95% CI=20 to 27) (PMID: 33970687). In the RUCAPANCA Phase II study to assess the efficacy of rucaparib monotherapy in nineteen patients with pancreatic cancer harboring a germline or somatic BRCA1/2 mutation (germline, n=16; somatic, n=3), the objective response rate was 15.8% (3/19) with one unconfirmed complete response, and a disease control rate of 31.6% (6/19) in all patients and 44.4% (4/9) in patients who had a prior chemotherapy regimen (PMID: 30051098). In a Phase II study to assess maintenance rucaparib treatment and reversion mutations in 42 patients with advanced pancreatic cancer harboring germline or somatic variants in BRCA1/2 or PALB2, the progression-free survival for patients with progression with no KRAS reversion mutations (n=23) compared to progression with acquired KRAS reversion mutations (n=5) was 279 days (95% CI, 225 to 428) versus 112 days (95% CI, 46 to 156) and the median overall survival rate was 701 days (95% CI, 586 to 829) versus 283 days (95% CI, 128 to 436), respectively (Abstract: Brown et al. Abstract# 734, ASCO 2023. https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.4_suppl.734).",
+      "drugs":[
+        {
+          "drugName":"Rucaparib",
+          "ncitCode":"C137800",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_2",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"PAAD",
+        "color":"Purple",
+        "id":180,
+        "level":2,
+        "mainType":{
+          "id":null,
+          "name":"Pancreatic Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"Pancreatic Adenocarcinoma",
+        "parent":"PANCREAS",
+        "tissue":"Pancreas",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "33970687",
+        "30051098"
+      ]
+    },
+    {
+      "abstracts":[
+        {
+          "abstract":"Brown et al. Abstract# 734, ASCO 2023",
+          "link":"https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.4_suppl.734"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Rucaparib, a small-molecule PARP inhibitor, is listed in the NCCN compendium as maintenance therapy for patients with pancreatic adenocarcinoma with germline or somatic BRCA1/2 or PALB2 mutations who have had prior platinum-based therapy. In a Phase II study to assess maintenance rucaparib treatment in 42 patients with platinum-sensitive advanced pancreatic cancer harboring germline or somatic variants in BRCA1/2 or PALB2, the progression-free survival rate was 59.5% (95% CI=44.6 to 74.4), the median progression-free survival was 13.1 months (95% CI=4.4 to 21.8) and median overall survival was 23.5 months (95% CI=20 to 27) (PMID: 33970687). In the RUCAPANCA Phase II study to assess the efficacy of rucaparib monotherapy in nineteen patients with pancreatic cancer harboring a germline or somatic BRCA1/2 mutation (germline, n=16; somatic, n=3), the objective response rate was 15.8% (3/19) with one unconfirmed complete response, and a disease control rate of 31.6% (6/19) in all patients and 44.4% (4/9) in patients who had a prior chemotherapy regimen (PMID: 30051098). In a Phase II study to assess maintenance rucaparib treatment and reversion mutations in 42 patients with advanced pancreatic cancer harboring germline or somatic variants in BRCA1/2 or PALB2, the progression-free survival for patients with progression with no KRAS reversion mutations (n=23) compared to progression with acquired KRAS reversion mutations (n=5) was 279 days (95% CI, 225 to 428) versus 112 days (95% CI, 46 to 156) and the median overall survival rate was 701 days (95% CI, 586 to 829) versus 283 days (95% CI, 128 to 436), respectively (Abstract: Brown et al. Abstract# 734, ASCO 2023. https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.4_suppl.734).",
+      "drugs":[
+        {
+          "drugName":"Rucaparib",
+          "ncitCode":"C137800",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_2",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"PAAC",
+        "color":"Purple",
+        "id":265,
+        "level":2,
+        "mainType":{
+          "id":null,
+          "name":"Pancreatic Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"Acinar Cell Carcinoma of the Pancreas",
+        "parent":"PANCREAS",
+        "tissue":"Pancreas",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "33970687",
+        "30051098"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Olaparib, a small molecule PARP inhibitor, is NCCN-listed and FDA-approved for the maintenance treatment of adult patients with deleterious or suspected deleterious germline BRCA-mutated (gBRCAm) metastatic pancreatic adenocarcinoma (PAAD), whose disease has not progressed on at least sixteen weeks of a first-line platinum-based chemotherapy regimen. In a randomized, double-blind, placebo-controlled, phase III trial (POLO, NCT02184195) of olaparib in 154 patients with gBRCAm metastatic PAAD that did not progress during first-line platinum-based chemotherapy, the median progression-free survival (PFS) was significantly longer in the olaparib group (n = 92 patients) than in the placebo group (n = 62 patients) (7.4 months vs. 3.8 months; HR for disease progression or death, 0.53; 95% CI=0.35-0.82; p = 0.004), and an interim analysis of overall survival (OS) showed no difference between the olaparib and placebo groups (median, 18.9 months vs. 18.1 months; HR for death, 0.91; 95% CI=0.561.46; p = 0.68) (PMID: 31157963). In a study looking at PFS and OS of 262 advanced-stage PAAD patients that underwent both germline and somatic targeted-gene sequencing to identify homologous recombination (HR)-gene mutations, including BRCA1/2, HR-deficient (HRD) patients treated with first-line platinum (n=35 patients) had a superior median OS compared to patients with no HRD treated with or without first-line platinum (25.1 [21.6-NR] vs. 15.3 [14.2\u201320.3] or 13 [10.1\u201316.9] months, respectively) (PMID: 32444418).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_3A",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"PAAD",
+        "color":"Purple",
+        "id":180,
+        "level":2,
+        "mainType":{
+          "id":null,
+          "name":"Pancreatic Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"Pancreatic Adenocarcinoma",
+        "parent":"PANCREAS",
+        "tissue":"Pancreas",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "31157963",
+        "32444418"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Olaparib, a small molecule PARP inhibitor, is NCCN-listed and FDA-approved for the maintenance treatment of adult patients with deleterious or suspected deleterious germline BRCA-mutated (gBRCAm) metastatic pancreatic adenocarcinoma (PAAD), whose disease has not progressed on at least sixteen weeks of a first-line platinum-based chemotherapy regimen. In a randomized, double-blind, placebo-controlled, phase III trial (POLO, NCT02184195) of olaparib in 154 patients with gBRCAm metastatic PAAD that did not progress during first-line platinum-based chemotherapy, the median progression-free survival (PFS) was significantly longer in the olaparib group (n = 92 patients) than in the placebo group (n = 62 patients) (7.4 months vs. 3.8 months; HR for disease progression or death, 0.53; 95% CI=0.35-0.82; p = 0.004), and an interim analysis of overall survival (OS) showed no difference between the olaparib and placebo groups (median, 18.9 months vs. 18.1 months; HR for death, 0.91; 95% CI=0.561.46; p = 0.68) (PMID: 31157963). In a study looking at PFS and OS of 262 advanced-stage PAAD patients that underwent both germline and somatic targeted-gene sequencing to identify homologous recombination (HR)-gene mutations, including BRCA1/2, HR-deficient (HRD) patients treated with first-line platinum (n=35 patients) had a superior median OS compared to patients with no HRD treated with or without first-line platinum (25.1 [21.6-NR] vs. 15.3 [14.2\u201320.3] or 13 [10.1\u201316.9] months, respectively) (PMID: 32444418).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_3A",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"PAAC",
+        "color":"Purple",
+        "id":265,
+        "level":2,
+        "mainType":{
+          "id":null,
+          "name":"Pancreatic Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"Acinar Cell Carcinoma of the Pancreas",
+        "parent":"PANCREAS",
+        "tissue":"Pancreas",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "31157963",
+        "32444418"
+      ]
+    },
+    {
+      "abstracts":[
+        {
+          "abstract":"Dhawan et al. Abstract# 2527, ASCO 2017",
+          "link":"https://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2527"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[
+        "HER2-negative, metastatic breast cancer with pathogenic germline BRCA1 mutations"
+      ],
+      "description":"Talazoparib, a small molecule PARP inhibitor, is FDA-approved for patients with deleterious or suspected deleterious germline BRCA-mutated, HER2-negative locally advanced or metastatic breast cancer. FDA approval was based on the results from the Phase III EMBRACA trial of talazoparib (1 mg once daily) versus standard single-agent chemotherapy (2:1) in 431 patients with advanced, BRCA1/2 germline-mutated breast cancer in which the median progression-free survival was 8.6 months in the talazoparib group versus 5.6 months in the chemotherapy group (HR= 0.54; 95%CI=0.41 to 0.71; p<0.001) and the objective response rate was 62.6% in the talazoparib group versus 27.2% in the chemotherapy group (p<0.001) (PMID: 30110579). In the Phase II study of talazoparib in patients with germline BRCA-mutant breast cancer who had a prior response to platinum agents, the overall response rate was 21-37% (depending on cohort) (PMID: 30563931). In a Phase I study of talazoparib plus carboplatin in patients with and without DNA repair mutations, three patients with somatic BRCA mutations had stable disease beyond four months (Abstract: Dhawan et al. Abstract# 2527, ASCO 2017. https://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2527). In the Phase IIb tumor-agnostic JAVELIN BRCA/ATM trial of combination talazoparib and avelumab in 159 patients with BRCA1/2-altered solid tumors, the objective response was observed in 42 patients (26.4%, 95% CI = 19.7%\u201334.0%) and the median duration of response was 10.9 months (95% CI = 6.2 months to not estimable) (PMID: 36394867).",
+      "drugs":[
+        {
+          "drugName":"Talazoparib",
+          "ncitCode":"C95733",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_3A",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"HotPink",
+        "id":873,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Breast Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Breast",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "30110579",
+        "36394867",
+        "30563931"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Olaparib, a small molecule PARP inhibitor, is FDA-approved for the treatment of patients with deleterious or suspected deleterious germline BRCA-mutated, HER2-negative metastatic breast cancer who have been treated with chemotherapy either in the neoadjuvant, adjuvant, or metastatic setting. FDA approval was based on the results from the Phase III OlympiAD trial of olaparib versus chemotherapy in 302 patients with advanced, BRCA1/2 germline-mutated breast cancer in which the median progression-free survival was seven months in the olaparib arm versus 4.2 months in the chemotherapy arm (HR=0.58, 95% CI=0.43-0.80; p=0.0009) and the response rate was 59.9% in the olaparib arm versus 28.8% in the chemotherapy arm (PMID: 28578601). While olaparib is approved in the setting of germline BRCA1 mutation, there have also been reports of patients with breast cancer harboring somatic mutations in BRCA1 who have had durable responses to treatment with olaparib, including for intracranial metastases (PMID: 35100699).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_3A",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"HotPink",
+        "id":873,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Breast Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Breast",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "35100699",
+        "28578601"
+      ]
+    }
+  ],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The BRCA1 X1453_splice alteration is likely oncogenic.",
+  "vus":false
+}

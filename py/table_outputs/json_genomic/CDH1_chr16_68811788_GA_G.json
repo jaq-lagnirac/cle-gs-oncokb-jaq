@@ -1,0 +1,50 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"CDH1 (E-cadherin), a tumor suppressor involved in cell adhesion, is altered by mutation or deletion in various cancer typess, most frequently in breast and esophagogastric cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"11/22/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "8934538",
+        "17522512"
+      ]
+    },
+    "description":"CDH1 truncating mutations can produce several forms of C-terminally truncated CDH1 proteins. These mutations have been found in breast cancer and as germline mutations in familial gastric cancer (PMID: 8934538, 17522512). CDH1 loss in a transplant mouse model demonstrated increased genomic instability and increased disease burden compared to wildtype (Abstract: Ishizawa, et al. ASH 2013, Abstract# 602 https://ashpublications.org/blood/article/122/21/344/83783/Loss-of-Function-of-The-Cell-Cycle-Regulator-Cdh1).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"D313Afs*43",
+    "alterationType":null,
+    "consequence":"frameshift_variant",
+    "entrezGeneId":999,
+    "hgvs":null,
+    "hugoSymbol":"CDH1",
+    "id":null,
+    "proteinEnd":313,
+    "proteinStart":313,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The CDH1 D313Afs*43 mutation is likely oncogenic.",
+  "vus":false
+}
