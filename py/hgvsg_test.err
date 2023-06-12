@@ -1,0 +1,19 @@
+[2023-06-12 10:30:00,329] INFO Config file: ../../gatewayseq_config.template.json
+[2023-06-12 10:30:00,329] INFO GS tumor types n: 12
+[2023-06-12 10:30:00,329] INFO OncoKB tumor types n: 33
+[2023-06-12 10:30:00,329] INFO Duplicates are:
+[2023-06-12 10:30:00,331] INFO ['Ampulla of Vater', 'Peritoneum']
+[2023-06-12 10:30:00,331] INFO Unique OncoKB tumor types n: 31
+[2023-06-12 10:30:00,331] INFO Final tumor types n: 31
+[2023-06-12 10:30:00,331] INFO tumor_types_n: 31
+[2023-06-12 10:30:00,331] INFO Input file: ../../json_for_jc/TWJV-Gateway-Seq-S16-474-lib2.report.json
+[2023-06-12 10:30:00,332] INFO Fetching OncoKB for PASS
+[2023-06-12 10:30:14,113] INFO Fetching OncoKB for Filtered
+[2023-06-12 10:30:39,359] INFO Total PASS: 7
+[2023-06-12 10:30:39,359] INFO Skipped PASS: 0
+[2023-06-12 10:30:39,359] INFO Annotated PASS: 2
+[2023-06-12 10:30:39,359] INFO Total Filtered: 26
+[2023-06-12 10:30:39,359] INFO Skipped Filtered: 0
+[2023-06-12 10:30:39,359] INFO Annotated Filtered: 3
+[2023-06-12 10:30:39,359] INFO Total Annotated: 5
+[2023-06-12 10:30:39,361] INFO Elapsed: 39.062 secs
