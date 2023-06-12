@@ -171,6 +171,7 @@ def add_hgvsg(row): # -jaq
   
   ### SNV "Substitution"
   if (len(reference) == 1) and (len(alteration) == 1):
+#    info('SNV')
     if variant_type != 'SNV':
       error('Type mismatch')
       sys.exit(1)
@@ -178,6 +179,7 @@ def add_hgvsg(row): # -jaq
       
   ### DELETION
   elif (len(reference) > 1) and (len(alteration) == 1):
+#    info('DELETION')
     if variant_type != 'INDEL':
       error('Type mismatch')
       sys.exit(1)
@@ -190,13 +192,24 @@ def add_hgvsg(row): # -jaq
 
   ### INSERTION
   elif (len(reference) == 1) and (len(alteration) > 1):
+#    info('INSERTION')
     if variant_type != 'INDEL':
       error('Type mismatch')
       sys.exit(1)
     second_position = position + 1
     hgvsg += f'{position}_{second_position}ins{alteration[1:]}'
     
+  ### DELINS (not robust, simply to handle what we're dealing with)
+  else: # variant_type == 'SNV': # The HARD one
+#    info('DELINS')
+    if len(reference) == 1:
+      hgvsg += f'{position}delins{alteration}'
+    else: # len(ref) > 1
+      second_position = position + len(reference) - 1
+      hgvsg += f'{position}_{second_position}delins{alteration}'
+    
   row['hgvsg'] = hgvsg
+#  info(f'----------{hgvsg}----------')
   return row
 
 
@@ -312,17 +325,21 @@ df = df.apply(add_maf, axis=1)
 df = df.apply(add_hgvsg, axis=1)
 
 ### calls byGenomicChange
-info('---Starts byGenomicChange calls---')
+info('----------Starts byGenomicChange calls----------')
 elapsed_array = [] # resets global var
 call_type = Call.GENOMIC
 genomic_column = 'genomic oncokb'
 df[genomic_column] = df.apply(add_oncokb, axis=1)
 check_api_call(df, genomic_column)
+
 # handles elapsed time
 genomic_elapsed = 'genomic elapsed (sec)'
 df[genomic_elapsed] = elapsed_array
 elapsed_avg_genomic = round(statistics.mean(elapsed_array), \
   NUM_DECIMALS)
+total_elapsed_genomic = round(sum(elapsed_array), \
+  NUM_DECIMALS)
+
 # handles proportions, uses global vars
 genomic_successes = successes_x
 genomic_total = total_n
@@ -330,7 +347,7 @@ genomic_prop = round(genomic_successes  / genomic_total, NUM_DECIMALS)
 
 
 ### calls byProteinChange
-info('---Starts byProteinChange calls---')
+info('----------Starts byProteinChange calls----------')
 elapsed_array = [] # resets global var
 call_type = Call.PROTEIN
 protein_column = 'protein oncokb'
@@ -342,15 +359,18 @@ protein_elapsed = 'protein elapsed (sec)'
 df[protein_elapsed] = elapsed_array
 elapsed_avg_protein = round(statistics.mean(elapsed_array), \
   NUM_DECIMALS)
+total_elapsed_protein = round(sum(elapsed_array), \
+  NUM_DECIMALS)
   
 # handles proportions, uses global vars
 protein_successes = successes_x
 protein_total = total_n
-protein_prop = round(protein_successes / protein_total, NUM_DECIMALS)
+protein_prop = round(protein_successes / protein_total, \
+  NUM_DECIMALS)
 
 
 ### calls byHGVSg
-info('---Starts byHGVSg calls---')
+info('----------Starts byHGVSg calls----------')
 elapsed_array = [] # resets global var  
 call_type = Call.HGVSG
 hgvsg_column = 'hgvsg oncokb'
@@ -362,7 +382,9 @@ hgvsg_elapsed = 'hgvsg elapsed (sec)'
 df[hgvsg_elapsed] = elapsed_array
 elapsed_avg_hgvsg = round(statistics.mean(elapsed_array), \
   NUM_DECIMALS)
-  
+total_elapsed_hgvsg = round(sum(elapsed_array), \
+  NUM_DECIMALS)
+
 # handles proportions, uses global vars
 hgvsg_successes = successes_x
 hgvsg_total = total_n
@@ -370,12 +392,26 @@ hgvsg_prop = round(hgvsg_successes  / hgvsg_total, NUM_DECIMALS)
 
 
 # prints overview info to .err file
-info(f'Genomic Average Elapsed Time: {elapsed_avg_genomic} secs')
-info(f'Protein Average Elapsed Time: {elapsed_avg_protein} secs')
-info(f'HGVSg Average Elapsed Time: {elapsed_avg_hgvsg} secs')
+info(f'Genomic Elapsed Time - Average: {elapsed_avg_genomic} secs, Total: {total_elapsed_genomic} secs')
+info(f'Protein Elapsed Time - Average: {elapsed_avg_protein} secs, Total: {total_elapsed_protein} secs')
+info(f'HGVSg Elapsed Time - Average: {elapsed_avg_hgvsg} secs, Total: {total_elapsed_hgvsg} secs')
+
 info(f'Genomic Proportion of Successful Hits: {genomic_prop} ({genomic_successes}/{genomic_total})')
 info(f'Protein Proportion of Successful Hits: {protein_prop} ({protein_successes}/{protein_total})')
-info(f'Genomic Proportion of Successful Hits: {genomic_prop} ({hgvsg_successes}/{hgvsg_total})')
+info(f'HGVSg Proportion of Successful Hits: {hgvsg_prop} ({hgvsg_successes}/{hgvsg_total})')
+
+elapsed_total = round((total_elapsed_genomic \
+  + total_elapsed_protein \
+  + total_elapsed_hgvsg), \
+  NUM_DECIMALS)
+seconds = elapsed_total
+minutes = 0
+# using while loop rather than divmod to prevent rounding discrepancies
+while seconds > 60:
+  seconds -= 60
+  minutes += 1
+seconds = round(seconds, NUM_DECIMALS)
+info(f'Approx. Total Elapsed Time: {minutes} min, {seconds} secs ({elapsed_total} secs)')
 
 df.to_csv(sys.stdout, sep='\t', index=None)
 
