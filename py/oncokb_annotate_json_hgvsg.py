@@ -105,7 +105,16 @@ def get_hgvsg(variant, columns): # -jaq
       type_mismatch()
     second_position = position + 1
     hgvsg += f'{position}_{second_position}ins{alteration[1:]}'
+    
+  ### DELINS (not robust, simply to handle what we're dealing with)
+  elif variant_type != 'SNV': # The HARD one
+    if len(reference) == 1:
+      hgvsg += f'{position}delins{alteration}'
+    else: # len(ref) > 1
+      second_position = position + len(reference) - 1
+      hgvsg += f'{position}_{second_position}delins{alteration}'
 
+  return hgvsg
   ##### SKELETON CODE FOR FUTURE IMPLEMENTATIONS #####
   ### DELINS
 '''
@@ -132,7 +141,6 @@ def get_hgvsg(variant, columns): # -jaq
   ##### END OF SKELETON CODE #####
   
 #  info(f'vartype: {variant_type}, pos: {position}, ref: {reference}, alt: {alteration}, hgvsg: {hgvsg}')
-  return hgvsg
 
 
 # returns a tuple of 
