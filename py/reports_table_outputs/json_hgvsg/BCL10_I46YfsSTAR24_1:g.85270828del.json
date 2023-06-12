@@ -1,0 +1,50 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"BCL10, a tumor suppressor and pro-apoptotic protein, is infrequently altered in cancer.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"02/27/2019",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "9989495",
+        "10319863"
+      ]
+    },
+    "description":"Truncating mutations of BCL10 occur either within or C-terminal to the CARD domain of the protein. Experimental studies have shown that mutations within the CARD domain cannot induce cell death or activate NF-kB signaling. In contrast, mutations after the CARD domain, while retaining NF-kB signaling, failed to induce apoptosis (PMID: 9989495, 10319863).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"I46Yfs*24",
+    "alterationType":null,
+    "consequence":"frameshift_variant",
+    "entrezGeneId":8915,
+    "hgvs":"1:g.85270828del",
+    "hugoSymbol":"BCL10",
+    "id":null,
+    "proteinEnd":46,
+    "proteinStart":46,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The BCL10 I46Yfs*24 mutation is likely oncogenic.",
+  "vus":false
+}

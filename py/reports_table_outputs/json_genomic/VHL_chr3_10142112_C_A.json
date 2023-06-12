@@ -1,0 +1,50 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"VHL is a tumor suppressor involved in protein degradation. Germline mutations of VHL are associated with Von Hippel-Lindau syndrome and predispose to renal cell carcinoma.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":true,
+  "lastUpdate":"02/02/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "32234874",
+        "21715564"
+      ]
+    },
+    "description":"The VHL L89H mutation is located in the VHL beta domain of the protein. This mutation has been identified in clear cell renal cell carcinoma and is a statistically significant hotspot (PMID: 21715564). In vitro studies with NCI-H28 malignant pleural mesothelioma cells expressing VHL L89H demonstrate that the mutation is inactivating as measured by increased HIF1a expression compared to wildtype (PMID: 32234874). VHL L89H is suggested to be sensitive to treatment with HIF1a inhibitor YC-1 as measured by dose-and-time-dependent manner induction of apoptosis in cells following treatment (PMID: 32234874).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"L89I",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":7428,
+    "hgvs":null,
+    "hugoSymbol":"VHL",
+    "id":null,
+    "proteinEnd":89,
+    "proteinStart":89,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The VHL L89I mutation has been identified as a statistically significant hotspot and is likely to be oncogenic.",
+  "vus":false
+}

@@ -1,0 +1,182 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"The CDKN2A gene encodes two proteins, p16INK4A and p14ARF, that regulate the cell growth and survival. CDKN2A is altered by mutation and/or deletion in a broad range of solid and hematologic cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":"LEVEL_Fda3",
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":"LEVEL_4",
+  "hotspot":false,
+  "lastUpdate":"02/15/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[
+        {
+          "abstract":"Fostira et al. JCO PO, 2018",
+          "link":"http://ascopubs.org/doi/full/10.1200/PO.18.00022"
+        }
+      ],
+      "pmids":[
+        "8668202",
+        "8603820"
+      ]
+    },
+    "description":"CDKN2A truncating mutations form several forms of C-terminally truncated CDKN2A proteins. These mutations have been found in germline mutations in families with squamous cell cancer of the oral cavity (Abstract: Fostira et al. JCO PO, 2018. http://ascopubs.org/doi/full/10.1200/PO.18.00022). Expression of a truncation mutation in vitro demonstrated that it was inactivating as measured by decreased binding to CDK4 and CDK6 and failure to inhibit the cell cycle compared to wildtype (PMID: 8668202). Additionally, expression of several C-terminally truncated CDKN2A proteins demonstrated that truncations upstream of residue 131 were inactivating as measured by decreased binding to CDK4 (PMID: 8603820).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"R58*",
+    "alterationType":null,
+    "consequence":"stop_gained",
+    "entrezGeneId":1029,
+    "hgvs":null,
+    "hugoSymbol":"CDKN2A",
+    "id":null,
+    "proteinEnd":58,
+    "proteinStart":58,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Palbociclib, ribociclib, and abemaciclib are selective small molecule inhibitors of CDK4 and CDK6 (PMID: 25941111). In a retrospective study of patients with uterine leiomyosarcoma, a patient harboring a CDKN2A mutation experienced stable disease and significant symptom reduction upon treatment with palbociclib (PMID: 28283584). In vitro studies of cancer cell lines with CDKN2A loss demonstrated that they are sensitive to CDK4/6 inhibition as measured by growth arrest upon drug treatment (PMID: 29232554). In a panel of melanoma and estrogen receptor-positive breast cancer cell lines, CDKN2A loss was found among cells with the highest sensitivity to palbociclib (PMID: 19874578, 24495407).",
+      "drugs":[
+        {
+          "drugName":"Palbociclib",
+          "ncitCode":"C49176",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_4",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"",
+        "id":984,
+        "level":-1,
+        "mainType":{
+          "id":null,
+          "name":"All Solid Tumors",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "19874578",
+        "24495407",
+        "25941111",
+        "29232554",
+        "28283584"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Palbociclib, ribociclib, and abemaciclib are selective small molecule inhibitors of CDK4 and CDK6 (PMID: 25941111). In a retrospective study of patients with uterine leiomyosarcoma, a patient harboring a CDKN2A mutation experienced stable disease and significant symptom reduction upon treatment with palbociclib (PMID: 28283584). In vitro studies of cancer cell lines with CDKN2A loss demonstrated that they are sensitive to CDK4/6 inhibition as measured by growth arrest upon drug treatment (PMID: 29232554). In a panel of melanoma and estrogen receptor-positive breast cancer cell lines, CDKN2A loss was found among cells with the highest sensitivity to palbociclib (PMID: 19874578, 24495407).",
+      "drugs":[
+        {
+          "drugName":"Ribociclib",
+          "ncitCode":"C95701",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_4",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"",
+        "id":984,
+        "level":-1,
+        "mainType":{
+          "id":null,
+          "name":"All Solid Tumors",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "19874578",
+        "24495407",
+        "25941111",
+        "29232554",
+        "28283584"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Palbociclib, ribociclib, and abemaciclib are selective small molecule inhibitors of CDK4 and CDK6 (PMID: 25941111). In a retrospective study of patients with uterine leiomyosarcoma, a patient harboring a CDKN2A mutation experienced stable disease and significant symptom reduction upon treatment with palbociclib (PMID: 28283584). In vitro studies of cancer cell lines with CDKN2A loss demonstrated that they are sensitive to CDK4/6 inhibition as measured by growth arrest upon drug treatment (PMID: 29232554). In a panel of melanoma and estrogen receptor-positive breast cancer cell lines, CDKN2A loss was found among cells with the highest sensitivity to palbociclib (PMID: 19874578, 24495407).",
+      "drugs":[
+        {
+          "drugName":"Abemaciclib",
+          "ncitCode":"C97660",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_4",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"",
+        "id":984,
+        "level":-1,
+        "mainType":{
+          "id":null,
+          "name":"All Solid Tumors",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "19874578",
+        "24495407",
+        "25941111",
+        "29232554",
+        "28283584"
+      ]
+    }
+  ],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The CDKN2A R58* mutation is likely oncogenic.",
+  "vus":false
+}

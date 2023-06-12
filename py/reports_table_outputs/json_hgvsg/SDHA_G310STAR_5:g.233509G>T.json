@@ -1,0 +1,51 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"SDHA encodes a tumor suppressor involved in the electron transport chain. Germline mutations of SDHA are associated with paraganglioma and pheochromocytoma and predispose to gastrointestinal cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"01/10/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "21752896",
+        "22974104",
+        "21505157"
+      ]
+    },
+    "description":"SDHA truncating mutations can form C-terminally truncated SDHA proteins. These mutations are found in patients with gastrointestinal stromal tumors and adrenal tumors (PMID: 22974104, 21752896). Protein structural analysis of SDHA S384* and R31* demonstrated truncating SDHA mutations are inactivating as measured by loss of protein function (PMID: 21505157).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"G310*",
+    "alterationType":null,
+    "consequence":"stop_gained",
+    "entrezGeneId":6389,
+    "hgvs":"5:g.233509G>T",
+    "hugoSymbol":"SDHA",
+    "id":null,
+    "proteinEnd":310,
+    "proteinStart":310,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The SDHA G310* mutation is likely oncogenic.",
+  "vus":false
+}

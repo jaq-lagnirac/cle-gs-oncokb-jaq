@@ -1,0 +1,188 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"PIK3CA, the catalytic subunit of PI3-kinase, is frequently mutated in a diverse range of cancers including breast, endometrial and cervical cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":"LEVEL_Fda3",
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":"LEVEL_2",
+  "hotspot":false,
+  "lastUpdate":"02/22/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "20530683"
+      ]
+    },
+    "description":"The PIK3CA P449T mutation is located in the C2 domain in exon 8 of the protein (PMID: 20530683). Expression of this mutation in 293T cells or in HT-29 tumor cells demonstrated that it is activating as measured by increased kinase activity compared to wildtype PIK3CA and tumor growth in a xenograft model (PMID: 20530683).",
+    "knownEffect":"Likely Gain-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"P449S",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":5290,
+    "hgvs":null,
+    "hugoSymbol":"PIK3CA",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations (excluding C420R, E542K, E545A, E545D, E545G, E545K, Q546E, Q546R, H1047L, H1047R and H1047Y)"
+      ],
+      "approvedIndications":[],
+      "description":"Alpelisib is a selective inhibitor of the alpha form of PI3K (PI3K\u03b1) that is FDA-approved in combination with the selective estrogen receptor (ER) degrader fulvestrant for the treatment of postmenopausal patients with ER+ HER2- PIK3CA-mutated, advanced or metastatic breast cancer. FDA approval was based on data from the Phase III randomized, double-blind, placebo-controlled SOLAR-1 trial of alpelisib plus fulvestrant versus placebo plus fulvestrant in 572 patients with breast cancer in which the progression-free survival in patients with PIK3CA mutation (n=341) was eleven months (95% CI= 7.5-14.5) with alpelisib plus fulvestrant versus 5.7 months (95% CI= 3.7-7.4) with placebo plus fulvestrant (HR= 0.65; 95% CI= 0.5-0.85; p= 0.0013) compared to PIK3CA-wildtype patients in which the hazard ratio was 0.85 (95% CI= 0.58-1.25) (PMID: 31091374). Overall response in the PIK3CA-mutant population was 35.7 months (95% CI =27.4-44.7; n=126) with alpelisib plus fulvestrant versus 16.2 months (95% CI= 10.4-23.5; n=136) with placebo plus fulvestrant (PMID: 31091374). Previous studies, including in vivo xenograft studies and a Phase I trial, also demonstrated that treatment of ER+ PIK3CA-mutant breast cancer with the combination of fulvestrant and alpelisib results in greater tumor shrinkage than either drug alone, with fulvestrant inhibiting the induction of ER-dependent gene transcription resulting from PI3K\u03b1 inhibition with alpelisib (PMID: 25877889, 30543347).",
+      "drugs":[
+        {
+          "drugName":"Alpelisib",
+          "ncitCode":"C94214",
+          "synonyms":[],
+          "uuid":null
+        },
+        {
+          "drugName":"Fulvestrant",
+          "ncitCode":"C1379",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_2",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"HotPink",
+        "id":873,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Breast Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Breast",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "25877889",
+        "31091374",
+        "30543347"
+      ]
+    },
+    {
+      "abstracts":[
+        {
+          "abstract":"Pazolli et al. Abstract# P5-16-10, SABCS 2021",
+          "link":"https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459"
+        },
+        {
+          "abstract":"Pazolli et al. Abstract# P251, TARG 2021",
+          "link":"https://aacrjournals.org/mct/article/20/12_Supplement/P251/676005/Abstract-P251-Discovery-and-characterization-of"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"RLY-2608 is an orally available allosteric inhibitor of PI3K\u03b1. Biochemical assays have demonstrated that RLY-2608 inhibits PI3K\u03b1 activity in kinase and helical domain mutants with high isoform selectivity (Abstract: Pazolli et al. Abstract# P251, TARG 2021. https://aacrjournals.org/mct/article/20/12_Supplement/P251/676005/Abstract-P251-Discovery-and-characterization-of). In vivo xenograft models harboring PIK3CA E545K and H1047R mutations demonstrated sensitivity to RLY-2608 as measured by dose-dependent tumor regression and anti-tumor activity (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459).",
+      "drugs":[
+        {
+          "drugName":"RLY-2608",
+          "ncitCode":"C186533",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_4",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"",
+        "id":984,
+        "level":-1,
+        "mainType":{
+          "id":null,
+          "name":"All Solid Tumors",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[]
+    },
+    {
+      "abstracts":[
+        {
+          "abstract":"Pazolli et al. Abstract# P5-16-10, SABCS 2021",
+          "link":"https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"RLY-2608 is an orally available allosteric inhibitor of PI3K\u03b1, and fulvestrant is an FDA-approved estrogen receptor antagonist indicated for the treatment of patients with hormone receptor (HR)-positive, HER2-negative metastatic breast cancer. In vitro studies with HR+ PI3K\u03b1 mutant cell lines demonstrated synergistic sensitivity to treatment with RLY-2608 in combination with fulvestrant (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459). In vivo cell-derived xenograft models harboring the PIK3CA E545K mutation demonstrated sensitivity to RLY-2608 + fulvestrant treatment as measured by dose-dependent tumor regression (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459).",
+      "drugs":[
+        {
+          "drugName":"RLY-2608",
+          "ncitCode":"C186533",
+          "synonyms":[],
+          "uuid":null
+        },
+        {
+          "drugName":"Fulvestrant",
+          "ncitCode":"C1379",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_4",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"HotPink",
+        "id":873,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Breast Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Breast",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[]
+    }
+  ],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The PIK3CA P449S mutation has not been functionally or clinically validated. However, PIK3CA P449T is known to be oncogenic, and therefore PIK3CA P449S is considered likely oncogenic.",
+  "vus":false
+}

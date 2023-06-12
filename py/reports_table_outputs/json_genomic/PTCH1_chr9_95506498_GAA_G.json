@@ -1,0 +1,139 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"PTCH1, a tumor suppressor and inhibitor of the hedgehog pathway, is recurrently mutated in basal cell carcinoma.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":"LEVEL_Fda3",
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":"LEVEL_3A",
+  "hotspot":false,
+  "lastUpdate":"02/24/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "24840883",
+        "22670903",
+        "8782823",
+        "24523439"
+      ]
+    },
+    "description":"PTCH1 truncating mutations result in the formation of several C-terminally truncated PTCH1 protein forms. These mutations have been found in patients with Gorlin syndrome and are thought to result in loss of protein activity, resulting in uncontrolled signaling and increased cell cycle progression through the oncogenic hedgehog (HH) signaling pathway (PMID: 8782823, 24840883). Cells harboring truncating mutations of PTCH1 are sensitive to treatment with inhibitors of smoothened such as sonidegib and vismodegib (PMID: 24523439, 22670903).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"F101Lfs*38",
+    "alterationType":null,
+    "consequence":"frameshift_variant",
+    "entrezGeneId":5727,
+    "hgvs":null,
+    "hugoSymbol":"PTCH1",
+    "id":null,
+    "proteinEnd":101,
+    "proteinStart":101,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Truncating Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Sonidegib is an orally administered inhibitor of Smoothened (SMO), a member of the Hedgehog (Hh) signaling pathway downstream of PTCH1, and is FDA-approved for use in patients with basal cell carcinoma. In a Phase I trial evaluating sonidegib in solid tumors, three of nine patients with medulloblastoma (33%) achieved objective tumor responses (partial or complete response) according to RECIST and FDG-PET, where the response was correlated with hedgehog pathway activation (PMID: 24523439). Studies of PTCH1-null tumors in genetically engineered mice demonstrated sensitivity to sonidegib as measured by its effect on Gli expression and tumor volume (PMID: 24900187). Across several case studies, four patients with medulloblastoma harboring PTCH1 mutations had a partial response and clinical benefit upon treatment with vismodegib (PMID: 32923880, 26169613, 31362788, 29515801).",
+      "drugs":[
+        {
+          "drugName":"Sonidegib",
+          "ncitCode":"C82385",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_3A",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"MBL",
+        "color":"Gray",
+        "id":549,
+        "level":3,
+        "mainType":{
+          "id":null,
+          "name":"Embryonal Tumor",
+          "tumorForm":"SOLID"
+        },
+        "name":"Medulloblastoma",
+        "parent":"EMBT",
+        "tissue":"CNS/Brain",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "31362788",
+        "26169613",
+        "29515801",
+        "32923880",
+        "24523439",
+        "24900187"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Truncating Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Sonidegib is an orally administered inhibitor of Smoothened (SMO), a member of the Hedgehog (Hh) signaling pathway downstream of PTCH1, and is FDA-approved for use in patients with basal cell carcinoma. In a Phase I trial evaluating sonidegib in solid tumors, three of nine patients with medulloblastoma (33%) achieved objective tumor responses (partial or complete response) according to RECIST and FDG-PET, where the response was correlated with hedgehog pathway activation (PMID: 24523439). Studies of PTCH1-null tumors in genetically engineered mice demonstrated sensitivity to sonidegib as measured by its effect on Gli expression and tumor volume (PMID: 24900187). Across several case studies, four patients with medulloblastoma harboring PTCH1 mutations had a partial response and clinical benefit upon treatment with vismodegib (PMID: 32923880, 26169613, 31362788, 29515801).",
+      "drugs":[
+        {
+          "drugName":"Vismodegib",
+          "ncitCode":"C74038",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_3A",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"MBL",
+        "color":"Gray",
+        "id":549,
+        "level":3,
+        "mainType":{
+          "id":null,
+          "name":"Embryonal Tumor",
+          "tumorForm":"SOLID"
+        },
+        "name":"Medulloblastoma",
+        "parent":"EMBT",
+        "tissue":"CNS/Brain",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "31362788",
+        "26169613",
+        "29515801",
+        "32923880",
+        "24523439",
+        "24900187"
+      ]
+    }
+  ],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The PTCH1 F101Lfs*38 mutation is likely oncogenic.",
+  "vus":false
+}

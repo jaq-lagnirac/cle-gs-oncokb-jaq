@@ -1,0 +1,49 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"CDH1 (E-cadherin), a tumor suppressor involved in cell adhesion, is altered by mutation or deletion in various cancer typess, most frequently in breast and esophagogastric cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"11/16/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "12588804"
+      ]
+    },
+    "description":"The CDH1 T340A mutation is located in the extracellular domain of the protein. This mutation has been found as a germline mutation in gastric cancer (PMID: 12588804). Expression of this mutation in a hamster ovary cell line demonstrated that it is inactivating as measured by decreased cell aggregation and increased cell invasion and migration compared to wildtype (PMID: 12588804).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"T340M",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":999,
+    "hgvs":null,
+    "hugoSymbol":"CDH1",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The CDH1 T340M mutation has not been functionally or clinically validated. However, CDH1 T340A is known to be oncogenic, and therefore CDH1 T340M is considered likely oncogenic.",
+  "vus":false
+}

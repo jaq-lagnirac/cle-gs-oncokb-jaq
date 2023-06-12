@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"ALK, a receptor tyrosine kinase, is recurrently altered by chromosomal rearrangements in various cancer types including anaplastic large cell lymphoma, non-small cell lung cancer and inflammatory myofibroblastic tumors.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"02/22/2018",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"A206T",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":238,
+    "hgvs":"2:g.29920044C>T",
+    "hugoSymbol":"ALK",
+    "id":null,
+    "proteinEnd":206,
+    "proteinStart":206,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the ALK A206T mutation is unknown.",
+  "vus":false
+}
