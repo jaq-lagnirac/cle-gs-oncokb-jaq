@@ -307,6 +307,12 @@ def add_oncokb(row):
   except KeyError:
     error(f'Not found in OncoKB: {call_type} {gene} {hgvsg}')
     sys.exit(1)
+    
+
+def rename_to_found(original_name):
+  type_name = column.split(' ')[0]
+  new_name = f'found {type_name}?'
+  return new_name
 
 
 def check_api_call(df, column):
@@ -316,12 +322,29 @@ def check_api_call(df, column):
   new_column = []
   for call in df[column]:
     new_column.append(bool(call))
-  type_name = (column.split(' '))[0]
-  new_name = f'found {type_name}?'
+  new_name = rename_to_found(column)
   df[new_name] = new_column
   
   successes_x = new_column.count(True)
   total_n = len(new_column)
+  
+  
+def filter_type_counter(df, column_name):
+  new_name = rename_to_found(column_name)
+  pass_counter = 0
+  filtered_counter = 0
+  
+  for index, filter_type in enumerate(df['filter_type']):
+    if df[new_name] == True:
+      if filter_type == 'PASS':
+        pass_counter += 1
+      elif filter_type == 'Filtered':
+        filtered_counter += 1
+      else:
+        error('Unknown successful hit')
+        sys.exit(1)
+        
+  return pass_counter, filtered_counter
 
 
 df = df.apply(add_maf, axis=1)
@@ -334,6 +357,7 @@ call_type = Call.GENOMIC
 genomic_column = 'genomic oncokb'
 df[genomic_column] = df.apply(add_oncokb, axis=1)
 check_api_call(df, genomic_column)
+pass_genomics, filtered_genomics = filter_type_counter(df, genomic_column)
 
 # handles elapsed time
 genomic_elapsed = 'genomic elapsed (sec)'
@@ -360,6 +384,7 @@ call_type = Call.PROTEIN
 protein_column = 'protein oncokb'
 df[protein_column] = df.apply(add_oncokb, axis=1)
 check_api_call(df, protein_column)
+pass_protein, filtered_protein = filter_type_counter(df, protein_column)
 
 # handles elapsed time
 protein_elapsed = 'protein elapsed (sec)'
@@ -387,6 +412,7 @@ call_type = Call.HGVSG
 hgvsg_column = 'hgvsg oncokb'
 df[hgvsg_column] = df.apply(add_oncokb, axis=1)
 check_api_call(df, hgvsg_column)
+pass_hgvsg, filtered_hgvsg = filter_type_counter(df, hgvsg_column)
 
 # handles elapsed time
 hgvsg_elapsed = 'hgvsg elapsed (sec)'
@@ -446,8 +472,11 @@ info(f'Approx. Total Elapsed Time: {minutes} min, {seconds} secs ({elapsed_total
 # prints successful hits
 info('---SUCCESSFUL HITS---')
 info(f'Genomic Proportion of Successful Hits: {genomic_prop} ({genomic_successes}/{genomic_total})')
+info(f'Genomic Successful Hits - PASS: {pass_genomics} - Filtered: {filtered_genomics}')
 info(f'Protein Proportion of Successful Hits: {protein_prop} ({protein_successes}/{protein_total})')
+info(f'Protein Successful Hits - PASS: {pass_protein} - Filtered: {filtered_protein}')
 info(f'HGVSg Proportion of Successful Hits: {hgvsg_prop} ({hgvsg_successes}/{hgvsg_total})')
+info(f'HGVSg Successful Hits - PASS: {pass_hgvsg} - Filtered: {filtered_hgvsg}')
 
 df.to_csv(sys.stdout, sep='\t', index=None)
 
