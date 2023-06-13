@@ -24,7 +24,7 @@ DESCRIPTION = '''
 With a config file and JSON input, iterate over all VARIANTS and add
 OncoKB annotation when available. See documentation for details
 
-API calls are to https://www.oncokb.org/api/v1/annotate/mutations/byGenomicChange
+API calls are to https://www.oncokb.org/api/v1/annotate/mutations/byProteinChange
 '''
 
 EPILOG = '''
@@ -132,12 +132,10 @@ def get_maf_string(variant, columns):
 #   res           either str(exception) if exception was raised or 
 #                 Requests response object
 def get_oncokb_protein(psyntax, gene, timeout, tumorType):
-#def get_oncokb_protein(genomicLocation, timeout, tumorType):
   url = 'https://www.oncokb.org/api/v1/annotate/mutations/byProteinChange'
   params = {
     'alteration' : psyntax,
     'hugoSymbol' : gene,
-#    'genomicLocation':genomicLocation,
     'referenceGenome' : 'GRCh38'
   }
   if tumorType != None:
@@ -145,7 +143,6 @@ def get_oncokb_protein(psyntax, gene, timeout, tumorType):
 
   try:
     res = requests.get(url, headers=headers, params=params, timeout=timeout)
-#    info(res.url)
   # A timeout or a failed network connection will raise an exception
   # Catch it and return the string version
   except Exception as e:
@@ -229,18 +226,11 @@ for tier in tiers:
   columns = gs_data['VARIANTS'][tier]['columns']
   for variant in gs_data['VARIANTS'][tier]['data']:
     total_count[tier] += 1
-#    info(f'Variant: {variant}')
     ### add get_oncokb_protein params here
-#    genomicLocation = get_maf_string(variant, columns)
     psyntax_index = columns.index('psyntax')
     psyntax = variant[psyntax_index].replace('p.', '')
-#    info(f'psyntax {psyntax} \tat index {psyntax_index}')
     gene_index = columns.index('gene') # aka hugoSymbol
     gene = variant[gene_index]
-#    info(f'PSyntax/Alteration: {psyntax}\t\t\tGene/HugoSymbol: {gene}')
-#    alteration_index = columns.index('alt')
-#    alteration = variant[alteration_index]
-#    info(alteration)
 
     variant_oncokb_data = {} 
     if args.include_variant:

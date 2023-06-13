@@ -51,9 +51,18 @@ DESCRIPTION = '''
 
 Given a table of variants, annotate with OncoKB data
 
+Outputs tsv file to standard output
+
+Outputs statistics to standard error
+  -Elapsed time
+  -Proportion of successful hits
+
 '''
 
 EPILOG = '''
+
+REQUIRES CONFIG FILE WITH VALID ONCOKB KEY
+
 '''
 
 class CustomFormatter(argparse.ArgumentDefaultsHelpFormatter,
@@ -78,9 +87,7 @@ if args.verbose:
 # -jaq
 def check_gs_config(config, config_p):
   gs_config_constraints = {
-    'oncokb_api_key': str,
-    'oncokb_api_timeout': int,
-    'gs_oncokb_tumor_type_map': dict
+    'oncokb_api_key': str
   }
   errors = []
 
@@ -145,7 +152,7 @@ def add_maf(row):
     end = pos + 1
     maf_ref = '-'
     maf_alt = alt[1:]
-  # COMPLEX this might handle DNP/TNP/ONP but what if 
+  ### COMPLEX this might handle DNP/TNP/ONP but what if 
   # len(ref) != len(alt)?
   else: 
     maf_ref = ref
@@ -171,7 +178,6 @@ def add_hgvsg(row): # -jaq
   
   ### SNV "Substitution"
   if (len(reference) == 1) and (len(alteration) == 1):
-#    info('SNV')
     if variant_type != 'SNV':
       error('Type mismatch')
       sys.exit(1)
@@ -179,7 +185,6 @@ def add_hgvsg(row): # -jaq
       
   ### DELETION
   elif (len(reference) > 1) and (len(alteration) == 1):
-#    info('DELETION')
     if variant_type != 'INDEL':
       error('Type mismatch')
       sys.exit(1)
@@ -192,7 +197,6 @@ def add_hgvsg(row): # -jaq
 
   ### INSERTION
   elif (len(reference) == 1) and (len(alteration) > 1):
-#    info('INSERTION')
     if variant_type != 'INDEL':
       error('Type mismatch')
       sys.exit(1)
@@ -201,7 +205,6 @@ def add_hgvsg(row): # -jaq
     
   ### DELINS (not robust, simply to handle what we're dealing with)
   else: # variant_type == 'SNV': # The HARD one
-#    info('DELINS')
     if len(reference) == 1:
       hgvsg += f'{position}delins{alteration}'
     else: # len(ref) > 1
@@ -209,7 +212,6 @@ def add_hgvsg(row): # -jaq
       hgvsg += f'{position}_{second_position}delins{alteration}'
     
   row['hgvsg'] = hgvsg
-#  info(f'----------{hgvsg}----------')
   return row
 
 

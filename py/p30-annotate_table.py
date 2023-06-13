@@ -153,14 +153,12 @@ def add_oncokb(row):
       'alteration': alteration,
       'referenceGenome': 'GRCh38'
     }
-#  info(params)
   r = requests.get(url, headers=headers, params=params)
   if args.genomic:
     info(f'{gene} {alteration} {pos} {ref} {alt} {chrom_no_chr} {start} {end} {maf_ref} {maf_alt} {r.status_code}')
   else:
     info(f'{gene} {alteration} {r.status_code}')
   oncokb_data = r.json()
-#  info(r.url) ### DELETE ME
   json_string = json.dumps(oncokb_data,
     sort_keys=True, indent=2, separators=(',',':'))
   clean_alteration = alteration.replace('*', 'STAR')
@@ -175,7 +173,6 @@ def add_oncokb(row):
 
   with open(out_p, 'w') as out_fh:
     out_fh.write(json_string)
-#  info(oncokb_data)
   return oncokb_data['mutationEffect']['description']
 
 

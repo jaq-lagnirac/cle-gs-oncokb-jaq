@@ -18,6 +18,11 @@ l.setLevel(logging.INFO)
 debug = l.debug; info = l.info; warning = l.warning; error = l.error
 
 DESCRIPTION = '''
+
+Takes input JSON file(s) and converts them into a tsv table to be processed later
+
+Parses both PASS and Filtered variants
+
 '''
 
 EPILOG = '''
@@ -44,14 +49,14 @@ sep = '\t'
 
 fields = [
   'type', 'chrom', 'pos', 'ref', 'alt', 'gene', 'transcript', 
-  'psyntax', 'csyntax'#,
-  #'start', 'end', 'maf_ref', 'maf_alt' # added this row to test out
+  'psyntax', 'csyntax'
 ]
 data = {}
 for field in fields:
   data[field] = []
 
 filter_types = ['PASS', 'Filtered']
+
 for filter_type in filter_types:
   for in_f in args.input_files:
     with open(in_f) as fh:

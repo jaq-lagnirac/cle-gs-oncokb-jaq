@@ -24,7 +24,7 @@ DESCRIPTION = '''
 With a config file and JSON input, iterate over all VARIANTS and add
 OncoKB annotation when available. See documentation for details
 
-API calls are to https://www.oncokb.org/api/v1/annotate/mutations/byGenomicChange
+API calls are to https://www.oncokb.org/api/v1/annotate/mutations/byHGVSg
 '''
 
 EPILOG = '''
@@ -115,32 +115,6 @@ def get_hgvsg(variant, columns): # -jaq
       hgvsg += f'{position}_{second_position}delins{alteration}'
 
   return hgvsg
-  ##### SKELETON CODE FOR FUTURE IMPLEMENTATIONS #####
-  ### DELINS
-'''
-  if variant_type == 'REPLACE ME':
-#  else:
-#    if variant_type != 'REPLACE ME': # The HARD one
-#      type_mismatch()
-    if len(reference) == 1:
-      hgvsg += f'{position}delins{alteration}'
-    else: # len(ref) > 1
-      second_position = position + len(reference) - 1
-      hgvsg += f'{position}_{second_position}delins{alteration}'
-#'''
-
-  ### REPEATED SEQUENCES
-'''
-  if variant_type == 'REPLACE ME':
-#  else:
-#    if variant_type != 'REPLACE ME': # The HARD one
-#      type_mismatch()
-    copy_num = alteration.count(reference)
-    hgvsg += f'{position}{alteration}[{copy_num}]'
-'''  
-  ##### END OF SKELETON CODE #####
-  
-#  info(f'vartype: {variant_type}, pos: {position}, ref: {reference}, alt: {alteration}, hgvsg: {hgvsg}')
 
 
 # returns a tuple of 
@@ -158,7 +132,6 @@ def get_oncokb(HGVSg, timeout, tumorType):
 
   try:
     res = requests.get(url, headers=headers, params=params, timeout=timeout)
-#    info(res.url)
   # A timeout or a failed network connection will raise an exception
   # Catch it and return the string version
   except Exception as e:
@@ -243,7 +216,6 @@ for tier in tiers:
   for variant in gs_data['VARIANTS'][tier]['data']:
     total_count[tier] += 1
     HGVSg = get_hgvsg(variant, columns)
-#    info(f'HGVSg String: {HGVSg}')
 
     variant_oncokb_data = {} 
     if args.include_variant:

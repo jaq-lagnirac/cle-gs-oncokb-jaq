@@ -15,6 +15,9 @@ l.setLevel(logging.INFO)
 debug = l.debug; info = l.info; warning = l.warning; error = l.error
 
 DESCRIPTION = '''
+
+Ouputs statistics for JSON file annotation, created from oncokb_annotate*.py
+
 '''
 
 EPILOG = '''
