@@ -37,12 +37,21 @@ if args.verbose:
 
 debug('%s begin', SCRIPT_PATH)
 
+all_input_file = []
 all_total_annotated = []
 all_elapsed_time = []
 with open(args.err_file) as fh:
   for line in fh:
     line = line.strip()
-    if 'Total Annotated' in line:
+    if 'Input file' in line:
+      m = re.search(r'Input file: (.+)', line)
+      if (m):
+        input_file = m.group(1).strip()
+      else:
+        error('Could not parse input file')
+        sys.exit(1)
+      all_input_file.append(input_file)
+    elif 'Total Annotated' in line:
       # INFO Total Annotated: 5
       m = re.search(r'Total Annotated: (\d+)', line)
       if (m):
@@ -63,6 +72,6 @@ with open(args.err_file) as fh:
       all_elapsed_time.append(elapsed_time)
 
 for i, total_annotated in enumerate(all_total_annotated):
-  print('\t'.join((total_annotated, all_elapsed_time[i])))
+  print('\t'.join((total_annotated, all_elapsed_time[i], all_input_file[i])))
 
 debug('%s end', (SCRIPT_PATH))
