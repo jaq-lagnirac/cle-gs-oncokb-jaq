@@ -17,6 +17,7 @@ import statistics
 
 # global constants
 NUM_DECIMALS = 3
+VAR_PRECISION = NUM_DECIMALS + 2
 
 
 # global vars
@@ -339,6 +340,10 @@ genomic_elapsed = 'genomic elapsed (sec)'
 df[genomic_elapsed] = elapsed_array
 elapsed_avg_genomic = round(statistics.mean(elapsed_array), \
   NUM_DECIMALS)
+var_genomic = round(statistics.variance(elapsed_array), \
+  VAR_PRECISION)
+sd_genomic = round(statistics.stdev(elapsed_array), \
+  NUM_DECIMALS)
 total_elapsed_genomic = round(sum(elapsed_array), \
   NUM_DECIMALS)
 
@@ -360,6 +365,10 @@ check_api_call(df, protein_column)
 protein_elapsed = 'protein elapsed (sec)'
 df[protein_elapsed] = elapsed_array
 elapsed_avg_protein = round(statistics.mean(elapsed_array), \
+  NUM_DECIMALS)
+var_protein = round(statistics.variance(elapsed_array), \
+  VAR_PRECISION)
+sd_protein = round(statistics.stdev(elapsed_array), \
   NUM_DECIMALS)
 total_elapsed_protein = round(sum(elapsed_array), \
   NUM_DECIMALS)
@@ -384,6 +393,10 @@ hgvsg_elapsed = 'hgvsg elapsed (sec)'
 df[hgvsg_elapsed] = elapsed_array
 elapsed_avg_hgvsg = round(statistics.mean(elapsed_array), \
   NUM_DECIMALS)
+var_hgvsg = round(statistics.variance(elapsed_array), \
+  VAR_PRECISION)
+sd_hgvsg = round(statistics.stdev(elapsed_array), \
+  NUM_DECIMALS)
 total_elapsed_hgvsg = round(sum(elapsed_array), \
   NUM_DECIMALS)
 
@@ -393,14 +406,29 @@ hgvsg_total = total_n
 hgvsg_prop = round(hgvsg_successes  / hgvsg_total, NUM_DECIMALS)
 
 
-# prints overview info to .err file
-info(f'Genomic Elapsed Time - Average: {elapsed_avg_genomic} secs, Total: {total_elapsed_genomic} secs')
-info(f'Protein Elapsed Time - Average: {elapsed_avg_protein} secs, Total: {total_elapsed_protein} secs')
-info(f'HGVSg Elapsed Time - Average: {elapsed_avg_hgvsg} secs, Total: {total_elapsed_hgvsg} secs')
+### prints overview info to .err file
+info('----------OVERVIEW OF PERFORMANCE----------')
 
-info(f'Genomic Proportion of Successful Hits: {genomic_prop} ({genomic_successes}/{genomic_total})')
-info(f'Protein Proportion of Successful Hits: {protein_prop} ({protein_successes}/{protein_total})')
-info(f'HGVSg Proportion of Successful Hits: {hgvsg_prop} ({hgvsg_successes}/{hgvsg_total})')
+# prints elapsed time info
+info('---ELAPSED TIME---')
+
+info(f'byGenomicChange:')
+info(f'\t-Total: {total_elapsed_genomic} secs')
+info(f'\t-Mean/Average: {elapsed_avg_genomic} secs')
+info(f'\t-Variance: {var_genomic} secs²')
+info(f'\t-Standard Deviation: {sd_genomic} secs')
+
+info(f'byProteinChange:')
+info(f'\t-Total: {total_elapsed_protein} secs')
+info(f'\t-Mean/Average: {elapsed_avg_protein} secs')
+info(f'\t-Variance: {var_protein} secs²')
+info(f'\t-Standard Deviation: {sd_protein} secs')
+
+info(f'byHGVSg:')
+info(f'\t-Total: {total_elapsed_hgvsg} secs')
+info(f'\t-Mean/Average: {elapsed_avg_hgvsg} secs')
+info(f'\t-Variance: {var_hgvsg} secs²')
+info(f'\t-Standard Deviation: {sd_hgvsg} secs')
 
 elapsed_total = round((total_elapsed_genomic \
   + total_elapsed_protein \
@@ -414,6 +442,12 @@ while seconds > 60:
   minutes += 1
 seconds = round(seconds, NUM_DECIMALS)
 info(f'Approx. Total Elapsed Time: {minutes} min, {seconds} secs ({elapsed_total} secs)')
+
+# prints successful hits
+info('---SUCCESSFUL HITS---')
+info(f'Genomic Proportion of Successful Hits: {genomic_prop} ({genomic_successes}/{genomic_total})')
+info(f'Protein Proportion of Successful Hits: {protein_prop} ({protein_successes}/{protein_total})')
+info(f'HGVSg Proportion of Successful Hits: {hgvsg_prop} ({hgvsg_successes}/{hgvsg_total})')
 
 df.to_csv(sys.stdout, sep='\t', index=None)
 

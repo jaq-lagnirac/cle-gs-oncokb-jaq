@@ -1,0 +1,50 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"CCND1, a regulator of the cell cycle, is amplified in various cancer types including breast, head and neck, and bladder cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":true,
+  "lastUpdate":"11/16/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "26619011",
+        "12955092"
+      ]
+    },
+    "description":"The CCND1 P287S mutation is located in the C-terminus of the protein. This mutation has been found in endometrial cancer (PMID: 12955092). While this mutation is a statistically significant hotspot (PMID: 26619011), this mutation has not yet been functionally characterized.",
+    "knownEffect":"Likely Gain-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"P287S",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":595,
+    "hgvs":null,
+    "hugoSymbol":"CCND1",
+    "id":null,
+    "proteinEnd":287,
+    "proteinStart":287,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The CCND1 P287S mutation is likely oncogenic.",
+  "vus":false
+}

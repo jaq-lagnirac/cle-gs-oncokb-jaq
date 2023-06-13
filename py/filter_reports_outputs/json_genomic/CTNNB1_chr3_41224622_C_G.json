@@ -1,0 +1,52 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"CTNNB1 (\u03b2-catenin), a transcriptional activator, is recurrently mutated in various cancers including endometrial and hepatocellular cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":true,
+  "lastUpdate":"11/16/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "26619011",
+        "9537226",
+        "18358501",
+        "18540944"
+      ]
+    },
+    "description":"The CTNNB1 S37C mutation is located in the N-terminus of the protein. This mutation has been found in liver cancer and craniopharyngioma and is a statistically significant hotspot (PMID: 18358501, 18540944, 26619011). While this mutation has not yet been functionally characterized, endogenous expression of this mutation in an endometrial cancer sample demonstrated increased protein expression compared to samples expressing wildtype (PMID: 9537226).",
+    "knownEffect":"Likely Gain-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"S37C",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":1499,
+    "hgvs":null,
+    "hugoSymbol":"CTNNB1",
+    "id":null,
+    "proteinEnd":37,
+    "proteinStart":37,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The CTNNB1 S37C mutation is likely oncogenic.",
+  "vus":false
+}

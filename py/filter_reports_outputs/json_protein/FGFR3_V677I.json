@@ -1,0 +1,49 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"FGFR3, a receptor tyrosine kinase, is altered by mutation, chromosomal rearrangement or amplification in various cancers, most frequently in bladder cancer.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"11/16/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "26992226"
+      ]
+    },
+    "description":"The FGFR3 V677I mutation is located in the kinase domain of the protein. This mutation has been found in intestinal cancer. Expression of this mutation in a murine fibroblast cell line demonstrated that it is neutral as measured by no change in protein activity compared to wildtype (PMID: 26992226)",
+    "knownEffect":"Likely Neutral"
+  },
+  "oncogenic":"Likely Neutral",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"V677I",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":2261,
+    "hgvs":null,
+    "hugoSymbol":"FGFR3",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The FGFR3 V677I mutation is likely neutral.",
+  "vus":false
+}

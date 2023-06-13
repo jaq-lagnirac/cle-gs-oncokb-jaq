@@ -1,0 +1,86 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx3",
+      "pmids":[
+        "9087572",
+        "24388756",
+        "19608751",
+        "19380639"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"FL",
+        "color":"LimeGreen",
+        "id":286,
+        "level":5,
+        "mainType":{
+          "id":null,
+          "name":"Mature B-Cell Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Follicular Lymphoma",
+        "parent":"MBN",
+        "tissue":"Lymphoid",
+        "tumorForm":"LIQUID"
+      }
+    }
+  ],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"TNFAIP3 encodes an enzyme involved in regulation of the NF-\u03baB pathway. Mutations of TNFAIP3 are found in lymphomas and leukemias.",
+  "highestDiagnosticImplicationLevel":"LEVEL_Dx3",
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"09/03/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "31030956",
+        "19258598",
+        "29625055",
+        "26642243",
+        "27479826",
+        "28469620",
+        "29515565"
+      ]
+    },
+    "description":"Truncating mutations in TNFAIP3 can occur throughout the entire gene and have been shown to lead to impairment of its inhibitory activity on the NF-\u03baB pathway (PMID: 27479826). TNFAIP3 encodes a Zn-finger protein and ubiquitin-editing enzyme that has been shown to be involved in immune response regulation (PMID: 29515565, 31030956). TNFAIP3 has been shown to negatively regulate several cytokine-mediated signaling cascades by terminating NF-kappa B activity (PMID: 28469620, 26642243). Germline truncating mutations in TNFAIP3 have been shown to lead haploinsufficiency manifested by early-onset autoimmune disease phenotype in the affected families (PMID: 26642243). Truncating mutations in TNFAIP3, leading to loss of this protein, have been identified in patients with diffuse large B-cell and marginal zone lymphomas, as well as several carcinomas (PMID: 19258598, 29625055).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"K759Qfs*10",
+    "alterationType":null,
+    "consequence":"frameshift_variant",
+    "entrezGeneId":7128,
+    "hgvs":null,
+    "hugoSymbol":"TNFAIP3",
+    "id":null,
+    "proteinEnd":756,
+    "proteinStart":756,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The TNFAIP3 K759Qfs*10 mutation is likely oncogenic.",
+  "vus":false
+}

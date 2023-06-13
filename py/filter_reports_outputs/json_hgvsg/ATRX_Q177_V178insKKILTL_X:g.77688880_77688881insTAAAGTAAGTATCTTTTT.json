@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"ATRX, a tumor suppressor involved in transcriptional regulation, is infrequently altered in cancer.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"10/03/2018",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"Q177_V178insKKILTL",
+    "alterationType":null,
+    "consequence":"inframe_insertion",
+    "entrezGeneId":546,
+    "hgvs":"X:g.77688880_77688881insTAAAGTAAGTATCTTTTT",
+    "hugoSymbol":"ATRX",
+    "id":null,
+    "proteinEnd":178,
+    "proteinStart":177,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the ATRX Q177_V178insKKILTL alteration is unknown.",
+  "vus":false
+}

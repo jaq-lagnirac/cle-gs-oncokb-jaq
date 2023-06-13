@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"ERBB2, a receptor tyrosine kinase, is altered by mutation, amplification and/or overexpression in various cancer types, most frequently in breast, esophagogastric and endometrial cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"11/06/2019",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"R985H",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":2064,
+    "hgvs":null,
+    "hugoSymbol":"ERBB2",
+    "id":null,
+    "proteinEnd":985,
+    "proteinStart":985,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The biologic significance of the ERBB2 R985H mutation is unknown (last reviewed 03/25/2019).",
+  "vus":true
+}

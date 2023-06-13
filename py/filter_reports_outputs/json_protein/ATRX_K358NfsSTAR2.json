@@ -1,0 +1,55 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"ATRX, a tumor suppressor involved in transcriptional regulation, is infrequently altered in cancer.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"10/03/2018",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "21719641",
+        "8968741",
+        "24148618",
+        "15591283",
+        "14592816",
+        "18409179",
+        "17609377"
+      ]
+    },
+    "description":"Truncating mutations in ATRX occur throughout several protein domains and leads to reduced protein expression and is associated with DNA methylation. Truncated ATRX variants in both alpha thalassaemia mental retardation (ATR-X) syndrome and alpha thalassemia myelodysplastic syndrome (ATMDS) are most commonly detected in the highly conserved helicase domain and also the P-box and Q-box domains, potential protein-interaction domains (PMID: 8968741, 14592816, 18409179, 17609377). In some cases, the truncated ATRX phenotype can be rescued by expression of a downstream start site through intraexonic skipping of the mutant allele, consistent with a hypomorphic effect (PMID: 18409179, 15591283). Based on loss of function studies, ATRX deletions are expected to result in chromosomal instability and alternate lengthening of telomeres (ALT) (PMID: 21719641, 24148618).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"K358Nfs*2",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":546,
+    "hgvs":null,
+    "hugoSymbol":"ATRX",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The ATRX K358Nfs*2 mutation is likely oncogenic.",
+  "vus":false
+}

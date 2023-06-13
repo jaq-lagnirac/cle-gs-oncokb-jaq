@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"TSC1, a tumor suppressor in the mTOR signaling pathway, is inactivated by mutation or deletion in a diverse range of cancers. Germline and somatic TSC1 mutation are a feature of the disease Tuberous sclerosis complex (TSC).",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"09/19/2018",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"H226Y",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":7248,
+    "hgvs":"9:g.132921424G>A",
+    "hugoSymbol":"TSC1",
+    "id":null,
+    "proteinEnd":226,
+    "proteinStart":226,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the TSC1 H226Y mutation is unknown.",
+  "vus":false
+}

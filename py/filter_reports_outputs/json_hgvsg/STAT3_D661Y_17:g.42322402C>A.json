@@ -1,0 +1,81 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx3",
+      "pmids":[
+        "24317090",
+        "29288042",
+        "22859607",
+        "22591296",
+        "25281507"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"TLGL",
+        "color":"LimeGreen",
+        "id":488,
+        "level":5,
+        "mainType":{
+          "id":null,
+          "name":"Mature T and NK Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"T-Cell Large Granular Lymphocytic Leukemia",
+        "parent":"MTNN",
+        "tissue":"Lymphoid",
+        "tumorForm":"LIQUID"
+      }
+    }
+  ],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"STAT3, a transcription factor, is altered by mutation or amplification in various solid and hematologic malignancies.",
+  "highestDiagnosticImplicationLevel":"LEVEL_Dx3",
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":true,
+  "lastUpdate":"01/17/2019",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "25586472"
+      ]
+    },
+    "description":"STAT3 D661Y missense mutation occurs in the Src homology 2 (SH2) domain- the domain that mediates the dimerization and activation of STAT3 protein. This variant has been described in T cell-large granular lymphocytic leukemia (T-LGLL); and in lymphomas arising from Natural Killer (NK) cells [NK/T cell lymphomas (NKTCLs)] and gamma-delta-T cells [gamma-delta-T-cell-derived lymphomas (gamma-delta-PTCLs)], as well as in NK and gamma-delta-T- cell lines (PMID: 25586472). Higher levels of phospho-STAT3 was detected in NK cell line SNK6 harboring the STAT3 D661Y variant. NK cell line KAI3 expressing the STAT3 D661Y variant demonstrated significant positive progressive selection under limiting concentration of the cytokine IL-2 when compared to cells transduced with wildtype STAT3, suggesting that this is an activating mutation (PMID: 25586472).",
+    "knownEffect":"Gain-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"D661Y",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":6774,
+    "hgvs":"17:g.42322402C>A",
+    "hugoSymbol":"STAT3",
+    "id":null,
+    "proteinEnd":661,
+    "proteinStart":661,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The STAT3 D661Y mutation is likely oncogenic.",
+  "vus":false
+}

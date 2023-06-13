@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"STAT6, a transcription factor involved with immune regulation, is recurrently altered by mutation and amplification in lymphomas and solid tumors. STAT6 fusions are found in all patients with solitary fibrous tumor and meningeal haemangiopericytoma.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"03/29/2019",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"X39_splice",
+    "alterationType":null,
+    "consequence":"splice_acceptor_variant",
+    "entrezGeneId":6778,
+    "hgvs":"12:g.57107744C>A",
+    "hugoSymbol":"STAT6",
+    "id":null,
+    "proteinEnd":39,
+    "proteinStart":39,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the STAT6 X39_splice alteration is unknown.",
+  "vus":false
+}

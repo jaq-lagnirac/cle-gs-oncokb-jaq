@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"PALB2 is a component of the Fanconi anemia complementation (FANCC) group involved in DNA double-strand break repair. Germline mutations of PALB2 are associated with Fanconi anemia and predispose to breast cancer.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"08/08/2018",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"L763F",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":79728,
+    "hgvs":"16:g.23629865C>G",
+    "hugoSymbol":"PALB2",
+    "id":null,
+    "proteinEnd":763,
+    "proteinStart":763,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the PALB2 L763F mutation is unknown.",
+  "vus":false
+}
