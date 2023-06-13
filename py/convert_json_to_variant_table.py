@@ -54,6 +54,7 @@ fields = [
 data = {}
 for field in fields:
   data[field] = []
+data['filter_type'] = [] # -jaq
 
 filter_types = ['PASS', 'Filtered']
 
@@ -72,6 +73,7 @@ for filter_type in filter_types:
     for entry in tier13_data:
       for field in fields:
         data[field].append(entry[tier13_columns.index(field)])
+      data['filter_type'].append(filter_type) # -jaq
 
 df = pd.DataFrame.from_dict(data)
 info(f'Shape before dedup: {df.shape}')
