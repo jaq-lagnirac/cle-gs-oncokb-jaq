@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"NOTCH1, a transmembrane receptor and transcription factor, can function as both an oncogene and tumor suppressor.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"04/13/2017",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"V2278L",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":4851,
+    "hgvs":"9:g.136496907C>A",
+    "hugoSymbol":"NOTCH1",
+    "id":null,
+    "proteinEnd":2278,
+    "proteinStart":2278,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the NOTCH1 V2278L mutation is unknown.",
+  "vus":false
+}

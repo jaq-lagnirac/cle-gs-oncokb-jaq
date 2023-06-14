@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"STAT3, a transcription factor, is altered by mutation or amplification in various solid and hematologic malignancies.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"01/17/2019",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"S25N",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":6774,
+    "hgvs":null,
+    "hugoSymbol":"STAT3",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the STAT3 S25N mutation is unknown.",
+  "vus":false
+}

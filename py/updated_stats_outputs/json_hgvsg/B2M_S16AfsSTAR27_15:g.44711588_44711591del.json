@@ -1,0 +1,51 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"B2M, a tumor suppressor and regulator of the immune system, is inactivated by mutation or deletion in various cancer types including non-Hodgkin's lymphoma.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"11/16/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "25294904",
+        "1898655",
+        "22137796"
+      ]
+    },
+    "description":"B2M truncating mutations can produce several forms of C-terminally truncated proteins. Expression of B2M mutations in lymphoma cell lines resulted in decreased protein stability and increased cancer cell evasion of immune surveillance compared to wildtype (PMID: 1898655, 22137796, 25294904).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"S16Afs*27",
+    "alterationType":null,
+    "consequence":"frameshift_variant",
+    "entrezGeneId":567,
+    "hgvs":"15:g.44711588_44711591del",
+    "hugoSymbol":"B2M",
+    "id":null,
+    "proteinEnd":15,
+    "proteinStart":14,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The B2M S16Afs*27 mutation is likely oncogenic.",
+  "vus":false
+}

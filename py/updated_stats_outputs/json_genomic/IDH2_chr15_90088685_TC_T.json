@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"IDH2, a cell metabolism enzyme, is recurrently mutated in various cancer types including acute myeloid leukemia, glioblastoma, and cholangiocarcinoma.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"02/04/2019",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"T146Lfs*15",
+    "alterationType":null,
+    "consequence":"frameshift_variant",
+    "entrezGeneId":3418,
+    "hgvs":null,
+    "hugoSymbol":"IDH2",
+    "id":null,
+    "proteinEnd":145,
+    "proteinStart":145,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the IDH2 T146Lfs*15 mutation is unknown.",
+  "vus":false
+}

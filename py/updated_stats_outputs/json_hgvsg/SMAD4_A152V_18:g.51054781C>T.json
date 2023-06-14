@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"SMAD4 encodes a tumor suppressor and transcription factor that is a downstream effector in the TGF-\u00df signal transduction pathway. SMAD4 is frequently mutated in pancreatic and colorectal cancer and infrequently mutated in various other cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"04/07/2017",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"A152V",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":4089,
+    "hgvs":"18:g.51054781C>T",
+    "hugoSymbol":"SMAD4",
+    "id":null,
+    "proteinEnd":152,
+    "proteinStart":152,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the SMAD4 A152V mutation is unknown.",
+  "vus":false
+}

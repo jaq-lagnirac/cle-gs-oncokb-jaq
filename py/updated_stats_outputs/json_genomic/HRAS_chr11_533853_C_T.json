@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"HRAS, a GTPase, is altered in a diverse range of cancers including head and neck squamous cell carcinoma, thyroid, and bladder cancer.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"07/23/2019",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"R68Q",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":3265,
+    "hgvs":null,
+    "hugoSymbol":"HRAS",
+    "id":null,
+    "proteinEnd":68,
+    "proteinStart":68,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the HRAS R68Q mutation is unknown.",
+  "vus":false
+}

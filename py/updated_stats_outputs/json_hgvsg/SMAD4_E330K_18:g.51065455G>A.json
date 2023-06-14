@@ -1,0 +1,49 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"SMAD4 encodes a tumor suppressor and transcription factor that is a downstream effector in the TGF-\u00df signal transduction pathway. SMAD4 is frequently mutated in pancreatic and colorectal cancer and infrequently mutated in various other cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":true,
+  "lastUpdate":"04/07/2017",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "26488212"
+      ]
+    },
+    "description":"The SMAD4 E330K mutation is located in the MH2 domain, which is an interaction surface for SMAD4 binding partners. Expression of this mutation in HT-29 cell lines resulted in decreased SMAD-mediated transcription, likely leading to altered TGF\u00df -mediated growth control (PMID: 26488212).",
+    "knownEffect":"Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"E330K",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":4089,
+    "hgvs":"18:g.51065455G>A",
+    "hugoSymbol":"SMAD4",
+    "id":null,
+    "proteinEnd":330,
+    "proteinStart":330,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The SMAD4 E330K mutation is likely oncogenic.",
+  "vus":false
+}

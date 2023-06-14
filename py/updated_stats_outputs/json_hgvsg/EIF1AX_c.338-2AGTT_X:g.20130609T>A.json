@@ -1,0 +1,54 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"EIF1AX, a translation initiation factor, is most frequently altered by mutation in uveal melanomas and papillary thyroid carcinomas.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"08/26/2019",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[
+        {
+          "abstract":"Krishnamoorthy et al. Abstract# 892, AACR 2016",
+          "link":"http://cancerres.aacrjournals.org/content/76/14_Supplement/892"
+        }
+      ],
+      "pmids":[
+        "26878173"
+      ]
+    },
+    "description":"The EIF1AX A113_splice mutation is located in the C-terminus of the protein and results in either a cryptic splice variant or a truncated version of the protein. This mutation is found in thyroid tumors (PMID: 26878173). In vitro studies demonstrated that this mutation is activating, as shown by increased protein activity resulting in an increased rate of protein synthesis (Abstract: Krishnamoorthy et al. Abstract# 892, AACR 2016. http://cancerres.aacrjournals.org/content/76/14_Supplement/892).",
+    "knownEffect":"Likely Gain-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"X113_splice",
+    "alterationType":null,
+    "consequence":"splice_acceptor_variant",
+    "entrezGeneId":1964,
+    "hgvs":"X:g.20130609T>A",
+    "hugoSymbol":"EIF1AX",
+    "id":null,
+    "proteinEnd":113,
+    "proteinStart":113,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The EIF1AX X113_splice alteration is likely oncogenic.",
+  "vus":false
+}

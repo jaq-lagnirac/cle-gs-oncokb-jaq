@@ -1,0 +1,50 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"CDKN2B, a tumor suppressor and cell cycle regulator, is inactivated by mutation or deletion in various cancer types.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"11/16/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "25873077",
+        "23715670"
+      ]
+    },
+    "description":"The CDKN2B D86N mutation is located in the cell cycle inhibitory region of the protein. This mutation has been found as a germline mutation in familial renal cell carcinoma (PMID: 25873077). Expression of this mutation in a renal cancer cell line demonstrated that it is inactivating as measured by decreased protein activity and increased colony formation compared to wildtype (PMID: 25873077, 23715670).",
+    "knownEffect":"Loss-of-function"
+  },
+  "oncogenic":"Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"D86N",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":1030,
+    "hgvs":null,
+    "hugoSymbol":"CDKN2B",
+    "id":null,
+    "proteinEnd":86,
+    "proteinStart":86,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The CDKN2B D86N mutation is known to be oncogenic.",
+  "vus":false
+}

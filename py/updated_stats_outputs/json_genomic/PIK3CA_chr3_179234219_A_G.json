@@ -1,0 +1,50 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"PIK3CA, the catalytic subunit of PI3-kinase, is frequently mutated in a diverse range of cancers including breast, endometrial and cervical cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":true,
+  "lastUpdate":"07/04/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "31996845",
+        "29533785"
+      ]
+    },
+    "description":"The PIK3CA Y1021C mutation is located in the C-terminus of the protein. This mutation has been found in glioblastoma (PMID: 31996845). There is conflicting functional data for this mutation. Expression of this mutation in Ba/F3 cells demonstrated that it was activating as measured by increased growth factor-independent proliferation (PMID: 29533785). However, expression of this mutation in MCF10A cells and in a transgenic mouse model demonstrated that it is neutral as measured by failure to induce growth factor-independent proliferation or in vivo glioblastoma formation (PMID: 29533785, 31996845).",
+    "knownEffect":"Inconclusive"
+  },
+  "oncogenic":"Inconclusive",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"Y1021C",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":5290,
+    "hgvs":null,
+    "hugoSymbol":"PIK3CA",
+    "id":null,
+    "proteinEnd":1021,
+    "proteinStart":1021,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"There is conflicting and/or weak data describing the biological significance of the PIK3CA Y1021C mutation.",
+  "vus":false
+}

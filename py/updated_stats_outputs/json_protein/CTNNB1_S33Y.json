@@ -1,0 +1,53 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"CTNNB1 (\u03b2-catenin), a transcriptional activator, is recurrently mutated in various cancers including endometrial and hepatocellular cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":true,
+  "lastUpdate":"11/16/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "24735922",
+        "16685513",
+        "17172831",
+        "16258095",
+        "18757411"
+      ]
+    },
+    "description":"The CTNNB1 S33Y mutation is located in the N-terminus of the protein. This mutation has been found in brain cancer (PMID: 16258095, 16685513, 17172831). Expression of this mutation in hepatoma and leukemia cell lines demonstrated that it is activating as measured by increased membrane and nuclear expression, increased protein activity and increased proliferation compared to wildtype (PMID: 18757411, 24735922).",
+    "knownEffect":"Gain-of-function"
+  },
+  "oncogenic":"Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"S33Y",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":1499,
+    "hgvs":null,
+    "hugoSymbol":"CTNNB1",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The CTNNB1 S33Y mutation is known to be oncogenic.",
+  "vus":false
+}

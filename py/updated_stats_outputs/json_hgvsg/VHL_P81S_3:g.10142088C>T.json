@@ -1,0 +1,47 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"VHL is a tumor suppressor involved in protein degradation. Germline mutations of VHL are associated with Von Hippel-Lindau syndrome and predispose to renal cell carcinoma.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"04/28/2017",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"P81S",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":7428,
+    "hgvs":"3:g.10142088C>T",
+    "hugoSymbol":"VHL",
+    "id":null,
+    "proteinEnd":81,
+    "proteinStart":81,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The VHL P81S mutation has not been functionally or clinically validated.",
+  "vus":true
+}

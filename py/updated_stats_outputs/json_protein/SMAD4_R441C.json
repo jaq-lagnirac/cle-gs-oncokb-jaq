@@ -1,0 +1,47 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"SMAD4 encodes a tumor suppressor and transcription factor that is a downstream effector in the TGF-\u00df signal transduction pathway. SMAD4 is frequently mutated in pancreatic and colorectal cancer and infrequently mutated in various other cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"04/07/2017",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"R441C",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":4089,
+    "hgvs":null,
+    "hugoSymbol":"SMAD4",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The SMAD4 R441C mutation has not been functionally or clinically validated.",
+  "vus":false
+}

@@ -1,0 +1,47 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"SMARCA4, a tumor suppressor involved in chromatin remodeling, is recurrently altered in small cell carcinoma of the ovaries, hypercalcemic type (SCCOHT).",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"12/20/2017",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"R885C",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":6597,
+    "hgvs":null,
+    "hugoSymbol":"SMARCA4",
+    "id":null,
+    "proteinEnd":885,
+    "proteinStart":885,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The biologic significance of the SMARCA4 R885C mutation is unknown (last reviewed 03/09/2017).",
+  "vus":true
+}

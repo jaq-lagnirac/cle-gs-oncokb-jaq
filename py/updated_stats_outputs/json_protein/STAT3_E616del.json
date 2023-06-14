@@ -1,0 +1,82 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx3",
+      "pmids":[
+        "24317090",
+        "29288042",
+        "22859607",
+        "22591296",
+        "25281507"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"TLGL",
+        "color":"LimeGreen",
+        "id":488,
+        "level":5,
+        "mainType":{
+          "id":null,
+          "name":"Mature T and NK Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"T-Cell Large Granular Lymphocytic Leukemia",
+        "parent":"MTNN",
+        "tissue":"Lymphoid",
+        "tumorForm":"LIQUID"
+      }
+    }
+  ],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"STAT3, a transcription factor, is altered by mutation or amplification in various solid and hematologic malignancies.",
+  "highestDiagnosticImplicationLevel":"LEVEL_Dx3",
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":true,
+  "lastUpdate":"02/06/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "23872306",
+        "29378236"
+      ]
+    },
+    "description":"The STAT3 E616del mutation is located in the SH2 domain of the protein. This mutation has been identified in diffuse large B-cell lymphoma and is a statistically significant hotspot (PMID: 23872306). In vitro studies with HEK293T cells expressing STAT3 E616del demonstrate that the mutation is activating as measured by increased reporter activity in non-stimulated conditions compared to wildtype (PMID: 29378236).",
+    "knownEffect":"Likely Gain-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"E616del",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":6774,
+    "hgvs":null,
+    "hugoSymbol":"STAT3",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The STAT3 E616del alteration is likely oncogenic.",
+  "vus":false
+}

@@ -1,0 +1,170 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx3",
+      "pmids":[
+        "19458356",
+        "22491738",
+        "19340001"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"TLL",
+        "color":"LimeGreen",
+        "id":293,
+        "level":3,
+        "mainType":{
+          "id":null,
+          "name":"T-Lymphoblastic Leukemia/Lymphoma",
+          "tumorForm":"LIQUID"
+        },
+        "name":"T-Lymphoblastic Leukemia/Lymphoma",
+        "parent":"LNM",
+        "tissue":"Lymphoid",
+        "tumorForm":"LIQUID"
+      }
+    }
+  ],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"PTEN, a lipid and protein phosphatase, is one of the most frequently mutated genes in cancer.",
+  "highestDiagnosticImplicationLevel":"LEVEL_Dx3",
+  "highestFdaLevel":"LEVEL_Fda3",
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":"LEVEL_4",
+  "hotspot":false,
+  "lastUpdate":"02/16/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "32350270",
+        "25527629",
+        "15805158"
+      ]
+    },
+    "description":"The PTEN D252G mutation is located in the C-terminal domain of the protein. This mutation has been found as a germline mutation in autism (PMID: 15805158, 25527629). Expression of this mutation in a glioblastoma cell line demonstrated that it is inactivating as measured by decreased protein stability compared to wildtype (PMID: 25527629). This mutation also leads to loss of PTEN function by yeast gene interaction assay, by altered developmental rate in Drosophila, by changes in rat neural development and by becoming a dominant negative regulator of the PI3-AKT signaling pathway (PMID: 32350270).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"D252G",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":5728,
+    "hgvs":null,
+    "hugoSymbol":"PTEN",
+    "id":null,
+    "proteinEnd":252,
+    "proteinStart":252,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[
+    {
+      "abstracts":[
+        {
+          "abstract":"Hansen et al. Abstract# 2570, ASCO 2017",
+          "link":"http://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2570"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"GSK2636771 and AZD8186 are ATP-competitive small molecule inhibitors of PI3K\u03b2. In a phase I clinical trial of GSK2636771 in PTEN-deficient advanced solid tumors, 11 (17%) of 65 patients experienced durable clinical benefit (>24 weeks), with 1 patient with castration-resistant prostate cancer having a partial response for over one year (PMID: 28645941). In a different Phase I trial of GSK2636771 plus enzalutamide in 36 patients with PTEN-deficient metastatic castration-resistant prostate cancer, the 12-week non-progressive disease rate was 50% (95% CI: 28.2\u201371.8, n = 22) in patients receiving 200mg of GSK2636771 daily, with 1 (3%) patient achieving a radiographic partial response lasting 36 weeks (PMID: 34281912). In a Phase I clinical trial of AZD8186 in 87 patients with advanced solid tumors, partial responses were seen in one patient with castration-resistant prostate cancer who was also treated in combination with vistusertib, a dual mTORC1/2 inhibitor, and in another patient with PTEN-deficient colorectal cancer (Abstract: Hansen et al. Abstract# 2570, ASCO 2017. http://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2570).",
+      "drugs":[
+        {
+          "drugName":"GSK2636771",
+          "ncitCode":"C106261",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_4",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"",
+        "id":984,
+        "level":-1,
+        "mainType":{
+          "id":null,
+          "name":"All Solid Tumors",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "28645941",
+        "34281912"
+      ]
+    },
+    {
+      "abstracts":[
+        {
+          "abstract":"Hansen et al. Abstract# 2570, ASCO 2017",
+          "link":"http://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2570"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"GSK2636771 and AZD8186 are ATP-competitive small molecule inhibitors of PI3K\u03b2. In a phase I clinical trial of GSK2636771 in PTEN-deficient advanced solid tumors, 11 (17%) of 65 patients experienced durable clinical benefit (>24 weeks), with 1 patient with castration-resistant prostate cancer having a partial response for over one year (PMID: 28645941). In a different Phase I trial of GSK2636771 plus enzalutamide in 36 patients with PTEN-deficient metastatic castration-resistant prostate cancer, the 12-week non-progressive disease rate was 50% (95% CI: 28.2\u201371.8, n = 22) in patients receiving 200mg of GSK2636771 daily, with 1 (3%) patient achieving a radiographic partial response lasting 36 weeks (PMID: 34281912). In a Phase I clinical trial of AZD8186 in 87 patients with advanced solid tumors, partial responses were seen in one patient with castration-resistant prostate cancer who was also treated in combination with vistusertib, a dual mTORC1/2 inhibitor, and in another patient with PTEN-deficient colorectal cancer (Abstract: Hansen et al. Abstract# 2570, ASCO 2017. http://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2570).",
+      "drugs":[
+        {
+          "drugName":"AZD8186",
+          "ncitCode":"C107684",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_4",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"",
+        "id":984,
+        "level":-1,
+        "mainType":{
+          "id":null,
+          "name":"All Solid Tumors",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "28645941",
+        "34281912"
+      ]
+    }
+  ],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The PTEN D252G mutation is likely oncogenic.",
+  "vus":false
+}
