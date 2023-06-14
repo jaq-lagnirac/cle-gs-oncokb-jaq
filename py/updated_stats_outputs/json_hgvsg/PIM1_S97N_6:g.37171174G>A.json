@@ -1,0 +1,49 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"PIM1 encodes a serine/threonine kinase involved in cell survival and proliferation. Mutations of PIM1 are found in lymphomas.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":true,
+  "lastUpdate":"11/13/2017",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "27904766"
+      ]
+    },
+    "description":"The PIM1 S97N mutation occurs in the N-terminal kinase domain of the protein. In a lymphoma cell line, expression of L2V did not alter cell proliferation or viability compared to the wildtype. In a colony formation assay, however, the mutated protein altered morphology and increased the number of colonies. Additionally, the L2V mutation increased protein stability and decreased sensitivity to inhibitor compound ibrutinib. Expression of the mutant also modulated expression of modulators and effectors in the NF\u03baB pathway (PMID: 27904766).",
+    "knownEffect":"Likely Gain-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"S97N",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":5292,
+    "hgvs":"6:g.37171174G>A",
+    "hugoSymbol":"PIM1",
+    "id":null,
+    "proteinEnd":97,
+    "proteinStart":97,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The PIM1 S97N mutation is likely oncogenic.",
+  "vus":false
+}

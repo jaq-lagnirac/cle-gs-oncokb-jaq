@@ -310,7 +310,7 @@ def add_oncokb(row):
     
 
 def rename_to_found(original_name):
-  type_name = column.split(' ')[0]
+  type_name = original_name.split(' ')[0]
   new_name = f'found {type_name}?'
   return new_name
 
@@ -333,9 +333,10 @@ def filter_type_counter(df, column_name):
   new_name = rename_to_found(column_name)
   pass_counter = 0
   filtered_counter = 0
+  column = df[new_name]
   
   for index, filter_type in enumerate(df['filter_type']):
-    if df[new_name] == True:
+    if column[index] == True:
       if filter_type == 'PASS':
         pass_counter += 1
       elif filter_type == 'Filtered':

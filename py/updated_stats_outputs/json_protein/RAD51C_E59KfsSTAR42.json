@@ -1,0 +1,128 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"RAD51C is a protein involved in DNA double-strand break repair. Germline mutations of RAD51C are associated with an increased risk of breast and ovarian cancer.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":"LEVEL_Fda2",
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":"LEVEL_1",
+  "hotspot":false,
+  "lastUpdate":"02/22/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "20400963",
+        "20400964",
+        "21616938"
+      ]
+    },
+    "description":"RAD51C is a tumor suppressor and truncating mutations in this gene are assumed to be oncogenic. Homozygous missense mutations in the RAD51C gene can cause Fanconi-anemia like disorders (PMID:20400963). Furthermore, multiple types of germline mutations in RAD51C establish it as a highly penetrant susceptibility gene for breast and ovarian cancer (PMID:21616938,20400964).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"E59Kfs*42",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":5889,
+    "hgvs":null,
+    "hugoSymbol":"RAD51C",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Olaparib, a small molecule PARP inhibitor, is FDA-approved for patients with deleterious or suspected deleterious germline or somatic homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC) who have progressed following prior treatment with enzalutamide or abiraterone. FDA approval was based on the results of the Phase III PROfound trial of olaparib in adult patients with metastatic castration-resistant prostate cancer who had disease progression while receiving a new hormonal agent and who had a deleterious or suspected deleterious mutation in a homologous recombination repair (HRR) gene. Of patients with a qualifying alteration in an HRR gene, the progression-free survival in the olaparib group was 5.8 months compared to 3.5 months in the placebo group (HR=0.49; 95% CI= 0.38 to 0.63; p<0.001), with a median overall survival of 17.5 months versus 14.3 months (0.67; 95% CI= 0.49 to 0.93) and an overall response rate of 22% versus 4%, respectively (PMID: 32343890). However, while the FDA approval includes those with RAD51C mutations, zero patients in this study had RAD51C mutations (PMID: 32343890).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"Cyan",
+        "id":944,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Prostate Cancer, NOS",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Prostate",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "32343890"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Olaparib, a small molecule PARP inhibitor, is FDA-approved for patients with deleterious or suspected deleterious germline or somatic homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC) who have progressed following prior treatment with enzalutamide or abiraterone. FDA approval was based on the results of the Phase III PROfound trial of olaparib in adult patients with metastatic castration-resistant prostate cancer who had disease progression while receiving a new hormonal agent and who had a deleterious or suspected deleterious mutation in a homologous recombination repair (HRR) gene. Of patients with a qualifying alteration in an HRR gene, the progression-free survival in the olaparib group was 5.8 months compared to 3.5 months in the placebo group (HR=0.49; 95% CI= 0.38 to 0.63; p<0.001), with a median overall survival of 17.5 months versus 14.3 months (0.67; 95% CI= 0.49 to 0.93) and an overall response rate of 22% versus 4%, respectively (PMID: 32343890). However, while the FDA approval includes those with RAD51C mutations, zero patients in this study had RAD51C mutations (PMID: 32343890).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"Cyan",
+        "id":936,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Prostate Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Prostate",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "32343890"
+      ]
+    }
+  ],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The RAD51C E59Kfs*42 mutation is likely oncogenic.",
+  "vus":false
+}

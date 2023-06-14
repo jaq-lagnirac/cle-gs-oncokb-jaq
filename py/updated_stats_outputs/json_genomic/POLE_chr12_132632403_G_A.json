@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"POLE encodes the catalytic subunit of DNA polymerase epsilon, an enzyme involved in DNA replication and repair. Select POLE mutations lead to ultra-high mutation rates, most frequently in endometrial and colorectal cancer.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"04/08/2017",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"T2081I",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":5426,
+    "hgvs":null,
+    "hugoSymbol":"POLE",
+    "id":null,
+    "proteinEnd":2081,
+    "proteinStart":2081,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the POLE T2081I mutation is unknown.",
+  "vus":false
+}

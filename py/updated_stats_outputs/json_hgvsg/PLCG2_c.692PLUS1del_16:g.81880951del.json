@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"PLCG2 encodes an enzyme involved in transmembrane signaling. Mutations of PLCG2 are associated with autoimmunity and immune dysregulation and resistance to Ibrutinib therapy in patients with CLL.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"01/17/2017",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"L230fs",
+    "alterationType":null,
+    "consequence":"frameshift_variant",
+    "entrezGeneId":5336,
+    "hgvs":"16:g.81880951del",
+    "hugoSymbol":"PLCG2",
+    "id":null,
+    "proteinEnd":230,
+    "proteinStart":230,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the PLCG2 L230fs mutation is unknown.",
+  "vus":false
+}

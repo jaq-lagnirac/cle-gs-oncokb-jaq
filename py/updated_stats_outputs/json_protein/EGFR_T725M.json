@@ -1,0 +1,51 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"EGFR, a receptor tyrosine kinase, is altered by amplification and/or mutation in lung and brain cancers among others.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"01/24/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "24743239",
+        "34526717",
+        "31931137"
+      ]
+    },
+    "description":"The EGFR T725M mutation is located in the kinase domain of the EGFR protein. This mutation has been found in non-small cell lung cancers, among others (PMID: 24743239, 31931137). In vitro studies have demonstrated that this mutation is activating as measured by increased EGFR autophosphorylation compared to wildtype (PMID: 24743239). The EGFR T725M mutation has been identified as a possible sensitizing mutation to the kinase inhibitor afatinib and preclinical models with the T725M mutation show high sensitivity to first-, second-, third-generation, and ex20ins-active EGFR inhibitors (PMID: 31931137, 34526717).",
+    "knownEffect":"Gain-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"T725M",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":1956,
+    "hgvs":null,
+    "hugoSymbol":"EGFR",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The EGFR T725M mutation is likely oncogenic.",
+  "vus":false
+}

@@ -1,0 +1,128 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"ATM, a kinase involved in DNA damage response, is inactivated in various solid and hematologic malignancies. Germline ATM mutations are a defining feature of ataxia telangiectasia syndrome, a neurodegenerative, autosomal disorder that predisposes to various cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":"LEVEL_Fda2",
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":"LEVEL_1",
+  "hotspot":false,
+  "lastUpdate":"02/24/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "30553448",
+        "27413114",
+        "30348496"
+      ]
+    },
+    "description":"ATM truncating mutations can produce several forms of C-terminally truncated ATM proteins. When found in the germline, these mutations result in ataxia-telangiectasia syndrome, which increases cancer predisposition, including a 20% to 30% lifetime risk of lymphoid, gastric, breast, central nervous system, skin, and other cancers (PMID: 27413114). Deletion of ATM in mouse models and cell lines demonstrates that it is oncogenic as measured by decreased DNA repair deficiency and increased cellular motility (PMID: 30553448, 30348496).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"K1773Sfs*3",
+    "alterationType":null,
+    "consequence":"frameshift_variant",
+    "entrezGeneId":472,
+    "hgvs":null,
+    "hugoSymbol":"ATM",
+    "id":null,
+    "proteinEnd":1771,
+    "proteinStart":1771,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Olaparib is a PARP inhibitor that is FDA-approved for patients with deleterious or suspected deleterious germline or somatic homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC), who have progressed following prior treatment with enzalutamide or abiraterone. FDA approval was based on the results of the Phase III PROfound trial of olaparib in adult patients with metastatic castration-resistant prostate cancer who had disease progression while receiving a new hormonal agent and who had a deleterious or suspected deleterious mutation in a homologous recombination repair gene. Of patients with BRCA2 (n=128), BRCA1 (n=13) or ATM mutations (n=86), the progression-free survival in the olaparib group was 7.4 months compared to 3.6 months in the placebo group (HR= 0.34; 95% CI=0.25 to 0.47; p<0.001), with a median overall survival of 18.5 months versus 15.1 months (HR=0.64; 95% CI=0.43 to 0.97; p=0.02) and an overall response rate of 33% versus 2% (p=0.02), respectively (PMID: 32343890). However, while the FDA approval includes those with ATM mutations, there is limited clinical data for patients with this biomarker (n=86)(PMID: 32343890).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"Cyan",
+        "id":944,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Prostate Cancer, NOS",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Prostate",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "32343890"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Olaparib is a PARP inhibitor that is FDA-approved for patients with deleterious or suspected deleterious germline or somatic homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC), who have progressed following prior treatment with enzalutamide or abiraterone. FDA approval was based on the results of the Phase III PROfound trial of olaparib in adult patients with metastatic castration-resistant prostate cancer who had disease progression while receiving a new hormonal agent and who had a deleterious or suspected deleterious mutation in a homologous recombination repair gene. Of patients with BRCA2 (n=128), BRCA1 (n=13) or ATM mutations (n=86), the progression-free survival in the olaparib group was 7.4 months compared to 3.6 months in the placebo group (HR= 0.34; 95% CI=0.25 to 0.47; p<0.001), with a median overall survival of 18.5 months versus 15.1 months (HR=0.64; 95% CI=0.43 to 0.97; p=0.02) and an overall response rate of 33% versus 2% (p=0.02), respectively (PMID: 32343890). However, while the FDA approval includes those with ATM mutations, there is limited clinical data for patients with this biomarker (n=86)(PMID: 32343890).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"Cyan",
+        "id":936,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Prostate Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Prostate",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "32343890"
+      ]
+    }
+  ],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The ATM K1773Sfs*3 mutation is likely oncogenic.",
+  "vus":false
+}

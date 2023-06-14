@@ -1,0 +1,183 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"TSC2, a tumor suppressor in the mTOR signaling pathway, is inactivated by mutation or deletion in a diverse range of cancers. Germline and somatic TSC2 mutations are a feature of the disease Tuberous sclerosis complex (TSC).",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":"LEVEL_Fda2",
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":"LEVEL_1",
+  "hotspot":false,
+  "lastUpdate":"02/23/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "24529379",
+        "14729330",
+        "25724664",
+        "14561707"
+      ]
+    },
+    "description":"Truncating mutations in TSC2 invariably result in the loss of its C-terminal GTPase-activating protein (GAP) domain. In the absence of GAP activity, TSC2 is likely unable to inhibit RHEB, even if the other two members (TSC1 and TBC1D7) of the TSC complex are intact, which can causes constitutive activation of the mTOR pathway (PMID: 14729330, 24529379) consistent with the oncogenic role of these mutations. Cells depleted of TSC2 display constitutive activation of the mTOR pathway and are sensitive to the mTOR inhibitor, rapamycin (PMID: 14561707, 25724664).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"R1361*",
+    "alterationType":null,
+    "consequence":"stop_gained",
+    "entrezGeneId":7249,
+    "hgvs":null,
+    "hugoSymbol":"TSC2",
+    "id":null,
+    "proteinEnd":1361,
+    "proteinStart":1361,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[
+        "Everolimus is FDA-approved for the treatment of pediatric and adult patients with tuberous sclerosis complex (TSC) who have subependymal giant cell astrocytoma (SEGA) that requires therapeutic intervention but cannot be curatively resected."
+      ],
+      "description":"Everolimus is a small molecule inhibitor of mTOR and is FDA-approved for pediatric and adult patients with tuberous sclerosis complex (TSC) who have subependymal giant cell astrocytoma (SEGA) that requires therapeutic intervention but cannot be curatively resected. FDA approval is based on the results of a Phase III clinical trial of everolimus in patients with SEGA associated with TSC in which 35% of patients receiving everolimus (27 of 78 patients) experienced a reduction of at least 50% in the total volume of all targetable SEGAs versus no patients in the placebo group (PMID: 23158522). Patients in the everolimus group responded to the drug irrespective of whether they had a TSC1 or TSC2 mutation, although a higher percentage of patients with TSC1 mutations responded (five of ten patients, 50%) compared to those with TSC2 mutations (sixteen of 55 patients, 29%) (PMID: 23158522).",
+      "drugs":[
+        {
+          "drugName":"Everolimus",
+          "ncitCode":"C48387",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"ENCG",
+        "color":"Gray",
+        "id":54,
+        "level":2,
+        "mainType":{
+          "id":null,
+          "name":"Glioma",
+          "tumorForm":"SOLID"
+        },
+        "name":"Encapsulated Glioma",
+        "parent":"BRAIN",
+        "tissue":"CNS/Brain",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "23158522"
+      ]
+    },
+    {
+      "abstracts":[
+        {
+          "abstract":"Wagner et al. Abstract# 11516, ASCO 2020",
+          "link":"https://ascopubs.org/doi/abs/10.1200/JCO.2020.38.15_suppl.11516"
+        },
+        {
+          "abstract":"Wagner et al. Abstract# 11005, ASCO 2019",
+          "link":"https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.15_suppl.11005"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Nab-sirolimus (ABI-009) is a nanoparticle albumin bound to the mTOR inhibitor rapamycin. In the Phase II AMPECT trial of nab-rapamycin in fourteen patients with TSC1 or TSC2 mutant PEComas, 100% of patients with TSC2 mutations (nine of nine patients) had a partial response, while 20% of patients with a TSC1 mutation (one of five patients) and 9% of patients with no mutation in TSC1 or 2 (one of eleven patients) had a partial response to treatment with nab-rapamycin. The disease control rate in the TSC1/2-mutant population was 93% (thirteen of fourteen patients) versus 55% (six of eleven patients) in the TSC1/2 wildtype population (Abstract: Wagner et al. Abstract# 11005, ASCO 2019. https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.15_suppl.11005) (Abstract: Wagner et al. Abstract# 11516, ASCO 2020. https://ascopubs.org/doi/abs/10.1200/JCO.2020.38.15_suppl.11516).",
+      "drugs":[
+        {
+          "drugName":"ABI-009",
+          "ncitCode":"C74065",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_3A",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"PECOMA",
+        "color":"LightYellow",
+        "id":769,
+        "level":2,
+        "mainType":{
+          "id":null,
+          "name":"Soft Tissue Sarcoma",
+          "tumorForm":"MIXED"
+        },
+        "name":"Perivascular Epithelioid Cell Tumor",
+        "parent":"SOFT_TISSUE",
+        "tissue":"Soft Tissue",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[]
+    },
+    {
+      "abstracts":[
+        {
+          "abstract":"Wagner et al. Abstract# 11516, ASCO 2020",
+          "link":"https://ascopubs.org/doi/abs/10.1200/JCO.2020.38.15_suppl.11516"
+        },
+        {
+          "abstract":"Wagner et al. Abstract# 11005, ASCO 2019",
+          "link":"https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.15_suppl.11005"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Nab-sirolimus (ABI-009) is a nanoparticle albumin bound to the mTOR inhibitor rapamycin. In the Phase II AMPECT trial of nab-rapamycin in fourteen patients with TSC1 or TSC2 mutant PEComas, 100% of patients with TSC2 mutations (nine of nine patients) had a partial response, while 20% of patients with a TSC1 mutation (one of five patients) and 9% of patients with no mutation in TSC1 or 2 (one of eleven patients) had a partial response to treatment with nab-rapamycin. The disease control rate in the TSC1/2-mutant population was 93% (thirteen of fourteen patients) versus 55% (six of eleven patients) in the TSC1/2 wildtype population (Abstract: Wagner et al. Abstract# 11005, ASCO 2019. https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.15_suppl.11005) (Abstract: Wagner et al. Abstract# 11516, ASCO 2020. https://ascopubs.org/doi/abs/10.1200/JCO.2020.38.15_suppl.11516).",
+      "drugs":[
+        {
+          "drugName":"ABI-009",
+          "ncitCode":"C74065",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_3A",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"UPECOMA",
+        "color":"PeachPuff",
+        "id":843,
+        "level":3,
+        "mainType":{
+          "id":null,
+          "name":"Uterine Sarcoma",
+          "tumorForm":"SOLID"
+        },
+        "name":"Uterine Perivascular Epithelioid Cell Tumor",
+        "parent":"USARC",
+        "tissue":"Uterus",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[]
+    }
+  ],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The TSC2 R1361* mutation is likely oncogenic.",
+  "vus":false
+}

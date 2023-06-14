@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"ATM, a kinase involved in DNA damage response, is inactivated in various solid and hematologic malignancies. Germline ATM mutations are a defining feature of ataxia telangiectasia syndrome, a neurodegenerative, autosomal disorder that predisposes to various cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"01/21/2019",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"A1605V",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":472,
+    "hgvs":null,
+    "hugoSymbol":"ATM",
+    "id":null,
+    "proteinEnd":1605,
+    "proteinStart":1605,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the ATM A1605V mutation is unknown.",
+  "vus":false
+}

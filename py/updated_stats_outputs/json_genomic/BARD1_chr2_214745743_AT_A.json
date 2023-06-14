@@ -1,0 +1,127 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"BARD1, a tumor suppressor involved in the DNA damage response, is altered by mutation in breast and ovarian cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":"LEVEL_Fda2",
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":"LEVEL_1",
+  "hotspot":false,
+  "lastUpdate":"03/03/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "20029420",
+        "8944023"
+      ]
+    },
+    "description":"The BARD1 (BRCA1-associated RING domain protein 1) encodes the BRCA1-associated RING domain protein 1 which forms a stable core complex with BRCA-1 (PMID: 8944023), a tumor suppressor that functions to maintain genome integrity by repairing DNA double-stranded breaks through homologous recombination and cell-cycle checkpoint activation (PMID: 20029420).Truncating mutations of BARD1 are assumed to be associated with loss of protein and therefore considered oncogenic.",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"K596Nfs*9",
+    "alterationType":null,
+    "consequence":"frameshift_variant",
+    "entrezGeneId":580,
+    "hgvs":null,
+    "hugoSymbol":"BARD1",
+    "id":null,
+    "proteinEnd":596,
+    "proteinStart":596,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Olaparib is a PARP inhibitor that is FDA-approved for patients with deleterious or suspected deleterious germline or somatic homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC), who have progressed following prior treatment with enzalutamide or abiraterone. FDA approval was based on the results of the Phase III PROfound trial of olaparib in adult patients with metastatic castration-resistant prostate cancer who had disease progression while receiving a new hormonal agent and who had a deleterious or suspected deleterious mutation in a homologous recombination repair (HRR) gene. Of patients with a qualifying alteration in an HRR gene, the progression-free survival in the olaparib group was 5.8 months compared to 3.5 months in the placebo group (HR=0.49; 95% CI= 0.38 to 0.63; p<0.001), with a median overall survival of 17.5 months versus 14.3 months (HR=0.67; 95% CI= 0.49 to 0.93) and an overall response rate of 22% versus 4%, respectively (PMID: 32343890). However, while the FDA approval includes those with BARD1 mutations, there is limited clinical data in patients with this biomarker (n=1)(PMID: 32343890).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"Cyan",
+        "id":944,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Prostate Cancer, NOS",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Prostate",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "32343890"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Olaparib is a PARP inhibitor that is FDA-approved for patients with deleterious or suspected deleterious germline or somatic homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC), who have progressed following prior treatment with enzalutamide or abiraterone. FDA approval was based on the results of the Phase III PROfound trial of olaparib in adult patients with metastatic castration-resistant prostate cancer who had disease progression while receiving a new hormonal agent and who had a deleterious or suspected deleterious mutation in a homologous recombination repair (HRR) gene. Of patients with a qualifying alteration in an HRR gene, the progression-free survival in the olaparib group was 5.8 months compared to 3.5 months in the placebo group (HR=0.49; 95% CI= 0.38 to 0.63; p<0.001), with a median overall survival of 17.5 months versus 14.3 months (HR=0.67; 95% CI= 0.49 to 0.93) and an overall response rate of 22% versus 4%, respectively (PMID: 32343890). However, while the FDA approval includes those with BARD1 mutations, there is limited clinical data in patients with this biomarker (n=1)(PMID: 32343890).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"Cyan",
+        "id":936,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Prostate Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Prostate",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "32343890"
+      ]
+    }
+  ],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The BARD1 K596Nfs*9 mutation is likely oncogenic.",
+  "vus":false
+}
