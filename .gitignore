@@ -1,2 +1,4 @@
 annotate_all.err
 annotated
+**/jfj_table_outputs/**
+**/reports_table_outputs/**
