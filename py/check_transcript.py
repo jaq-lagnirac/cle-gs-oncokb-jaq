@@ -45,13 +45,27 @@ debug('%s begin', SCRIPT_PATH)
 
 sep = '\t'
 
-generated = pd.read_csv(args.generated_table, sep='\t')
-reference = pd.read_csv(args.reference_table, sep='\t')
+generated = pd.read_csv(args.generated_table, sep=sep)
+reference = pd.read_csv(args.reference_table, sep=sep)
 
 def compare_generated(row):
   gene = row['gene']
   id38 = row['transcript']
+
+  data_comparison = reference.loc[(reference['Hugo Symbol'] == gene) \
+    & (reference['GRCh38 Isoform'] == id38)] # false if present, true if not
   
-  print(reference.loc[gene])
+  correct_id = not data_comparison.empty # true if present, false if not
+  row['Correct ID?'] = correct_id # adds result to row
   
-generated.apply(compare_generated, axis=1)
+  return row
+  
+##generated.apply(compare_generated, axis=1)
+
+def line():
+  for i in range(50):
+    print('-', end='')
+  print(' ')
+  
+gene_test = reference.loc[(reference['Hugo Symbol'] == 'ABL1') & (reference['GRCh38 Isoform'] == 'ENST00000318560')]
+print(gene_test)# false if present, true if not
