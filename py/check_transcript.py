@@ -76,15 +76,14 @@ def compare_generated(row):
   try:
     data_comparison = reference.loc[(reference['Hugo Symbol'] == gene) \
       & (reference['GRCh38 Isoform'] == id38)] # false if present, true if not
-    correct_id = not data_comparison.empty # true if present, false if not
-    row['Correct ID?'] = correct_id # adds result to row
   except KeyError:
     error('Column not found')
     sys.exit(1)
   except:
     error('Unknown error occured')
     sys.exit(1)
-    
+  correct_id = not data_comparison.empty # true if present, false if not
+  row['Correct ID?'] = correct_id # adds result to row    
   # adds to global variables
   if not correct_id:
     discrepancies += 1
