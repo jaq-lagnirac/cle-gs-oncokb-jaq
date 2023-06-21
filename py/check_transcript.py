@@ -49,19 +49,21 @@ if args.verbose:
 
 debug('%s begin', SCRIPT_PATH)
 
-sep = '\t'
+sep = '\t' # working with tab-separated values files
 
 info(f'Input generated table file: {args.generated_table}')
 info(f'OncoKB reference table file: {args.reference_table}')
 
+# reading in tsv files into pandas dataframes
 generated = pd.read_csv(args.generated_table, sep=sep)
 reference = pd.read_csv(args.reference_table, sep=sep)
 
+# initializing global variables
 discrepancies = 0
 total = 0
 
 def compare_generated(row):
-  # configures global variables
+  # connecting global variables
   global discrepancies
   global total
   
@@ -71,30 +73,35 @@ def compare_generated(row):
   
   info(f'Checking {id38}, {gene}')
 
-  data_comparison = reference.loc[(reference['Hugo Symbol'] == gene) \
-    & (reference['GRCh38 Isoform'] == id38)] # false if present, true if not
-  
-  correct_id = not data_comparison.empty # true if present, false if not
-  row['Correct ID?'] = correct_id # adds result to row
-  
+  try:
+    data_comparison = reference.loc[(reference['Hugo Symbol'] == gene) \
+      & (reference['GRCh38 Isoform'] == id38)] # false if present, true if not
+    correct_id = not data_comparison.empty # true if present, false if not
+    row['Correct ID?'] = correct_id # adds result to row
+  except KeyError:
+    error('Column not found')
+    sys.exit(1)
+  except:
+    error('Unknown error occured')
+    sys.exit(1)
+    
+  # adds to global variables
   if not correct_id:
     discrepancies += 1
-  total = += 1
+  total += 1
   
   return row
 
   
-generated.apply(compare_generated, axis=1)
-
-#gene_test = reference.loc[(reference['Hugo Symbol'] == 'ABL1') & (reference['GRCh38 Isoform'] == 'ENST00000318560')]
-#print(gene_test)# false if present, true if not
+# applies discrepancy finder to dataframe, saves data in df
+generated = generated.apply(compare_generated, axis=1)
 
 error_frequency = round(discrepancies / total, ROUNDING_DECIMALS)
 
 info(f'Total discrepancies: {discrepancies}')
 info(f'Total number of comparisons: {total}')
-info(f'Error frequency: {error_frequency}')
+info(f'Discrepancy frequency: {error_frequency}')
 
-df.to_csv(sys.stdout, sep='\t', index=None)
+generated.to_csv(sys.stdout, sep=sep, index=None)
 
 debug('%s end', (SCRIPT_PATH))
