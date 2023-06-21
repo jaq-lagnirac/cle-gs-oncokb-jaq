@@ -1,0 +1,50 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"EGFR, a receptor tyrosine kinase, is altered by amplification and/or mutation in lung and brain cancers among others.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":true,
+  "lastUpdate":"10/06/2021",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "27478040",
+        "34526717"
+      ]
+    },
+    "description":"The EGFR K754E mutation lies in the kinase domain of the protein. Xenograft experiments using an immortalized human lung epithelial cell line expressing this mutation demonstrated it is likely activating as measured by increased tumor formation compared to wildtype EGFR (PMID: 27478040). Preclinical models with the K754E mutation show high sensitivity to first-, second-, third-generation, and Ex20ins-active EGFR inhibitors (PMID: 34526717)",
+    "knownEffect":"Likely Gain-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"K754N",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":1956,
+    "hgvs":null,
+    "hugoSymbol":"EGFR",
+    "id":null,
+    "proteinEnd":754,
+    "proteinStart":754,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The EGFR K754N mutation has been identified as a statistically significant hotspot and is likely to be oncogenic.",
+  "vus":false
+}

@@ -1,0 +1,60 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"PMS2 encodes a tumor suppressor involved in DNA mismatch repair. Germline mutations of PMS2 are associated with Lynch Syndrome and predispose to colorectal cancer.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"08/11/2017",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "12697830",
+        "10439048",
+        "20487569",
+        "7628019",
+        "24362816",
+        "23582141",
+        "21376568",
+        "9500552",
+        "10874005",
+        "7892206",
+        "16144131",
+        "9488480"
+      ]
+    },
+    "description":"Truncating mutations in PMS2 can produce several C-terminally truncated protein forms, affecting all or part the nuclease domain, thus eliminating the ability of PMS2 to incise the DNA flanking a mismatch. In addition, the loss of the MLH1 binding domain, which is found near the C-terminud of PMS2, causes PMS2 protein instability and inhibits the ability of PMS2 to heterodimerize, bind to damaged DNA and perform its endonuclease function (PMID: 7892206, 12697830). Truncating mutations are frequently detected in individuals with inherited Lynch syndrome, but also in constitutional mismatch repair deficiency syndrome (PMID: 21376568, 20487569, 9488480, 16144131, 23582141, 24362816). Mouse modeling of PMS2 deletion results in the development of various cancers, including spontaneous thymic lymphoma and sarcoma. PMS2-deficient mice were also found to have increased sensitivity to chemical carcinogens (PMID:10439048). Tumors from PMS2-deficient mice have high microsatellite instability and have increased mutation accumulation (PMID: 7628019, 10874005, 9500552). Together, this data suggest that loss of PMS2 may contribute to tumor formation.",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"D414Tfs*34",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":5395,
+    "hgvs":null,
+    "hugoSymbol":"PMS2",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The PMS2 D414Tfs*34 mutation is likely oncogenic.",
+  "vus":false
+}

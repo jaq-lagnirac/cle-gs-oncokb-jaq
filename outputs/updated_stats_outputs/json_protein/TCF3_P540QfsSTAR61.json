@@ -1,0 +1,87 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx3",
+      "pmids":[
+        "23143595",
+        "28209658",
+        "22885699"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"BL",
+        "color":"LimeGreen",
+        "id":23,
+        "level":5,
+        "mainType":{
+          "id":null,
+          "name":"Mature B-Cell Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Burkitt Lymphoma",
+        "parent":"MBN",
+        "tissue":"Lymphoid",
+        "tumorForm":"LIQUID"
+      }
+    }
+  ],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"TCF3, a transcription factor involved in lymphopoiesis, is altered by mutation or deletion in various cancer types.",
+  "highestDiagnosticImplicationLevel":"LEVEL_Dx3",
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"06/14/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "24832538",
+        "25729575",
+        "30063982",
+        "29625055",
+        "28532655",
+        "17018284",
+        "25990863",
+        "27461063",
+        "31575852"
+      ]
+    },
+    "description":"Truncating mutations in TCF3 can occur throughout the entire gene and are predicted to lead to loss of its activity (PMID: 29625055). TCF3 encodes a member of the E protein family of helix-loop-helix transcription factors, and it has been shown to be involved in lymphocyte, skin and neural development by regulating the Wnt signaling pathway (PMID: 25990863,17018284, 24832538). Chromosomal translocations involving TCF3 have been shown to be associated with the development of several lymphoid malignancies (PMID: 25729575, 27461063, 31575852). Germline truncating mutations in TCF3 have been shown to lead to severe hypogammaglobulinemia and predispose to B-ALL (PMID: 30063982, 28532655). Additionally, somatic truncating mutations in TCF3 have been identified in patients with several types of carcinomas (PMID: 29625055)",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"P540Qfs*61",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":6929,
+    "hgvs":null,
+    "hugoSymbol":"TCF3",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The TCF3 P540Qfs*61 mutation is likely oncogenic.",
+  "vus":false
+}

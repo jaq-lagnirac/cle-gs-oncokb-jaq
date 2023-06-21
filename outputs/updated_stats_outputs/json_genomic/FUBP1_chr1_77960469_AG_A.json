@@ -1,0 +1,52 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"FUBP1, a tumor suppressor and single-stranded DNA binding protein, is recurrently inactivated by mutation or deletion in glioma.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"01/26/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "22072542",
+        "30500954",
+        "21817013",
+        "24117486"
+      ]
+    },
+    "description":"FUBP1 truncation mutations occur throughout the gene and are associated with decreased FUBP1 protein expression (PMID: 24117486). Loss of FUBP1 on chromosome 1p is associated with IDH1 and CIC mutations on chromosome 19q in gliomas (PMID: 24117486, 22072542, 21817013). In vitro studies with HEK293 cells expressing central DNA-binding domain truncated FUBP1 demonstrate that FUBP1 truncation mutations are inactivating as measured by reduced transcriptional activity compared to full-length FUBP1 (PMID: 30500954).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"P457Lfs*208",
+    "alterationType":null,
+    "consequence":"frameshift_variant",
+    "entrezGeneId":8880,
+    "hgvs":null,
+    "hugoSymbol":"FUBP1",
+    "id":null,
+    "proteinEnd":457,
+    "proteinStart":457,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The FUBP1 P457Lfs*208 mutation is likely oncogenic.",
+  "vus":false
+}

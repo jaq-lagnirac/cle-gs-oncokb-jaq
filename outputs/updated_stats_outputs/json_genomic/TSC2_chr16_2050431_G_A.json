@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"TSC2, a tumor suppressor in the mTOR signaling pathway, is inactivated by mutation or deletion in a diverse range of cancers. Germline and somatic TSC2 mutations are a feature of the disease Tuberous sclerosis complex (TSC).",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"08/16/2019",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"R57H",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":7249,
+    "hgvs":null,
+    "hugoSymbol":"TSC2",
+    "id":null,
+    "proteinEnd":57,
+    "proteinStart":57,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the TSC2 R57H mutation is unknown.",
+  "vus":false
+}

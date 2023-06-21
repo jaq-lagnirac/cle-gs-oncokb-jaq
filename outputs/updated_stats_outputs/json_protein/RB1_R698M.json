@@ -1,0 +1,50 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"RB1, a regulator of the cell cycle, is inactivated by mutation, deletion or allelic loss in various cancer types, including retinoblastoma and lung cancer.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"11/16/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "27135926",
+        "20594292"
+      ]
+    },
+    "description":"The RB1 R698W mutation is located in the pocket domain B of the protein. This mutation has been found in breast cancer (PMID: 20594292, 27135926). Expression of this mutation in cervical cancer and sarcoma cell lines demonstrated that it is inactivating as measured by decreased cell apoptosis and decreased protein stability compared to wildtype (PMID: 20594292).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"R698M",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":5925,
+    "hgvs":null,
+    "hugoSymbol":"RB1",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The RB1 R698M mutation has not been functionally or clinically validated. However, RB1 R698W is likely oncogenic, and therefore RB1 R698M is considered likely oncogenic.",
+  "vus":true
+}

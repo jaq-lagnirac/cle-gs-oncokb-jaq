@@ -1,0 +1,382 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx2",
+      "pmids":[
+        "25957392"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"MDS",
+        "color":"LightSalmon",
+        "id":355,
+        "level":3,
+        "mainType":{
+          "id":null,
+          "name":"Myelodysplastic Syndromes",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Myelodysplastic Syndromes",
+        "parent":"MNM",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx3",
+      "pmids":[
+        "24550227",
+        "22150006",
+        "23415222",
+        "26200345",
+        "22039264",
+        "26466571"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"CLLSLL",
+        "color":"LimeGreen",
+        "id":533,
+        "level":5,
+        "mainType":{
+          "id":null,
+          "name":"Mature B-Cell Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
+        "parent":"MBN",
+        "tissue":"Lymphoid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx2",
+      "pmids":[
+        "22096241",
+        "25957392"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"MDSRS",
+        "color":"LightSalmon",
+        "id":267,
+        "level":4,
+        "mainType":{
+          "id":null,
+          "name":"Myelodysplastic Syndromes",
+          "tumorForm":"LIQUID"
+        },
+        "name":"MDS with Ring Sideroblasts",
+        "parent":"MDS",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx2",
+      "pmids":[
+        "19692701",
+        "25957392"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"MDSMPNRST",
+        "color":"LightSalmon",
+        "id":801,
+        "level":4,
+        "mainType":{
+          "id":null,
+          "name":"Myelodysplastic/Myeloproliferative Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"MDS/MPN with Ring Sideroblasts and Thrombocytosis",
+        "parent":"MDS/MPN",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    }
+  ],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"SF3B1, a component of the spliceosome complex, is frequently mutated in hematologic malignancies.",
+  "highestDiagnosticImplicationLevel":"LEVEL_Dx2",
+  "highestFdaLevel":"LEVEL_Fda3",
+  "highestPrognosticImplicationLevel":"LEVEL_Px1",
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":"LEVEL_4",
+  "hotspot":true,
+  "lastUpdate":"02/23/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "33031100",
+        "24434863",
+        "26565915",
+        "23861464"
+      ]
+    },
+    "description":"The SF3B1 R625C mutation occurs in the protein\u2019s HEAT domain, which functions as a scaffolding region for protein interactions. This mutation has been found in uveal melanoma (UVM) (PMID: 33031100). Mutations within this domain alter SF3B1-mediated splicing, resulting in the degradation of SF3B1-targeted transcripts and aberrant protein expression in the cell (PMID: 26565915). In patient-derived UVM and myelodysplastic syndrome samples, the R625C mutation has been found to alter the splicing and gene expression signatures (PMID: 23861464, 24434863).",
+    "knownEffect":"Switch-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Px1",
+      "pmids":[
+        "21998214"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"MDS",
+        "color":"LightSalmon",
+        "id":355,
+        "level":3,
+        "mainType":{
+          "id":null,
+          "name":"Myelodysplastic Syndromes",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Myelodysplastic Syndromes",
+        "parent":"MNM",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Px1",
+      "pmids":[
+        "23594705",
+        "21998214"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"MDSMPNRST",
+        "color":"LightSalmon",
+        "id":801,
+        "level":4,
+        "mainType":{
+          "id":null,
+          "name":"Myelodysplastic/Myeloproliferative Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"MDS/MPN with Ring Sideroblasts and Thrombocytosis",
+        "parent":"MDS/MPN",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Px2",
+      "pmids":[
+        "30594750",
+        "29296692"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"ET",
+        "color":"LightSalmon",
+        "id":695,
+        "level":4,
+        "mainType":{
+          "id":null,
+          "name":"Myeloproliferative Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Essential Thrombocythemia",
+        "parent":"MPN",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    }
+  ],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"R625C",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":23451,
+    "hgvs":null,
+    "hugoSymbol":"SF3B1",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[
+    {
+      "abstracts":[
+        {
+          "abstract":"Buonamici et al. Abstract# 636, ASH, 2016",
+          "link":"http://www.bloodjournal.org/content/128/22/966?sso-checked=true"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"H3B-8800 is an orally available small-molecule modulator of the SF3b complex. Specifically, H3B-8800 modulates splicing by interfering with the interaction between the SF3b complex and the branchpoint region on RNA. Preclinical studies show that spliceosome-mutants are sensitive to H3B-8800 treatment, as measured by decreased proliferation in spliceosome-mutant acute myeloid leukemia cell lines and xenograft models and decreased cell proliferation and viability in pancreatic cancer cell lines upon drug treatment compared to isogenic controls expressing a wildtype spliceosome (PMID: 29457796)(Abstract: Buonamici et al. Abstract# 636, ASH, 2016. http://www.bloodjournal.org/content/128/22/966?sso-checked=true).",
+      "drugs":[
+        {
+          "drugName":"H3B-8800",
+          "ncitCode":"C129546",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_4",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"AML",
+        "color":"LightSalmon",
+        "id":527,
+        "level":3,
+        "mainType":{
+          "id":null,
+          "name":"Leukemia",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Acute Myeloid Leukemia",
+        "parent":"MNM",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "29457796"
+      ]
+    },
+    {
+      "abstracts":[
+        {
+          "abstract":"Buonamici et al. Abstract# 636, ASH, 2016",
+          "link":"http://www.bloodjournal.org/content/128/22/966?sso-checked=true"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"H3B-8800 is an orally available small-molecule modulator of the SF3b complex. Specifically, H3B-8800 modulates splicing by interfering with the interaction between the SF3b complex and the branchpoint region on RNA. Preclinical studies show that spliceosome-mutants are sensitive to H3B-8800 treatment, as measured by decreased proliferation in spliceosome-mutant acute myeloid leukemia cell lines and xenograft models and decreased cell proliferation and viability in pancreatic cancer cell lines upon drug treatment compared to isogenic controls expressing a wildtype spliceosome (PMID: 29457796)(Abstract: Buonamici et al. Abstract# 636, ASH, 2016. http://www.bloodjournal.org/content/128/22/966?sso-checked=true).",
+      "drugs":[
+        {
+          "drugName":"H3B-8800",
+          "ncitCode":"C129546",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_4",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"CMML",
+        "color":"LightSalmon",
+        "id":224,
+        "level":4,
+        "mainType":{
+          "id":null,
+          "name":"Myelodysplastic/Myeloproliferative Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Chronic Myelomonocytic Leukemia",
+        "parent":"MDS/MPN",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "29457796"
+      ]
+    },
+    {
+      "abstracts":[
+        {
+          "abstract":"Buonamici et al. Abstract# 636, ASH, 2016",
+          "link":"http://www.bloodjournal.org/content/128/22/966?sso-checked=true"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"H3B-8800 is an orally available small-molecule modulator of the SF3b complex. Specifically, H3B-8800 modulates splicing by interfering with the interaction between the SF3b complex and the branchpoint region on RNA. Preclinical studies show that spliceosome-mutants are sensitive to H3B-8800 treatment, as measured by decreased proliferation in spliceosome-mutant acute myeloid leukemia cell lines and xenograft models and decreased cell proliferation and viability in pancreatic cancer cell lines upon drug treatment compared to isogenic controls expressing a wildtype spliceosome (PMID: 29457796)(Abstract: Buonamici et al. Abstract# 636, ASH, 2016. http://www.bloodjournal.org/content/128/22/966?sso-checked=true).",
+      "drugs":[
+        {
+          "drugName":"H3B-8800",
+          "ncitCode":"C129546",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_4",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"MDS",
+        "color":"LightSalmon",
+        "id":355,
+        "level":3,
+        "mainType":{
+          "id":null,
+          "name":"Myelodysplastic Syndromes",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Myelodysplastic Syndromes",
+        "parent":"MNM",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "29457796"
+      ]
+    }
+  ],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The SF3B1 R625C mutation is likely oncogenic.",
+  "vus":false
+}

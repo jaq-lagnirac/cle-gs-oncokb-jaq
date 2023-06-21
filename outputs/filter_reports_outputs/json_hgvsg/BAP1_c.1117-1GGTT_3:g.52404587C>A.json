@@ -1,0 +1,50 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"BAP1 is a tumor suppressor and deubiquitinating enzyme. Germline mutations of BAP1 predispose to various cancer types, including malignant mesothelioma, uveal and cutaneous melanoma, and renal cell carcinoma.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"11/19/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "21874000",
+        "18757409"
+      ]
+    },
+    "description":"BAP1 truncating mutations produce several forms of C-terminally truncated BAP1 proteins with loss of the nuclear localization signal (PMID: 21874000). These mutations have been found in hepatocellular cancer, head and neck squamous cell cancer, lung cancer, renal clear cell cancer, pleural mesothelioma and uveal melanoma. Expression of a BAP1 truncation mutant in lung cancer cells demonstrated that it is unable to localize to the nucleus and nuclear loss of BAP1 in lung cancer cell lines was oncogenic as measured by the reduced ability to suppress the cell cycle (PMID: 18757409).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"X373_splice",
+    "alterationType":null,
+    "consequence":"splice_acceptor_variant",
+    "entrezGeneId":8314,
+    "hgvs":"3:g.52404587C>A",
+    "hugoSymbol":"BAP1",
+    "id":null,
+    "proteinEnd":373,
+    "proteinStart":373,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The BAP1 X373_splice alteration is likely oncogenic.",
+  "vus":false
+}

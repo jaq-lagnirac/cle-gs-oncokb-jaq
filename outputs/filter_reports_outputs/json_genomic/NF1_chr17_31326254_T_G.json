@@ -1,0 +1,254 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx2",
+      "pmids":[
+        "18925961"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"CMML",
+        "color":"LightSalmon",
+        "id":224,
+        "level":4,
+        "mainType":{
+          "id":null,
+          "name":"Myelodysplastic/Myeloproliferative Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Chronic Myelomonocytic Leukemia",
+        "parent":"MDS/MPN",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx2",
+      "pmids":[
+        "23832011",
+        "14644997",
+        "25691160",
+        "26457647",
+        "9639526"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"JMML",
+        "color":"LightSalmon",
+        "id":692,
+        "level":4,
+        "mainType":{
+          "id":null,
+          "name":"Myelodysplastic/Myeloproliferative Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Juvenile Myelomonocytic Leukemia",
+        "parent":"MDS/MPN",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    }
+  ],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"NF1, a negative regulator of RAS, is inactivated by mutation or deletion in various solid and hematologic malignancies.",
+  "highestDiagnosticImplicationLevel":"LEVEL_Dx2",
+  "highestFdaLevel":"LEVEL_Fda2",
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":"LEVEL_1",
+  "hotspot":false,
+  "lastUpdate":"02/22/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "31548343",
+        "8052307",
+        "19573811",
+        "26345759",
+        "8563751",
+        "23913538",
+        "7542586",
+        "7655472",
+        "24576830",
+        "10862084",
+        "23047742",
+        "10543400",
+        "12509763",
+        "14722914",
+        "31591187"
+      ]
+    },
+    "description":"NF1 truncating mutations produce several forms of C-terminally truncated NF1 proteins that are unstable, resulting in loss of protein expression (PMID: 7655472, 10543400, 10862084, 14722914, 23047742, 26345759). These mutations have been found in neurofibromas, lung cancers, and breast cancers, among others (PMID: 23913538). In vitro studies have demonstrated that these mutations are likely inactivating as measured by reduced NF1 protein expression, decreased GAP activity, increased GTP-bound RAS, and enhanced downstream signaling compared to wildtype (PMID: 19573811, 24576830, 8563751, 7542586, 8052307, 12509763). Preclinical studies have identified NF1 mutations as likely resistance mutations to the tyrosine kinase inhibitor crizotinib and the ESR1 inhibitors tamoxifen and fulvestrant (PMID: 31548343, 31591187).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"X1735_splice",
+    "alterationType":null,
+    "consequence":"splice_donor_variant",
+    "entrezGeneId":4763,
+    "hgvs":null,
+    "hugoSymbol":"NF1",
+    "id":null,
+    "proteinEnd":1735,
+    "proteinStart":1735,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Selumetinib is a small molecule inhibitor of MEK1/2 that is FDA-approved for the treatment of pediatric patients with neurofibromatosis type 1 (NF1) who have symptomatic, inoperable plexiform neurofibromas (PN). FDA approval was based on the results of the open-label, multicenter, single-arm Phase II SPRINT Stratum I trial of selumetinib in 50 pediatric patients with NF1 and inoperable plexiform neurofibromas in which 37 patients had a partial response (74%; 95% CI= 60 - 85) and the overall response rate was 66% (n=33; 95% CI= 51-79) (PMID: 32187457). In a prior phase I trial of selumetinib in children with NF1 who had inoperable PN, seventeen of 24 (71%) children had a partial response (PMID: 28029918). In vivo studies in a mouse model of NF1 demonstrated tumor regression in twelve of eighteen mice (67%) upon treatment with selumetinib (PMID: 28029918).",
+      "drugs":[
+        {
+          "drugName":"Selumetinib",
+          "ncitCode":"C66939",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"NFIB",
+        "color":"Gray",
+        "id":638,
+        "level":3,
+        "mainType":{
+          "id":null,
+          "name":"Nerve Sheath Tumor",
+          "tumorForm":"SOLID"
+        },
+        "name":"Neurofibroma",
+        "parent":"NST",
+        "tissue":"Peripheral Nervous System",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "28029918",
+        "32187457"
+      ]
+    },
+    {
+      "abstracts":[
+        {
+          "abstract":"Romo et al. Abstract# e13562, ASCO 2019",
+          "link":"https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.15_suppl.e13562"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Trametinib and cobimetinib are small molecule inhibitors of MEK1 and MEK2. Several clinial reports have documented patients with NF1-mutant solid tumors who have responded to treatment with MEK inhibitors. In a case report, a single patient with treatment-refractory neurofibromatosis-associated glioblastoma experienced clinical and radiological benefit from treatment with trametinib (PMID: 26936308). In a retrospective analysis of patients with neurofibromatosis Type I-associated astrocytoma, two of two patients who were treated with trametinib had clinical benefit and partial tumor regression (Abstract: Romo et al. Abstract# e13562, ASCO 2019. https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.15_suppl.e13562). Other MEK inhibitors, such as selumetinib, have demonstrated efficacy in NF1-associated gliomas, including in a phase II clinical trial in which ten of 25 patients (40% [95% CI:21-61%]) had a sustained partial response to treatment with MEK inhibitors (PMID: 31151904). Additionally, in vitro studies have demonstrated that loss of NF1 results in sensitivity to MEK inhibitors as measured by downstream MAPK pathway signaling and cell proliferation (PMID: 24535670, 24576830).",
+      "drugs":[
+        {
+          "drugName":"Trametinib",
+          "ncitCode":"C77908",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_4",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"",
+        "id":984,
+        "level":-1,
+        "mainType":{
+          "id":null,
+          "name":"All Solid Tumors",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "31151904",
+        "24576830",
+        "26936308",
+        "24535670"
+      ]
+    },
+    {
+      "abstracts":[
+        {
+          "abstract":"Romo et al. Abstract# e13562, ASCO 2019",
+          "link":"https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.15_suppl.e13562"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Trametinib and cobimetinib are small molecule inhibitors of MEK1 and MEK2. Several clinial reports have documented patients with NF1-mutant solid tumors who have responded to treatment with MEK inhibitors. In a case report, a single patient with treatment-refractory neurofibromatosis-associated glioblastoma experienced clinical and radiological benefit from treatment with trametinib (PMID: 26936308). In a retrospective analysis of patients with neurofibromatosis Type I-associated astrocytoma, two of two patients who were treated with trametinib had clinical benefit and partial tumor regression (Abstract: Romo et al. Abstract# e13562, ASCO 2019. https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.15_suppl.e13562). Other MEK inhibitors, such as selumetinib, have demonstrated efficacy in NF1-associated gliomas, including in a phase II clinical trial in which ten of 25 patients (40% [95% CI:21-61%]) had a sustained partial response to treatment with MEK inhibitors (PMID: 31151904). Additionally, in vitro studies have demonstrated that loss of NF1 results in sensitivity to MEK inhibitors as measured by downstream MAPK pathway signaling and cell proliferation (PMID: 24535670, 24576830).",
+      "drugs":[
+        {
+          "drugName":"Cobimetinib",
+          "ncitCode":"C68923",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_4",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"",
+        "id":984,
+        "level":-1,
+        "mainType":{
+          "id":null,
+          "name":"All Solid Tumors",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "31151904",
+        "24576830",
+        "26936308",
+        "24535670"
+      ]
+    }
+  ],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The NF1 X1735_splice alteration is likely oncogenic.",
+  "vus":false
+}

@@ -1,0 +1,52 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"CCND1, a regulator of the cell cycle, is amplified in various cancer types including breast, head and neck, and bladder cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"11/22/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "17299095",
+        "9832503",
+        "9926916",
+        "16732330"
+      ]
+    },
+    "description":"CCND1 truncating mutations can produce several forms of C-terminally truncated CCND1 proteins. These mutations have been found in uterine, bladder, pancreatic and head and neck cancer (cBioPortal, MSKCC, May 2015). While the specific deletions may vary slightly, all truncated proteins result in loss of threonine 286 in the CCND1 protein, a critical phosphorylation site that modulates the nuclear localization and stability of the protein (PMID: 9832503, 16732330). There is conflicting functional information for these mutations. Endogenous expression of a CCND1 truncation mutation in a lymphoma cell line demonstrated that it may be activating as measured by increased mRNA transcript stability compared to wildtype (PMID: 17299095). However, expression of multiple CCND1 truncation variants in rat embryonal fibroblasts demonstrated that it is inactivating as measured by reduced colony formation compared to wildtype (PMID: 9926916).",
+    "knownEffect":"Gain-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"E276*",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":595,
+    "hgvs":null,
+    "hugoSymbol":"CCND1",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The CCND1 E276* mutation is likely oncogenic.",
+  "vus":false
+}

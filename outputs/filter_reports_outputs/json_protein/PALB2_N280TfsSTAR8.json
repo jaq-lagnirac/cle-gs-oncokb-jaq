@@ -1,0 +1,217 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"PALB2 is a component of the Fanconi anemia complementation (FANCC) group involved in DNA double-strand break repair. Germline mutations of PALB2 are associated with Fanconi anemia and predispose to breast cancer.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":"LEVEL_Fda2",
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":"LEVEL_1",
+  "hotspot":false,
+  "lastUpdate":"02/22/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "28279176",
+        "29484706",
+        "25529982",
+        "28779002",
+        "28858227",
+        "18053174"
+      ]
+    },
+    "description":"PALB2 truncating mutations can form several forms of C-terminally truncated PALB2 protein and are found in breast cancers. As such, PALB2 is considered a rare breast cancer susceptibility gene. In patient studies, PALB2 truncation mutations were shown to significantly increase the risk of breast cancer, with similar risks for estrogen receptor-positive and -negative breast cancer. PALB2 truncation mutations have also been found in cases of hereditary male breast cancer (PMID: 28858227, 18053174, 25529982, 29484706, 28279176, 28779002).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"N280Tfs*8",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":79728,
+    "hgvs":null,
+    "hugoSymbol":"PALB2",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Olaparib, a small molecule PARP inhibitor, is FDA-approved for patients with deleterious or suspected deleterious germline or somatic homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC) who have progressed following prior treatment with enzalutamide or abiraterone. FDA approval was based on the results of the Phase III PROfound trial of olaparib in adult patients with metastatic castration-resistant prostate cancer who had disease progression while receiving a new hormonal agent and who had a deleterious or suspected deleterious mutation in a homologous recombination repair (HRR) gene. Of patients with a qualifying alteration in an HRR gene, the progression-free survival in the olaparib group was 5.8 months compared to 3.5 months in the placebo group (HR=0.49; 95% CI= 0.38 to 0.63; p<0.001), with a median overall survival of 17.5 months versus 14.3 months (0.67; 95% CI= 0.49 to 0.93) and an overall response rate of 22% versus 4%, respectively (PMID: 32343890). However, while the FDA approval includes those with PALB2 mutations, there is limited clinical data in patients with this biomarker (n=4) (PMID: 32343890).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"Cyan",
+        "id":944,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Prostate Cancer, NOS",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Prostate",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "32343890"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Olaparib, a small molecule PARP inhibitor, is FDA-approved for patients with deleterious or suspected deleterious germline or somatic homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC) who have progressed following prior treatment with enzalutamide or abiraterone. FDA approval was based on the results of the Phase III PROfound trial of olaparib in adult patients with metastatic castration-resistant prostate cancer who had disease progression while receiving a new hormonal agent and who had a deleterious or suspected deleterious mutation in a homologous recombination repair (HRR) gene. Of patients with a qualifying alteration in an HRR gene, the progression-free survival in the olaparib group was 5.8 months compared to 3.5 months in the placebo group (HR=0.49; 95% CI= 0.38 to 0.63; p<0.001), with a median overall survival of 17.5 months versus 14.3 months (0.67; 95% CI= 0.49 to 0.93) and an overall response rate of 22% versus 4%, respectively (PMID: 32343890). However, while the FDA approval includes those with PALB2 mutations, there is limited clinical data in patients with this biomarker (n=4) (PMID: 32343890).",
+      "drugs":[
+        {
+          "drugName":"Olaparib",
+          "ncitCode":"C71721",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"Cyan",
+        "id":936,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Prostate Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Prostate",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "32343890"
+      ]
+    },
+    {
+      "abstracts":[
+        {
+          "abstract":"Brown et al. Abstract# 734, ASCO 2023",
+          "link":"https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.4_suppl.734"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Rucaparib, a small molecule PARP inhibitor, is NCCN compendium-listed as a maintenance therapeutic option for patients with pancreatic adenocarcinoma that have had prior platinum-based therapy with germline or somatic BRCA1/2 or PALB2 mutations. In a Phase II study of maintenance rucaparib treatment in 42 patients with platinum-sensitive advanced pancreatic cancer harboring germline or somatic variants in BRCA1/2 or PALB2, the progression-free survival rate was 59.5% (95% CI= 44.6 to 74.4), median progression-free survival was 13.1 months (95% CI= 4.4 to 21.8) and median overall survival was 23.5 months (95% CI= 20 to 27) (PMID: 33970687). In a Phase II study to assess maintenance rucaparib treatment and reversion mutations in 42 patients with advanced pancreatic cancer harboring germline or somatic variants in BRCA1/2 or PALB2, the progression-free survival for patients with progression with no KRAS reversion mutations (n=23) compared to progression with acquired KRAS reversion mutations (n=5) was 279 days (95% CI= 225 to 428) versus 112 days (95% CI= 46 to 156) and the median overall survival rate was 701 days (95% CI= 586 to 829) versus 283 days (95% CI= 128 to 436), respectively (Abstract: Brown et al. Abstract# 734, ASCO 2023. https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.4_suppl.734).",
+      "drugs":[
+        {
+          "drugName":"Rucaparib",
+          "ncitCode":"C137800",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_2",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"PAAD",
+        "color":"Purple",
+        "id":180,
+        "level":2,
+        "mainType":{
+          "id":null,
+          "name":"Pancreatic Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"Pancreatic Adenocarcinoma",
+        "parent":"PANCREAS",
+        "tissue":"Pancreas",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "33970687"
+      ]
+    },
+    {
+      "abstracts":[
+        {
+          "abstract":"Brown et al. Abstract# 734, ASCO 2023",
+          "link":"https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.4_suppl.734"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Rucaparib, a small molecule PARP inhibitor, is NCCN compendium-listed as a maintenance therapeutic option for patients with pancreatic adenocarcinoma that have had prior platinum-based therapy with germline or somatic BRCA1/2 or PALB2 mutations. In a Phase II study of maintenance rucaparib treatment in 42 patients with platinum-sensitive advanced pancreatic cancer harboring germline or somatic variants in BRCA1/2 or PALB2, the progression-free survival rate was 59.5% (95% CI= 44.6 to 74.4), median progression-free survival was 13.1 months (95% CI= 4.4 to 21.8) and median overall survival was 23.5 months (95% CI= 20 to 27) (PMID: 33970687). In a Phase II study to assess maintenance rucaparib treatment and reversion mutations in 42 patients with advanced pancreatic cancer harboring germline or somatic variants in BRCA1/2 or PALB2, the progression-free survival for patients with progression with no KRAS reversion mutations (n=23) compared to progression with acquired KRAS reversion mutations (n=5) was 279 days (95% CI= 225 to 428) versus 112 days (95% CI= 46 to 156) and the median overall survival rate was 701 days (95% CI= 586 to 829) versus 283 days (95% CI= 128 to 436), respectively (Abstract: Brown et al. Abstract# 734, ASCO 2023. https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.4_suppl.734).",
+      "drugs":[
+        {
+          "drugName":"Rucaparib",
+          "ncitCode":"C137800",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_2",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"PAAC",
+        "color":"Purple",
+        "id":265,
+        "level":2,
+        "mainType":{
+          "id":null,
+          "name":"Pancreatic Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"Acinar Cell Carcinoma of the Pancreas",
+        "parent":"PANCREAS",
+        "tissue":"Pancreas",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "33970687"
+      ]
+    }
+  ],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The PALB2 N280Tfs*8 mutation is likely oncogenic.",
+  "vus":false
+}

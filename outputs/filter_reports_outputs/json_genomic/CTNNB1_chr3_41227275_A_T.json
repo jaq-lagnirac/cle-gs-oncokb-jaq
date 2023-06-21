@@ -1,0 +1,54 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"CTNNB1 (\u03b2-catenin), a transcriptional activator, is recurrently mutated in various cancers including endometrial and hepatocellular cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":true,
+  "lastUpdate":"03/24/2021",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "30155617",
+        "31857074",
+        "15579438",
+        "28825729",
+        "24735922",
+        "28481359"
+      ]
+    },
+    "description":"The CTNNB1 K335I mutation is located in the APC/Axin binding region of the protein. This mutation has been found in kidney and intestinal cancer (PMID: 30155617, 28825729, 28481359). Expression of this mutation in embryonic kidney and hepatoma cell lines as well as in xenograft models demonstrated that it is activating as measured by increased protein activity and tumor growth compared to wildtype (PMID: 15579438, 24735922, 31857074).",
+    "knownEffect":"Gain-of-function"
+  },
+  "oncogenic":"Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"K335I",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":1499,
+    "hgvs":null,
+    "hugoSymbol":"CTNNB1",
+    "id":null,
+    "proteinEnd":335,
+    "proteinStart":335,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The CTNNB1 K335I mutation is known to be oncogenic.",
+  "vus":false
+}

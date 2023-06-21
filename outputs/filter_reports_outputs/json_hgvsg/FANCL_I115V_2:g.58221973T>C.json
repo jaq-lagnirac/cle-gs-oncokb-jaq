@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"FANCL, an E3 ubiquitin ligase involved in DNA repair, is infrequently altered in cancer. Germline mutations of FANCL are associated with the cancer predisposition syndrome Fanconi Anemia.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"06/05/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"I115V",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":55120,
+    "hgvs":"2:g.58221973T>C",
+    "hugoSymbol":"FANCL",
+    "id":null,
+    "proteinEnd":115,
+    "proteinStart":115,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the FANCL I115V mutation is unknown.",
+  "vus":false
+}

@@ -1,0 +1,50 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"SMARCA4, a tumor suppressor involved in chromatin remodeling, is recurrently altered in small cell carcinoma of the ovaries, hypercalcemic type (SCCOHT).",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":true,
+  "lastUpdate":"02/02/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "33144586",
+        "31558468"
+      ]
+    },
+    "description":"The SMARCA4 R1192C mutation is located in the ATP binding pocket of the protein. This mutation has been identified in Burkitt lymphoma and is a statistically significant hotspot (PMID: 31558468). In vitro studies with 293T cells expressing SMARCA4 R1192C demonstrate that the mutation is inactivating as measured by deficiency in chromatin opening and inducing gene expression compared to wildtype (PMID: 33144586).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"R1192H",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":6597,
+    "hgvs":null,
+    "hugoSymbol":"SMARCA4",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The biologic significance of the SMARCA4 R1192H mutation is unknown (last reviewed 02/02/2023). However, it has been identified as a statistically significant hotspot and is likely to be oncogenic.",
+  "vus":true
+}

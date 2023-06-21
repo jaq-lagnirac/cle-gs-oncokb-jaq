@@ -1,0 +1,54 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"CIC, a tumor suppressor and transcriptional repressor, is recurrently altered by mutation, deletion, and translocation, most frequently in oligodendrogliomas.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"01/27/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "22072542",
+        "24086756",
+        "22588899",
+        "21817013",
+        "24117486",
+        "26017892"
+      ]
+    },
+    "description":"CIC truncating mutations are typically a result of loss or mutation of CIC on chromosome 19q, and are associated with IDH1 and FUBP1 mutations or deletions on chromosome 1p. These mutations have been identified in glioma (PMID: 24117486, 22072542, 21817013, 24086756). CIC mutations were detected with chromosome 1p/19q co-deletion in a study examining patient oligodendrogliomas (PMID: 22588899). Oligodendrogliomas with loss of CIC detected with FUBP1 mutations were found to exclusively co-occur with IDH1 or IDH2 mutations (PMID: 22588899). In vitro studies of truncated CIC in human glioma cell lines have demonstrated that CIC truncating mutations are inactivating as measured by a defect in CIC nuclear targeting to the nucleus (PMID: 26017892).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"K194Rfs*12",
+    "alterationType":null,
+    "consequence":"frameshift_variant",
+    "entrezGeneId":23152,
+    "hgvs":"19:g.42287445_42287446insCG",
+    "hugoSymbol":"CIC",
+    "id":null,
+    "proteinEnd":193,
+    "proteinStart":193,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The CIC K194Rfs*12 mutation is likely oncogenic.",
+  "vus":false
+}

@@ -1,0 +1,315 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"TP53, a tumor suppressor in the DNA damage pathway, is the most frequently mutated gene in cancer.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":"LEVEL_Px1",
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":true,
+  "lastUpdate":"04/20/2017",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "23863845",
+        "11900253",
+        "23612969",
+        "15037740"
+      ]
+    },
+    "description":"The TP53 R273C mutation is located in the protein's DNA binding domain. Expression of this mutant in TP53 null mouse embryonic fibrobalsts (MEFs) resulted in a significant increase in cell migration relative to TP53 null cells (PMID: 23612969). Structural studies demonstrated that the R273C mutation leads to a dramatic reduction in the DNA binding affinity of p53, although the protein retains wildtype stability (PMID: 23863845, 11900253). Expression of this mutation in cell lines that lack TP53 expression did not enhance TP53-mediated transcriptional activity in reporter assays, as compared to expression of wildtype TP53 (PMID: 15037740).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Px1",
+      "pmids":[
+        "25412851",
+        "25860933"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"AMLMRC",
+        "color":"LightSalmon",
+        "id":17,
+        "level":4,
+        "mainType":{
+          "id":null,
+          "name":"Leukemia",
+          "tumorForm":"LIQUID"
+        },
+        "name":"AML with Myelodysplasia-Related Changes",
+        "parent":"AML",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Px1",
+      "pmids":[
+        "22186996",
+        "18596741"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"AML",
+        "color":"LightSalmon",
+        "id":527,
+        "level":3,
+        "mainType":{
+          "id":null,
+          "name":"Leukemia",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Acute Myeloid Leukemia",
+        "parent":"MNM",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Px1",
+      "pmids":[
+        "25412846",
+        "25952993"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"TMN",
+        "color":"LightSalmon",
+        "id":418,
+        "level":4,
+        "mainType":{
+          "id":null,
+          "name":"Leukemia",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Therapy-Related Myeloid Neoplasms",
+        "parent":"AML",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Px1",
+      "pmids":[
+        "23243274",
+        "24004666",
+        "20697090",
+        "19188171",
+        "24652989"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"CLLSLL",
+        "color":"LimeGreen",
+        "id":533,
+        "level":5,
+        "mainType":{
+          "id":null,
+          "name":"Mature B-Cell Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
+        "parent":"MBN",
+        "tissue":"Lymphoid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Px1",
+      "pmids":[
+        "21714648",
+        "25092778",
+        "24220272"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"MDS",
+        "color":"LightSalmon",
+        "id":355,
+        "level":3,
+        "mainType":{
+          "id":null,
+          "name":"Myelodysplastic Syndromes",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Myelodysplastic Syndromes",
+        "parent":"MNM",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Px1",
+      "pmids":[
+        "24478400",
+        "29296692",
+        "22887079"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"ET",
+        "color":"LightSalmon",
+        "id":695,
+        "level":4,
+        "mainType":{
+          "id":null,
+          "name":"Myeloproliferative Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Essential Thrombocythemia",
+        "parent":"MPN",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Px1",
+      "pmids":[
+        "25516983",
+        "22052707",
+        "22887079"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"MPN",
+        "color":"LightSalmon",
+        "id":185,
+        "level":3,
+        "mainType":{
+          "id":null,
+          "name":"Myeloproliferative Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Myeloproliferative Neoplasms",
+        "parent":"MNM",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Px1",
+      "pmids":[
+        "25516983",
+        "22052707",
+        "22887079"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"PMF",
+        "color":"LightSalmon",
+        "id":632,
+        "level":4,
+        "mainType":{
+          "id":null,
+          "name":"Myeloproliferative Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Primary Myelofibrosis",
+        "parent":"MPN",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Px3",
+      "pmids":[
+        "8639789",
+        "7579380",
+        "28819011",
+        "24684350",
+        "26022239"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"MCL",
+        "color":"LimeGreen",
+        "id":586,
+        "level":5,
+        "mainType":{
+          "id":null,
+          "name":"Mature B-Cell Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Mantle Cell Lymphoma",
+        "parent":"MBN",
+        "tissue":"Lymphoid",
+        "tumorForm":"LIQUID"
+      }
+    }
+  ],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"R273C",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":7157,
+    "hgvs":null,
+    "hugoSymbol":"TP53",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The TP53 R273C mutation is likely oncogenic.",
+  "vus":false
+}

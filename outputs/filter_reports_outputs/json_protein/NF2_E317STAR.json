@@ -1,0 +1,52 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"NF2 is a tumor suppressor involved in the regulation of downstream signaling pathways. Germline mutations of NF2 are associated with Neurofibromatosis Type 2 and predispose to certain cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"10/01/2019",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "8755919",
+        "19545378",
+        "22825583",
+        "9643284"
+      ]
+    },
+    "description":"Truncating mutations of NF2 can produce several forms of C-terminally truncated proteins, and result in loss of NF2 protein function. These alterations are predicted to cause activation of multiple mitogenic signaling pathways, including mTOR and Hippo signaling (PMID: 22825583), which has led to a study of mTOR inhibitors in patients or cell lines with NF2 mutations (PMID: 22825583). Truncating mutations are frequently observed in patients with neurofibromatosis type 2 (NF2) and are associated with poor prognosis (PMID: 8755919, 9643284). Somatic truncating mutations are more commonly frameshift mutations, whereas germline mutations associated with neurofibromatosis type 2 are more commonly nonsense mutations (PMID: 19545378).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"E317*",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":4771,
+    "hgvs":null,
+    "hugoSymbol":"NF2",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The NF2 E317* mutation is likely oncogenic.",
+  "vus":false
+}
