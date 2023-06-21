@@ -1,0 +1,81 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx3",
+      "pmids":[
+        "24296945",
+        "22891276",
+        "25779943",
+        "22891273"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"SMZL",
+        "color":"LimeGreen",
+        "id":578,
+        "level":6,
+        "mainType":{
+          "id":null,
+          "name":"Mature B-Cell Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Splenic Marginal Zone Lymphoma",
+        "parent":"MZL",
+        "tissue":"Lymphoid",
+        "tumorForm":"LIQUID"
+      }
+    }
+  ],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"NOTCH2 encodes a transmembrane receptor that regulates many aspects of development by affecting cell-fate determination.",
+  "highestDiagnosticImplicationLevel":"LEVEL_Dx3",
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"01/11/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "21378989",
+        "25314575"
+      ]
+    },
+    "description":"The NOTCH2 2010_2471trunc mutations are located in exon 34 of the gene and exclude the C-terminal PEST domain. These mutations have been identified in Hajdu-Cheney syndrome (PMID: 21378989). Truncating mutations in the last exon of NOTCH2 are suggested to be stable as the mutations avoid nonsense medicated decay, however, it is suggested that loss of the regulatory PEST domain will allow the mutated NOTCH2 to escape proteasomal degradation and remain constitutively active (PMID: 21378989). In vitro studies with 293T cells expressing partial deletion in the PEST domain demonstrate NOTCH2 2010_2471trunc mutations are activating as measured by constitutive activation of both Notch2 and the NF-kB signals and increased cellular proliferation compared to wildtype (PMID: 25314575).",
+    "knownEffect":"Likely Gain-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"I2304Hfs*9",
+    "alterationType":null,
+    "consequence":"frameshift_variant",
+    "entrezGeneId":4853,
+    "hgvs":"1:g.119915812_119915813insG",
+    "hugoSymbol":"NOTCH2",
+    "id":null,
+    "proteinEnd":2304,
+    "proteinStart":2303,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The NOTCH2 I2304Hfs*9 mutation is likely oncogenic.",
+  "vus":false
+}

@@ -1,0 +1,55 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"ERBB2, a receptor tyrosine kinase, is altered by mutation, amplification and/or overexpression in various cancer types, most frequently in breast, esophagogastric and endometrial cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"11/16/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[
+        {
+          "abstract":"Kancha et. al, AACR Annual Meeting 2009, Abstract # 1766",
+          "link":"http://cancerres.aacrjournals.org/content/69/9_Supplement/1766"
+        }
+      ],
+      "pmids":[
+        "19336545",
+        "15550452"
+      ]
+    },
+    "description":"The ERBB2 I654V mutation is located in the kinase domain of the protein. This mutation has been found as a germline mutation in familial breast cancer (PMID:15550452,19336545). There is conflicting functional data for this mutation. Expression of this mutation in a murine B-cell line demonstrated that it is neutral as measured by no change in protein activation or growth factor-independent proliferation compared to wildtype (Abstract: Kancha et. al, AACR Annual Meeting 2009, Abstract # 1766. http://cancerres.aacrjournals.org/content/69/9_Supplement/1766). However, computational analysis of this mutation in combination with ERBB2 I655V demonstrated that together both mutations may increase protein activity (PMID: 15550452). This mutation is associated with an increased risk for breast cancer (odds ratio= 2.56), particularly in women over the age of forty (odds ratio= 2.86) (PMID: 15550452).",
+    "knownEffect":"Inconclusive"
+  },
+  "oncogenic":"Likely Neutral",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"I654_I655delinsVV",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":2064,
+    "hgvs":null,
+    "hugoSymbol":"ERBB2",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The ERBB2 I654_I655delinsVV alteration is likely neutral.",
+  "vus":false
+}

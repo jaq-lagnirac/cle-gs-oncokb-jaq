@@ -1,0 +1,50 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"MLH1, a tumor suppressor involved in DNA mismatch repair, is recurrently altered by deletion and mutation in various cancer types. Germline mutations of MLH1 are associated with Lynch syndrome and predispose to colorectal cancer.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"08/27/2019",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "25092538",
+        "24362816"
+      ]
+    },
+    "description":"The MLH1 Q689R mutation occurs in the C-terminal protein binding domain of the protein. This mutation has been observed in a urothelial bladder carcinoma (PMID: 25092538). The International Society for Gastrointestinal Hereditary Tumours considers this variant neutral (PMID: 24362816).",
+    "knownEffect":"Inconclusive"
+  },
+  "oncogenic":"Inconclusive",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"Q689R",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":4292,
+    "hgvs":null,
+    "hugoSymbol":"MLH1",
+    "id":null,
+    "proteinEnd":689,
+    "proteinStart":689,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"There is conflicting and/or weak data describing the biological significance of the MLH1 Q689R mutation.",
+  "vus":false
+}

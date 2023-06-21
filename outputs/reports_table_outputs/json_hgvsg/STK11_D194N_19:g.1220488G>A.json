@@ -1,0 +1,98 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"STK11, a tumor suppressor and intracellular kinase, is frequently mutated in lung cancer.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":"LEVEL_Fda3",
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":"LEVEL_4",
+  "hotspot":true,
+  "lastUpdate":"02/15/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "34849607",
+        "26917230"
+      ]
+    },
+    "description":"The STK11 D194Y mutation is located in the kinase domain of the protein. In vitro studies demonstrated that the mutant exhibits reduced phosphorylation of AMPK, a known target of STK11 (PMID: 26917230). In vitro studies with HEK293 cells expressing STK11 D194Y demonstrate that the mutation is inactivating as measured by loss of kinase activity and decreased TP53-mediated transcriptional activity compared to wildtype (PMID: 34849607).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"D194N",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":6794,
+    "hgvs":"19:g.1220488G>A",
+    "hugoSymbol":"STK11",
+    "id":null,
+    "proteinEnd":194,
+    "proteinStart":194,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[
+    {
+      "abstracts":[
+        {
+          "abstract":"Li et al. Abstract # 602, JITC 2021",
+          "link":"https://jitc.bmj.com/content/9/Suppl_2/A632.altmetrics"
+        }
+      ],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Bemcentinib is an inhibitor of the AXL receptor tyrosine kinase, and pembrolizumab is an anti-PD-1 antibody. In a phase II trial of bemcentinib + pembrolizumab in patients with advanced non-small cell lung cancer (NSCLC), three evaluable patients with STK11 mutations demonstrated objective clinical response/clinical benefit. Additionally, preclinical data shows that AXL inhibition increases the efficacy of checkpoint blockade in STK11-deficient tumor models (Abstract: Li et al. Abstract # 602, JITC 2021. https://jitc.bmj.com/content/9/Suppl_2/A632.altmetrics).",
+      "drugs":[
+        {
+          "drugName":"Bemcentinib",
+          "ncitCode":"C121854",
+          "synonyms":[],
+          "uuid":null
+        },
+        {
+          "drugName":"Pembrolizumab",
+          "ncitCode":"C106432",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_4",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"Gainsboro",
+        "id":876,
+        "level":0,
+        "mainType":{
+          "id":null,
+          "name":"Non-Small Cell Lung Cancer",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"Lung",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[]
+    }
+  ],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The biologic significance of the STK11 D194N mutation is unknown (last reviewed 02/02/2023). However, it has been identified as a statistically significant hotspot and is likely to be oncogenic.",
+  "vus":true
+}

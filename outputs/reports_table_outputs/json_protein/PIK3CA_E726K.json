@@ -1,0 +1,49 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"PIK3CA, the catalytic subunit of PI3-kinase, is frequently mutated in a diverse range of cancers including breast, endometrial and cervical cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":true,
+  "lastUpdate":"08/22/2019",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "29533785"
+      ]
+    },
+    "description":"The PIK3CA E726K mutation is located between the accessory and the kinase domains of the protein. There is conflicting functional data for this mutation. Expression of this mutation in Ba/F3 but not MCF10A cell lines led to proliferation in the absence of growth factors (PMID: 29533785).",
+    "knownEffect":"Inconclusive"
+  },
+  "oncogenic":"Inconclusive",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"E726K",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":5290,
+    "hgvs":null,
+    "hugoSymbol":"PIK3CA",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"There is conflicting and/or weak data describing the biological significance of the PIK3CA E726K mutation.",
+  "vus":false
+}

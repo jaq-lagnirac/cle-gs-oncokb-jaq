@@ -1,0 +1,53 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"GNAQ, a G protein subunit, is recurrently mutated in uveal melanoma.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":true,
+  "lastUpdate":"11/23/2020",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "31336681",
+        "19718445",
+        "19078957",
+        "21083380",
+        "1328859"
+      ]
+    },
+    "description":"The GNAQ Q209L mutation is located in the GTP-binding pocket of the RAS-like domain of the protein. This mutation has been found in choroidal hemangioma and uveal melanoma (PMID: 31336681, 19718445, 21083380). Expression of this mutation in melanocytes and murine fibroblasts demonstrated that it is activating, as measured by increased anchorage-independent growth compared to wildtype (PMID: 1328859, 19078957).",
+    "knownEffect":"Gain-of-function"
+  },
+  "oncogenic":"Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"Q209L",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":2776,
+    "hgvs":null,
+    "hugoSymbol":"GNAQ",
+    "id":null,
+    "proteinEnd":209,
+    "proteinStart":209,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The GNAQ Q209L mutation is known to be oncogenic.",
+  "vus":false
+}

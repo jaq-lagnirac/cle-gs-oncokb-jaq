@@ -1,0 +1,47 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"RAF1 (CRAF), an intracellular kinase and component of the pro-oncogenic MAP-kinase signaling pathway, is infrequently mutated in cancer. Germline mutations of RAF1 are associated with Noonan and LEOPARD syndrome.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"08/28/2017",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[]
+    },
+    "description":"",
+    "knownEffect":"Unknown"
+  },
+  "oncogenic":"Unknown",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"L126F",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":5894,
+    "hgvs":"3:g.12609280G>A",
+    "hugoSymbol":"RAF1",
+    "id":null,
+    "proteinEnd":126,
+    "proteinStart":126,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The biologic significance of the RAF1 L126F mutation is unknown.",
+  "vus":false
+}

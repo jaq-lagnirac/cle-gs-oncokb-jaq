@@ -1,0 +1,53 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"MET, a receptor tyrosine kinase, is recurrently altered by mutation, amplification and rarely altered by gene translocation in various cancer types.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"03/24/2022",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "20670955",
+        "25992381",
+        "14559814",
+        "22973954",
+        "31004003"
+      ]
+    },
+    "description":"The MET R970C mutation (also known as R988C on other transcripts) is located in the protein's juxtamembrane domain. This mutation was identified in the germline of a patient with HER2+ breast cancer as well as in one patient out of 105 patients with triple-negative breast cancer and one patient out of 96 patients with JAK2 V617F-mutated polycythemia vera (PMID: 31004003). There is conflicting data for this mutation (PMID: 25992381). Two studies reported that MET R970C is associated with increased oncogenic function of MET. Experiments in cell lines demonstrated that this mutation leads to constitutive MET phosphorylation and increased cell motility, migration, adhesion and colony formation (PMID: 14559814). Generation of an in vivo transgenic mouse model expressing this mutation demonstrated that it is activating, as all mice harboring the mutation developed autoimmune disease and myeloproliferative syndromes (PMID: 31004003). Treatment of the transgenic mice with the MET inhibitor cabozantinib resulted in an inhibition of the autoimmune and proliferative phenotypes and reduced the number of skin cancers in mice (PMID: 31004003). However, other reports suggest that the R970C mutation is not oncogenic and has no effect on MET phosphorylation (PMID: 22973954, 20670955).",
+    "knownEffect":"Inconclusive"
+  },
+  "oncogenic":"Inconclusive",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"R970C",
+    "alterationType":null,
+    "consequence":"missense_variant",
+    "entrezGeneId":4233,
+    "hgvs":null,
+    "hugoSymbol":"MET",
+    "id":null,
+    "proteinEnd":970,
+    "proteinStart":970,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"There is conflicting and/or weak data describing the biological significance of the MET R970C mutation.",
+  "vus":false
+}

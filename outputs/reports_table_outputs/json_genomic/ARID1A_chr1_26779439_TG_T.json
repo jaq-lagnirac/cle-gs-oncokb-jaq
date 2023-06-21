@@ -1,0 +1,131 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"ARID1A, a tumor suppressor involved in transcriptional regulation, is inactivated by mutation in various cancer types including endometrial and bladder cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":"LEVEL_Fda3",
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":"LEVEL_4",
+  "hotspot":false,
+  "lastUpdate":"12/30/2021",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "21900401",
+        "24899687",
+        "22009941",
+        "25625625"
+      ]
+    },
+    "description":"ARID1A truncating mutations can produce several forms of C-terminally truncated proteins. These mutations have been found in gastric, colon, breast, and pancreatic cancer (PMID: 22009941). Endogenous expression of these mutations in ovarian and endometrial cancer cell lines demonstrated that they are activating as measured by increased cell proliferation compared to the re-expression of wildtype, and in vivo loss of ARID1A in combination with a mutation in the PTEN-PIK3CA pathway resulted in the development of ovarian cancer in transgenic mouse models (PMID: 21900401, 24899687, 25625625).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"D1850Tfs*33",
+    "alterationType":null,
+    "consequence":"frameshift_variant",
+    "entrezGeneId":8289,
+    "hgvs":null,
+    "hugoSymbol":"ARID1A",
+    "id":null,
+    "proteinEnd":1848,
+    "proteinStart":1848,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Truncating Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"Tazemetostat is a small molecule methyltransferase inhibitor of EZH2 indicated for the treatment of adult and pediatric patients with metastatic or locally advanced epithelioid sarcoma ineligible for complete resection as well as adults with relapsed or refractory follicular lymphoma whose tumors are positive for an EZH2 mutation. In vitro studies showed that other small molecule inhibitors of EZH2 methyltransferase activity, including GSK126, GSK343, and EPZ005687, selectively suppressed the growth of ARID1A mutated ovarian and gastric cancer cell lines compared to controls (PMID: 25686104, 32506298).",
+      "drugs":[
+        {
+          "drugName":"Tazemetostat",
+          "ncitCode":"C107506",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_4",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"",
+        "id":984,
+        "level":-1,
+        "mainType":{
+          "id":null,
+          "name":"All Solid Tumors",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "25686104",
+        "32506298"
+      ]
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Truncating Mutations"
+      ],
+      "approvedIndications":[],
+      "description":"PLX2853 is an inhibitor of the bromodomain-containing protein 4 (BRD4) that binds to the acetylated lysine recognition motifs in the bromodomains of the BRD4 protein, thereby preventing the binding of BRD4 to acetylated lysines on histones. Small molecule inhibitors of the BET family of proteins have been shown to specifically inhibit proliferation of ARID1A-mutated cell lines, both in vitro and in ovarian clear cell cancer xenografts and patient-derived xenograft models (PMID: 29760405). Similarly, loss of ARID1A has been shown to sensitize breast cancer cells to BET inhibition with various BET inhibitors including JQ1, OTX015, and IBET762 (PMID: 31913353).",
+      "drugs":[
+        {
+          "drugName":"PLX2853",
+          "ncitCode":"C146825",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda3",
+      "level":"LEVEL_4",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"",
+        "color":"",
+        "id":984,
+        "level":-1,
+        "mainType":{
+          "id":null,
+          "name":"All Solid Tumors",
+          "tumorForm":"SOLID"
+        },
+        "name":"",
+        "parent":null,
+        "tissue":"",
+        "tumorForm":"SOLID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "31913353",
+        "29760405"
+      ]
+    }
+  ],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The ARID1A D1850Tfs*33 mutation is likely oncogenic.",
+  "vus":false
+}

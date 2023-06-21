@@ -1,0 +1,50 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"PTPRD, a tumor suppressor and receptor protein tyrosine phosphatase, is altered by mutation or deletion in various cancer types including skin and lung cancers.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"04/23/2018",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "19478061",
+        "25113440"
+      ]
+    },
+    "description":"Truncating mutations in PRPRD can produce serveral C-terminally truncated protein forms, which are likely inactivating. Ectopic expression of tumor-derived PTPRD mutations in cancer cell lines attenuate the tumor suppressive functions of the wildtype protein, resulting in increased cell growth and migration (PMID: 19478061, 25113440).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"R179*",
+    "alterationType":null,
+    "consequence":"stop_gained",
+    "entrezGeneId":5789,
+    "hgvs":"9:g.8528597G>A",
+    "hugoSymbol":"PTPRD",
+    "id":null,
+    "proteinEnd":179,
+    "proteinStart":179,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The PTPRD R179* mutation is likely oncogenic.",
+  "vus":false
+}

@@ -1,0 +1,82 @@
+{
+  "alleleExist":false,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx3",
+      "pmids":[
+        "24296945",
+        "22891276",
+        "25779943",
+        "22891273"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"SMZL",
+        "color":"LimeGreen",
+        "id":578,
+        "level":6,
+        "mainType":{
+          "id":null,
+          "name":"Mature B-Cell Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Splenic Marginal Zone Lymphoma",
+        "parent":"MZL",
+        "tissue":"Lymphoid",
+        "tumorForm":"LIQUID"
+      }
+    }
+  ],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"NOTCH2 encodes a transmembrane receptor that regulates many aspects of development by affecting cell-fate determination.",
+  "highestDiagnosticImplicationLevel":"LEVEL_Dx3",
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"01/09/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "15994325",
+        "22006338",
+        "16773578"
+      ]
+    },
+    "description":"The NOTCH2 1_2009trunc mutations are located in exons 1 through 33 of the gene. These mutations have been identified in Alagille syndrome and squamous cell carcinoma (PMID: 16773578, 22006338). In vivo studies with Drosophila expressing NOTCH2 W330* demonstrate that NOTCH2 1_2009trunc mutations are likely inactivating as measured by the loss of EGF repeats 11-13 to allow for ligand interaction (PMID: 15994325).",
+    "knownEffect":"Likely Loss-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"M1?",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":4853,
+    "hgvs":null,
+    "hugoSymbol":"NOTCH2",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":false,
+  "variantSummary":"The NOTCH2 M1? mutation is likely oncogenic.",
+  "vus":false
+}

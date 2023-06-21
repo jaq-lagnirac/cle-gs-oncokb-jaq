@@ -1,0 +1,329 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx2",
+      "pmids":[
+        "29358618"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"CMML",
+        "color":"LightSalmon",
+        "id":224,
+        "level":4,
+        "mainType":{
+          "id":null,
+          "name":"Myelodysplastic/Myeloproliferative Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Chronic Myelomonocytic Leukemia",
+        "parent":"MDS/MPN",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx3",
+      "pmids":[
+        "20081860",
+        "20054396",
+        "23680150",
+        "21796119"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"DLBCLNOS",
+        "color":"LimeGreen",
+        "id":490,
+        "level":5,
+        "mainType":{
+          "id":null,
+          "name":"Mature B-Cell Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Diffuse Large B-Cell Lymphoma, NOS",
+        "parent":"MBN",
+        "tissue":"Lymphoid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx3",
+      "pmids":[
+        "22237106"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"ETPLL",
+        "color":"LimeGreen",
+        "id":857,
+        "level":4,
+        "mainType":{
+          "id":null,
+          "name":"T-Lymphoblastic Leukemia/Lymphoma",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Early T-Cell Precursor Lymphoblastic Leukemia",
+        "parent":"TLL",
+        "tissue":"Lymphoid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx3",
+      "pmids":[
+        "24362818",
+        "24052547"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"FL",
+        "color":"LimeGreen",
+        "id":286,
+        "level":5,
+        "mainType":{
+          "id":null,
+          "name":"Mature B-Cell Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Follicular Lymphoma",
+        "parent":"MBN",
+        "tissue":"Lymphoid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Dx2",
+      "pmids":[
+        "24030381",
+        "21714648",
+        "25465125",
+        "24220272"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"MDS",
+        "color":"LightSalmon",
+        "id":355,
+        "level":3,
+        "mainType":{
+          "id":null,
+          "name":"Myelodysplastic Syndromes",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Myelodysplastic Syndromes",
+        "parent":"MNM",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    }
+  ],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"EZH2, an epigenetic modifier, is altered by mutation and/or overexpression in solid tumors and hematologic malignancies.",
+  "highestDiagnosticImplicationLevel":"LEVEL_Dx2",
+  "highestFdaLevel":"LEVEL_Fda2",
+  "highestPrognosticImplicationLevel":"LEVEL_Px1",
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":"LEVEL_1",
+  "hotspot":true,
+  "lastUpdate":"02/16/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "25671303",
+        "21078963",
+        "21190999",
+        "25402979",
+        "21796119",
+        "24469040",
+        "20081860",
+        "30705065"
+      ]
+    },
+    "description":"The EZH2 Y646F mutation is located in the enzymatic SET domain of the protein. This mutation has been found in lymphoma (PMID: 21796119, 20081860). Expression of this mutation in vitro, in human embryonic kidney and lymphoma cell lines, and in transgenic mouse models demonstrated that it is activating as measured by increased protein stability, preferential modification of dimethylated H3K27 residues instead of un- or monomethylated residues, increased levels of H3K27 trimethylation compared to wildtype and the formation of lymphoma and melanoma in vivo (PMID: 21078963, 21190999, 25402979, 24469040, 25671303). In addition, a mouse model of B-cell lymphoma expressing this mutation had reduced levels of T-cell infiltrates compared to models expressing wildtype (PMID: 30705065).",
+    "knownEffect":"Likely Gain-of-function"
+  },
+  "oncogenic":"Likely Oncogenic",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Px1",
+      "pmids":[
+        "21714648",
+        "24220272"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"MDS",
+        "color":"LightSalmon",
+        "id":355,
+        "level":3,
+        "mainType":{
+          "id":null,
+          "name":"Myelodysplastic Syndromes",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Myelodysplastic Syndromes",
+        "parent":"MNM",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Px1",
+      "pmids":[
+        "21921040",
+        "23619563"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"PMF",
+        "color":"LightSalmon",
+        "id":632,
+        "level":4,
+        "mainType":{
+          "id":null,
+          "name":"Myeloproliferative Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Primary Myelofibrosis",
+        "parent":"MPN",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    },
+    {
+      "abstracts":[],
+      "alterations":[
+        "Oncogenic Mutations"
+      ],
+      "description":"",
+      "levelOfEvidence":"LEVEL_Px2",
+      "pmids":[
+        "27991718",
+        "29296692"
+      ],
+      "tumorType":{
+        "children":{},
+        "code":"ET",
+        "color":"LightSalmon",
+        "id":695,
+        "level":4,
+        "mainType":{
+          "id":null,
+          "name":"Myeloproliferative Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Essential Thrombocythemia",
+        "parent":"MPN",
+        "tissue":"Myeloid",
+        "tumorForm":"LIQUID"
+      }
+    }
+  ],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"Y646F",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":2146,
+    "hgvs":null,
+    "hugoSymbol":"EZH2",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[
+    {
+      "abstracts":[],
+      "alterations":[
+        "A692V",
+        "Y646H",
+        "Y646S",
+        "Y646C",
+        "Y646F",
+        "Y646N",
+        "A682G"
+      ],
+      "approvedIndications":[],
+      "description":"Tazemetostat is a small molecule inhibitor of EZH2 that is FDA-approved for adult patients with relapsed or refractory follicular lymphoma (FL) whose tumors are positive for an EZH2 mutation as detected by an FDA-approved test and who have received at least two prior systemic therapies, or who have no satisfactory alternative treatment options. Approval was based on the open-label, multicenter, phase II trial of tazemetostat in 99 patients with mutant (n=45) or wildtype (n=54) EZH2 relapsed or refractory FL in which the objective response rate was 77% (95% CI= 61.4-88.2) in the EZH2 mutant group versus 34% (95% CI=21.5-48.3) in the EZH2 wildtype group, with median progression-free survival of 11.1 months (95% CI=8.4-15.7) versus 5.7 (95% CI=3.5-11.1) months, respectively (PMID: 33035457).",
+      "drugs":[
+        {
+          "drugName":"Tazemetostat",
+          "ncitCode":"C107506",
+          "synonyms":[],
+          "uuid":null
+        }
+      ],
+      "fdaLevel":"LEVEL_Fda2",
+      "level":"LEVEL_1",
+      "levelAssociatedCancerType":{
+        "children":{},
+        "code":"FL",
+        "color":"LimeGreen",
+        "id":286,
+        "level":5,
+        "mainType":{
+          "id":null,
+          "name":"Mature B-Cell Neoplasms",
+          "tumorForm":"LIQUID"
+        },
+        "name":"Follicular Lymphoma",
+        "parent":"MBN",
+        "tissue":"Lymphoid",
+        "tumorForm":"LIQUID"
+      },
+      "levelExcludedCancerTypes":[],
+      "pmids":[
+        "33035457"
+      ]
+    }
+  ],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The EZH2 Y646F mutation is likely oncogenic.",
+  "vus":false
+}

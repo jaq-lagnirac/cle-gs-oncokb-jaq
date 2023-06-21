@@ -1,0 +1,49 @@
+{
+  "alleleExist":true,
+  "dataVersion":"v4.5",
+  "diagnosticImplications":[],
+  "diagnosticSummary":"",
+  "geneExist":true,
+  "geneSummary":"DNMT3A, a tumor suppressor and DNA methyltransferase, is recurrently mutated in acute myeloid leukemia and other hematologic malignancies.",
+  "highestDiagnosticImplicationLevel":null,
+  "highestFdaLevel":null,
+  "highestPrognosticImplicationLevel":null,
+  "highestResistanceLevel":null,
+  "highestSensitiveLevel":null,
+  "hotspot":false,
+  "lastUpdate":"03/10/2023",
+  "mutationEffect":{
+    "citations":{
+      "abstracts":[],
+      "pmids":[
+        "34429321"
+      ]
+    },
+    "description":"The DNMT3A R366H mutation is located adjacent to the PWWP domain of the protein. In vitro studies with HEK293T cells expressing DNMT3A R366H demonstrate that the mutation is likely neutral as measured by methyltransferase function and protein stability comparable to wildtype (PMID: 34429321).",
+    "knownEffect":"Likely Neutral"
+  },
+  "oncogenic":"Likely Neutral",
+  "otherSignificantResistanceLevels":[],
+  "otherSignificantSensitiveLevels":[],
+  "prognosticImplications":[],
+  "prognosticSummary":"",
+  "query":{
+    "alteration":"R366H",
+    "alterationType":null,
+    "consequence":null,
+    "entrezGeneId":1788,
+    "hgvs":null,
+    "hugoSymbol":"DNMT3A",
+    "id":null,
+    "proteinEnd":null,
+    "proteinStart":null,
+    "referenceGenome":"GRCh38",
+    "svType":null,
+    "tumorType":null
+  },
+  "treatments":[],
+  "tumorTypeSummary":"",
+  "variantExist":true,
+  "variantSummary":"The DNMT3A R366H mutation is likely neutral.",
+  "vus":false
+}
