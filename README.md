@@ -169,7 +169,7 @@ Python
 ------
 A summary of the Python scripts pulled and created by Justin Caringal (jaq-lagnirac) and Ajay Khanna (apldx).
 
-`annotate_table_comparison.py` - Takes .tsv file generated from `convert_json_to_table.py` and utilizes OncoKB calls to `byGenomicChange`, `byProteinChange`, and `byHGVSg` to annotate the table, then appends the results onto a new .tsv file. Also .err file with elapsed time and successful hit proportion statistics. Modified `p30-annotate_table.py` by apldx.
+`annotate_table_comparison.py` - Takes .tsv file generated from `convert_json_to_table.py` and utilizes OncoKB calls to `byGenomicChange`, `byProteinChange`, and `byHGVSg` to annotate the table, then appends the results onto a new .tsv file. Also .err file with elapsed time and successful hit proportion statistics. Modified from `p30-annotate_table.py` by apldx.
 
 `check_transcript.py` - Takes .tsv file generated from `annotate_table_comparison.py` and compares the gene and transcript outputs with a reference table from OncoKB (`/utils/allCuratedGenes.txt`), then appends the results onto a new .tsv file and outputs it to stdout. Also generates .err file with statistics on proportion and frequency of comparison discrepancy.
 
