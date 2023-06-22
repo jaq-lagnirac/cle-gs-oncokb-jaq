@@ -164,3 +164,25 @@ make build
 make interact
 ```
 
+
+Python
+------
+A summary of the Python scripts pulled and created by Justin Caringal (jaq-lagnirac) and Ajay Khanna (apldx).
+
+`annotate_table_comparison.py` - Takes .tsv file generated from `convert_json_to_table.py` and utilizes OncoKB calls to `byGenomicChange`, `byProteinChange`, and `byHGVSg` to annotate the table, then appends the results onto a new .tsv file. Also .err file with elapsed time and successful hit proportion statistics. Modified `p30-annotate_table.py` by apldx.
+
+`check_transcript.py` - Takes .tsv file generated from `annotate_table_comparison.py` and compares the gene and transcript outputs with a reference table from OncoKB (`/utils/allCuratedGenes.txt`), then appends the results onto a new .tsv file and outputs it to stdout. Also generates .err file with statistics on proportion and frequency of comparison discrepancy.
+
+`convert_json_to_variant_table.py` - Takes .json file or directory of .json files and generates a table of unique variants from both PASS and Filtered variants. Modified from `p30-json_to_unique_tier13_variants.py` by apldx.
+
+`oncokb_annotate_json.py` - Created by apldx. Takes a .json file and calls OncoKB `byGenomicChange` to annotate the file. Outputs annotated .json file and .err file with statistics. Elapsed time functions added by jaq-lagnirac.
+
+`oncokb_annotate_json_hgvsg.py` - Modified derivative of `oncokb_annotate_json.py` to work with OncoKB `byHGVSg`.
+
+`oncokb_annotate_json_protein.py` - Modified derivative of `oncokb_annotate_json.py` to work with OncoKB `byProteinChange`.
+
+`oncokb_annotate_stats.py` - Takes .err file generate by `oncokb_annotate_json.py` or one of its derivatives and scrapes the statistics to output them to stdout.
+
+`p30-annotate_table.py` - Created by apldx. Takes .tsv file generated from `p30-json_to_unique_tier13_variants.py` and utilizes OncoKB calls to `byGenomicChange` to annotate the table, then appends the results onto a new .tsv file.
+
+`p30-json_to_unique_tier13_variants.py` - Created by apldx. Takes .json file or directory of .json files and generates a table of unique variants from *only* PASS variants.
